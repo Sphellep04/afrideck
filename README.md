@@ -2,7 +2,8 @@
 
 Afrikaans vocabulary Telegram bot with spaced repetition (SM-2) and audio pronunciation.
 Full plan: see the project plan doc. This repo currently implements **Phase 1 (bot skeleton)**,
-**Phase 2 (seed vocabulary)**, **Phase 3 (spaced repetition core)**, and **Phase 4 (audio layer)**.
+**Phase 2 (seed vocabulary)**, **Phase 3 (spaced repetition core)**, **Phase 4 (audio layer)**, and
+**Phase 5 (quiz and progress)**.
 
 ## Stack
 
@@ -112,14 +113,23 @@ stored alongside it.
    The TTS endpoint is unofficial and keyless, so it could change or stop working without notice;
    the documented fallback is `espeak-ng` (self-hosted, not yet wired up here).
 
+## Phase 5 — quiz and progress
+
+- `/quiz` — a random card, multiple choice (correct translation + up to 3 distractors from other
+  cards). Answering doesn't touch SM-2 scheduling at all — it's a separate ephemeral session (5 min
+  TTL) keyed by chat id in Redis, purely for reinforcement.
+- `/progress` — cards mastered (interval ≥ 21 days) out of the total deck, cards due today, and a
+  review streak (consecutive days with at least one `/review` rating logged).
+
 ## Project layout
 
 ```
 api/webhook.ts             Vercel function — Telegram webhook entrypoint
-lib/bot.ts                 grammY bot instance, command handlers, /review and audio flows
+lib/bot.ts                 grammY bot instance, command handlers, /review, audio and quiz flows
 lib/redis.ts                Upstash Redis client
-lib/cards.ts                 Card storage, due-index (sorted set) and deck-registry helpers
+lib/cards.ts                 Card storage, due-index, deck registry, mastery/streak stats
 lib/sm2.ts                   SM-2 scheduling algorithm
+lib/quiz.ts                  /quiz session logic (separate from SRS scheduling)
 lib/r2.ts                    Cloudflare R2 client (aws4fetch, S3-compatible)
 lib/tts.ts                   Google Translate TTS (unofficial) helper
 lib/audio.ts                 Reference audio caching + recording storage/listing
@@ -140,5 +150,5 @@ data/seed-cards.json        Final cards with example sentences (generated)
 - [x] Phase 2 — seed vocabulary from Wiktionary, loaded into Redis
 - [x] Phase 3 — SM-2 spaced repetition core (`/review`)
 - [x] Phase 4 — audio layer (R2 storage, `/pronounce`, voice note capture)
-- [ ] Phase 5 — `/quiz` and `/progress`
+- [x] Phase 5 — `/quiz` and `/progress`
 - [ ] Phase 6 — daily reminder (cron)

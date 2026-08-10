@@ -1,8 +1,11 @@
 import { Bot, InlineKeyboard, InputFile, type Context } from "grammy";
 import {
   countDue,
+  countMastered,
   findCardByWord,
+  getAllCards,
   getCard,
+  getReviewStreak,
   logReview,
   nextDueMember,
   parseMemberId,
@@ -11,6 +14,7 @@ import {
 import { applySM2, type Rating } from "./sm2.js";
 import { getReferenceAudio, listRecordings, storeRecording } from "./audio.js";
 import { getObject } from "./r2.js";
+import { answerQuiz, startQuiz } from "./quiz.js";
 import type { Card } from "./types.js";
 
 const token = process.env.BOT_TOKEN;
@@ -211,4 +215,55 @@ bot.command("recordings", async (ctx) => {
     if (!audio) continue;
     await ctx.replyWithVoice(new InputFile(audio, "recording.ogg"), { caption: rec.lastModified });
   }
+});
+
+bot.command("quiz", async (ctx) => {
+  const question = await startQuiz(ctx.chat.id);
+  if (!question) {
+    await ctx.reply("No cards to quiz on yet — seed the deck first.");
+    return;
+  }
+
+  const keyboard = new InlineKeyboard();
+  question.choices.forEach((choice, i) => {
+    keyboard.text(choice, `quizans:${i}`).row();
+  });
+
+  await ctx.reply(`❓ What does "${question.afrikaans_word}" mean?`, { reply_markup: keyboard });
+});
+
+bot.callbackQuery(/^quizans:([0-3])$/, async (ctx) => {
+  if (!ctx.chat) {
+    await ctx.answerCallbackQuery();
+    return;
+  }
+  const chosenIndex = Number(ctx.match[1]);
+  const result = await answerQuiz(ctx.chat.id, chosenIndex);
+  if (!result) {
+    await ctx.answerCallbackQuery({ text: "This quiz expired — send /quiz for a new one." });
+    return;
+  }
+
+  await ctx.answerCallbackQuery({ text: result.correct ? "✅ Correct!" : "❌ Not quite" });
+  await ctx.editMessageText(
+    `${result.correct ? "✅" : "❌"} ${result.afrikaans_word} → ${result.correctAnswer}`
+  );
+});
+
+bot.command("progress", async (ctx) => {
+  const [total, due, mastered, streak] = await Promise.all([
+    getAllCards().then((cards) => cards.length),
+    countDue(),
+    countMastered(),
+    getReviewStreak(),
+  ]);
+
+  await ctx.reply(
+    [
+      "📊 Progress",
+      `Cards mastered: ${mastered}/${total}`,
+      `Due today: ${due}`,
+      `Review streak: ${streak} day${streak === 1 ? "" : "s"}`,
+    ].join("\n")
+  );
 });
