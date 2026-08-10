@@ -1,9 +1,8 @@
 # AfriDeck
 
 Afrikaans vocabulary Telegram bot with spaced repetition (SM-2) and audio pronunciation.
-Full plan: see the project plan doc. This repo currently implements **Phase 1 (bot skeleton)**,
-**Phase 2 (seed vocabulary)**, **Phase 3 (spaced repetition core)**, **Phase 4 (audio layer)**, and
-**Phase 5 (quiz and progress)**.
+Full plan: see the project plan doc. This repo currently implements all six phases: bot skeleton,
+seed vocabulary, spaced repetition core, audio layer, quiz/progress, and the daily reminder cron.
 
 ## Stack
 
@@ -121,10 +120,30 @@ stored alongside it.
 - `/progress` — cards mastered (interval ≥ 21 days) out of the total deck, cards due today, and a
   review streak (consecutive days with at least one `/review` rating logged).
 
+## Phase 6 setup — daily reminder
+
+A Vercel Cron job runs once a day and messages you if any cards are due, so there's a nudge to open
+the bot without relying on memory.
+
+1. **Get your Telegram chat id** — message the bot once (e.g. `/start`), then visit
+   `https://api.telegram.org/bot<token>/getUpdates` in a browser and read `message.chat.id` from the
+   response.
+
+2. **Local + Vercel env vars** — the cron job runs on Vercel, not locally, so these need to be set
+   with `npx vercel env add <name>` (in addition to `.env` if you want to test the handler locally):
+   - `TELEGRAM_CHAT_ID` — your chat id from step 1
+   - `CRON_SECRET` — any random string you generate yourself; Vercel sends it back as a bearer token
+     on every cron invocation, which the handler checks to reject requests to the (otherwise public)
+     cron URL from anyone else
+
+3. **Schedule** — set in `vercel.json` (`0 7 * * *`, 7am UTC by default; edit to taste — Vercel Cron
+   runs in UTC and the Hobby plan allows at most once-daily invocations per job).
+
 ## Project layout
 
 ```
 api/webhook.ts             Vercel function — Telegram webhook entrypoint
+api/cron/daily-reminder.ts  Vercel Cron function — daily due-cards nudge
 lib/bot.ts                 grammY bot instance, command handlers, /review, audio and quiz flows
 lib/redis.ts                Upstash Redis client
 lib/cards.ts                 Card storage, due-index, deck registry, mastery/streak stats
@@ -142,6 +161,7 @@ scripts/seed-redis.ts       Loads finished cards into Upstash Redis
 data/curated-words.json     Hand-picked 88-word/phrase seed list (greetings, everyday, work)
 data/seed-words.json        Curated list + Wiktionary cross-check (generated)
 data/seed-cards.json        Final cards with example sentences (generated)
+vercel.json                 Cron schedule for the daily reminder
 ```
 
 ## Roadmap
@@ -151,4 +171,4 @@ data/seed-cards.json        Final cards with example sentences (generated)
 - [x] Phase 3 — SM-2 spaced repetition core (`/review`)
 - [x] Phase 4 — audio layer (R2 storage, `/pronounce`, voice note capture)
 - [x] Phase 5 — `/quiz` and `/progress`
-- [ ] Phase 6 — daily reminder (cron)
+- [x] Phase 6 — daily reminder (cron)
