@@ -1,7 +1,8 @@
 # AfriDeck
 
 Afrikaans vocabulary Telegram bot with spaced repetition (SM-2) and audio pronunciation.
-Full plan: see the project plan doc. This repo currently implements **Phase 1 (bot skeleton)** and **Phase 2 (seed vocabulary)**.
+Full plan: see the project plan doc. This repo currently implements **Phase 1 (bot skeleton)**,
+**Phase 2 (seed vocabulary)**, and **Phase 3 (spaced repetition core)**.
 
 ## Stack
 
@@ -78,12 +79,23 @@ with Groq-generated example sentences.
    npm run seed-redis
    ```
 
+## Phase 3 — reviewing
+
+Send `/review` to work through every card due today, one at a time: `/review` shows the Afrikaans
+word, "Show answer" reveals the translation and example sentence, then Again/Hard/Good/Easy rates
+the card. Rating applies the SM-2 update (interval + ease factor), logs the review, and immediately
+shows the next due card — or a "no cards due" message once the queue is empty. No session state is
+kept between requests; each step just re-reads the due index, so it's safe across serverless
+invocations.
+
 ## Project layout
 
 ```
 api/webhook.ts             Vercel function — Telegram webhook entrypoint
-lib/bot.ts                 grammY bot instance and command handlers
+lib/bot.ts                 grammY bot instance, command handlers, /review flow
 lib/redis.ts                Upstash Redis client
+lib/cards.ts                 Card storage + due-index (sorted set) helpers
+lib/sm2.ts                   SM-2 scheduling algorithm
 lib/types.ts                 Card / review log types
 scripts/set-webhook.ts      One-off script to register the webhook URL with Telegram
 scripts/build-wordlist.ts   Cross-checks the curated word list against the Wiktionary export
@@ -98,7 +110,7 @@ data/seed-cards.json        Final cards with example sentences (generated)
 
 - [x] Phase 1 — bot skeleton (`/start`)
 - [x] Phase 2 — seed vocabulary from Wiktionary, loaded into Redis
-- [ ] Phase 3 — SM-2 spaced repetition core (`/review`)
+- [x] Phase 3 — SM-2 spaced repetition core (`/review`)
 - [ ] Phase 4 — audio layer (R2 storage, `/pronounce`, voice note capture)
 - [ ] Phase 5 — `/quiz` and `/progress`
 - [ ] Phase 6 — daily reminder (cron)
