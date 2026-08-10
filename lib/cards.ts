@@ -1,7 +1,9 @@
 import { redis, cardKey } from "./redis.js";
+import { slugify } from "./slug.js";
 import type { Card, ReviewLogEntry } from "./types.js";
 
 export const DUE_INDEX_KEY = "due_index";
+const DECKS_KEY = "decks";
 
 export function memberId(deck: string, cardId: string): string {
   return `${deck}:${cardId}`;
@@ -46,4 +48,25 @@ export async function countDue(): Promise<number> {
 export async function logReview(member: string, rating: ReviewLogEntry["rating"]): Promise<void> {
   const entry: ReviewLogEntry = { card_id: member, rating };
   await redis.set(`review_log:${Date.now()}`, entry);
+}
+
+export async function registerDeck(deck: string): Promise<void> {
+  await redis.sadd(DECKS_KEY, deck);
+}
+
+export async function listDecks(): Promise<string[]> {
+  return redis.smembers(DECKS_KEY);
+}
+
+/** Finds a card by its Afrikaans word/phrase text, searching every known deck. */
+export async function findCardByWord(
+  text: string
+): Promise<{ deck: string; cardId: string; card: Card } | null> {
+  const cardId = slugify(text);
+  const decks = await listDecks();
+  for (const deck of decks) {
+    const card = await getCard(deck, cardId);
+    if (card) return { deck, cardId, card };
+  }
+  return null;
 }

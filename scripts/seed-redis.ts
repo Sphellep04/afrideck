@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
-import { redis, cardKey } from "../lib/redis.js";
+import { saveCard, registerDeck } from "../lib/cards.js";
+import { slugify } from "../lib/slug.js";
 import type { Card } from "../lib/types.js";
 
 interface SeedCard {
@@ -8,15 +9,6 @@ interface SeedCard {
   english_translation: string;
   example_sentence_af: string;
   example_sentence_en: string;
-}
-
-function slugify(word: string): string {
-  return word
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "");
 }
 
 async function main() {
@@ -41,8 +33,8 @@ async function main() {
       review_count: 0,
     };
 
-    await redis.set(cardKey(c.deck, cardId), card);
-    await redis.zadd("due_index", { score: Date.parse(today), member: `${c.deck}:${cardId}` });
+    await saveCard(c.deck, cardId, card);
+    await registerDeck(c.deck);
     seeded++;
   }
 

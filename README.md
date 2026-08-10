@@ -2,7 +2,7 @@
 
 Afrikaans vocabulary Telegram bot with spaced repetition (SM-2) and audio pronunciation.
 Full plan: see the project plan doc. This repo currently implements **Phase 1 (bot skeleton)**,
-**Phase 2 (seed vocabulary)**, and **Phase 3 (spaced repetition core)**.
+**Phase 2 (seed vocabulary)**, **Phase 3 (spaced repetition core)**, and **Phase 4 (audio layer)**.
 
 ## Stack
 
@@ -88,14 +88,42 @@ shows the next due card — or a "no cards due" message once the queue is empty.
 kept between requests; each step just re-reads the due index, so it's safe across serverless
 invocations.
 
+## Phase 4 setup — audio
+
+Reference pronunciation is generated once per word (unofficial Google Translate TTS endpoint) and
+cached in Cloudflare R2; your own practice recordings are captured from Telegram voice notes and
+stored alongside it.
+
+1. **Create an R2 bucket** in the Cloudflare dashboard (free tier, no card), and an API token
+   (R2 → Manage API Tokens) scoped to that bucket for read/write access.
+
+2. **Local env vars** — add to your `.env`:
+   - `R2_ACCOUNT_ID` — your Cloudflare account ID
+   - `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` — from the R2 API token
+   - `R2_BUCKET` — the bucket name
+
+3. **Usage**
+   - `🔊 Pronounce` button on any card during `/review`, or `/pronounce <word>` standalone —
+     generates (first time) or replays (cached) the reference audio for a word.
+   - Reply to any card message with a voice note to save it as a practice recording, tagged to
+     that word.
+   - `/recordings <word>` — replays your last 5 saved recordings for that word.
+
+   The TTS endpoint is unofficial and keyless, so it could change or stop working without notice;
+   the documented fallback is `espeak-ng` (self-hosted, not yet wired up here).
+
 ## Project layout
 
 ```
 api/webhook.ts             Vercel function — Telegram webhook entrypoint
-lib/bot.ts                 grammY bot instance, command handlers, /review flow
+lib/bot.ts                 grammY bot instance, command handlers, /review and audio flows
 lib/redis.ts                Upstash Redis client
-lib/cards.ts                 Card storage + due-index (sorted set) helpers
+lib/cards.ts                 Card storage, due-index (sorted set) and deck-registry helpers
 lib/sm2.ts                   SM-2 scheduling algorithm
+lib/r2.ts                    Cloudflare R2 client (aws4fetch, S3-compatible)
+lib/tts.ts                   Google Translate TTS (unofficial) helper
+lib/audio.ts                 Reference audio caching + recording storage/listing
+lib/slug.ts                  Shared word → card-id slug helper
 lib/types.ts                 Card / review log types
 scripts/set-webhook.ts      One-off script to register the webhook URL with Telegram
 scripts/build-wordlist.ts   Cross-checks the curated word list against the Wiktionary export
@@ -111,6 +139,6 @@ data/seed-cards.json        Final cards with example sentences (generated)
 - [x] Phase 1 — bot skeleton (`/start`)
 - [x] Phase 2 — seed vocabulary from Wiktionary, loaded into Redis
 - [x] Phase 3 — SM-2 spaced repetition core (`/review`)
-- [ ] Phase 4 — audio layer (R2 storage, `/pronounce`, voice note capture)
+- [x] Phase 4 — audio layer (R2 storage, `/pronounce`, voice note capture)
 - [ ] Phase 5 — `/quiz` and `/progress`
 - [ ] Phase 6 — daily reminder (cron)
