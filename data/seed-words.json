@@ -1,0 +1,618 @@
+[
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Hallo",
+    "english_translation": "Hello",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "hello"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Goeiemôre",
+    "english_translation": "Good morning",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "good morning"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Goeiemiddag",
+    "english_translation": "Good afternoon",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Goeienaand",
+    "english_translation": "Good evening",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Goeienag",
+    "english_translation": "Good night",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Totsiens",
+    "english_translation": "Goodbye",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Goodbye, farewell."
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Baie dankie",
+    "english_translation": "Thank you very much",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "thanks a lot; thank you very much"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Dankie",
+    "english_translation": "Thanks",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "thanks"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Asseblief",
+    "english_translation": "Please",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "please; used to make a polite request"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Jammer",
+    "english_translation": "Sorry",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "sorry"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Verskoon my",
+    "english_translation": "Excuse me",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Ja",
+    "english_translation": "Yes",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "yes"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Nee",
+    "english_translation": "No",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "no"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Hoe gaan dit?",
+    "english_translation": "How are you?",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "How are you?"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Goed, dankie",
+    "english_translation": "Good, thanks",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Wat is jou naam?",
+    "english_translation": "What is your name?",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "What is your name?"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "My naam is",
+    "english_translation": "My name is",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "my name is"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Aangename kennis",
+    "english_translation": "Nice to meet you",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "pleased to meet you"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Waar kom jy vandaan?",
+    "english_translation": "Where are you from?",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Ek verstaan nie",
+    "english_translation": "I don't understand",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "I don't understand"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Praat jy Engels?",
+    "english_translation": "Do you speak English?",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "do you speak English?"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Welkom",
+    "english_translation": "Welcome",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "welcome"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Tot later",
+    "english_translation": "See you later",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Tot môre",
+    "english_translation": "See you tomorrow",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Groete",
+    "english_translation": "Greetings / regards",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "plural of groet"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Lekker slaap",
+    "english_translation": "Sleep well",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Voorspoedige verjaarsdag",
+    "english_translation": "Happy birthday",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Geluk",
+    "english_translation": "Congratulations",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "luck, good luck"
+  },
+  {
+    "deck": "greetings",
+    "afrikaans_word": "Alles van die beste",
+    "english_translation": "All the best",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Water",
+    "english_translation": "Water",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "water"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Kos",
+    "english_translation": "Food",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "food"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Huis",
+    "english_translation": "House",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A house, residence."
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Familie",
+    "english_translation": "Family",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "family"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Vriend",
+    "english_translation": "Friend",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "friend"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Tyd",
+    "english_translation": "Time",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "time"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Vandag",
+    "english_translation": "Today",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "today"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Gister",
+    "english_translation": "Yesterday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "yesterday; the previous day"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Nou",
+    "english_translation": "Now",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "now (at this time)"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Later",
+    "english_translation": "Later",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Hoeveel kos dit?",
+    "english_translation": "How much does it cost?",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "How much is it?"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Waar is die badkamer?",
+    "english_translation": "Where is the bathroom?",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Ek is honger",
+    "english_translation": "I am hungry",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "I'm hungry"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Ek is dors",
+    "english_translation": "I am thirsty",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "I'm thirsty"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Lekker",
+    "english_translation": "Nice / delicious",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "having a nice taste, tasty, good, delicious"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Mooi",
+    "english_translation": "Beautiful",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "beautiful, pretty"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Groot",
+    "english_translation": "Big",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "great; big; large"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Klein",
+    "english_translation": "Small",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "small, little"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Warm",
+    "english_translation": "Warm / hot",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "warm"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Koud",
+    "english_translation": "Cold",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "cold (of low temperature)"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Winkel",
+    "english_translation": "Shop",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A shop."
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Geld",
+    "english_translation": "Money",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "money"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Motor",
+    "english_translation": "Car",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "car, automobile"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Pad",
+    "english_translation": "Road",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "path; way; street"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Stad",
+    "english_translation": "City",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "city"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Reën",
+    "english_translation": "Rain",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "rain"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Son",
+    "english_translation": "Sun",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Sun, sun (star of the solar system)"
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Weer",
+    "english_translation": "Weather",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "everyday",
+    "afrikaans_word": "Help my asseblief",
+    "english_translation": "Help me please",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Werk",
+    "english_translation": "Work",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "work"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Kantoor",
+    "english_translation": "Office",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "office"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Baas",
+    "english_translation": "Boss",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "boss"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Kollega",
+    "english_translation": "Colleague",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Vergadering",
+    "english_translation": "Meeting",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "E-pos",
+    "english_translation": "Email",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Rekenaar",
+    "english_translation": "Computer",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "computer"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Skerm",
+    "english_translation": "Screen",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "screen"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Verslag",
+    "english_translation": "Report",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "report"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Sperdatum",
+    "english_translation": "Deadline",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Salaris",
+    "english_translation": "Salary",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "salary"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Kontrak",
+    "english_translation": "Contract",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "contract"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Onderhoud",
+    "english_translation": "Interview",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "interview"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Aansoek",
+    "english_translation": "Application",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Span",
+    "english_translation": "Team",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Projek",
+    "english_translation": "Project",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "project"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Taak",
+    "english_translation": "Task",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Besig",
+    "english_translation": "Busy",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "busy"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Klaar",
+    "english_translation": "Finished / ready",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "ready, prepared"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Belangrik",
+    "english_translation": "Important",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "important (having relevant and crucial value)"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Dringend",
+    "english_translation": "Urgent",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Vakansie",
+    "english_translation": "Holiday / vacation",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "holiday, vacation"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Siekverlof",
+    "english_translation": "Sick leave",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Bespreking",
+    "english_translation": "Discussion",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Besluit",
+    "english_translation": "Decision",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "to decide"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Probleem",
+    "english_translation": "Problem",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "problem"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Oplossing",
+    "english_translation": "Solution",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Skedule",
+    "english_translation": "Schedule",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "schedule"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Maatskappy",
+    "english_translation": "Company",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "company, partnership"
+  },
+  {
+    "deck": "work",
+    "afrikaans_word": "Bevorder",
+    "english_translation": "Promote",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  }
+]
