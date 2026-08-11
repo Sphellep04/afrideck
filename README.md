@@ -94,10 +94,17 @@ Reference pronunciation is generated once per word (unofficial Google Translate 
 cached in Cloudflare R2; your own practice recordings are captured from Telegram voice notes and
 stored alongside it.
 
-1. **Create an R2 bucket** in the Cloudflare dashboard (free tier, no card), and an API token
+**This phase is optional at runtime.** Unlike the other services, Cloudflare has historically
+required a payment card on file to activate R2 even within its free tier (10 GB storage, 1M writes/
+month — no realistic personal usage would ever be billed, but it's a card on file regardless). If
+you'd rather not add one yet, skip this section entirely: every other command works fine without
+it, and `/pronounce`, voice note replies, and `/recordings` just reply with a "not set up yet"
+message until R2 is configured.
+
+1. **Create an R2 bucket** in the Cloudflare dashboard, and an API token
    (R2 → Manage API Tokens) scoped to that bucket for read/write access.
 
-2. **Local env vars** — add to your `.env`:
+2. **Local + Vercel env vars** — add to your `.env` and, once deployed, `npx vercel env add` each:
    - `R2_ACCOUNT_ID` — your Cloudflare account ID
    - `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY` — from the R2 API token
    - `R2_BUCKET` — the bucket name
