@@ -28,7 +28,7 @@ export const bot = new Bot(token);
 
 bot.command("start", async (ctx) => {
   await ctx.reply(
-    "Hello, 👋 welcome to AfriDeck, your personal bot by Phellep 🇿🇦🇳🇦.\n\n" +
+    "Hello, 👋 welcome to AfriDeck, your personal bot by Phellep 🇳🇦.\n\n" +
       "Let us learn Afrikaans together, kom ons leer saam: vocabulary with spaced repetition, " +
       "grammar lessons, quizzes, and pronunciation audio.\n\n" +
       "Send /review to review the cards due today, /grammar for a grammar topic, /quiz to " +
