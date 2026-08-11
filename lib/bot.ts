@@ -16,6 +16,7 @@ import { getReferenceAudio, listRecordings, storeRecording } from "./audio.js";
 import { getObject } from "./r2.js";
 import { answerQuiz, startQuiz } from "./quiz.js";
 import { chatReply } from "./chat.js";
+import { getGrammarLesson, listGrammarTopics } from "./grammar.js";
 import type { Card } from "./types.js";
 
 const token = process.env.BOT_TOKEN;
@@ -29,7 +30,8 @@ bot.command("start", async (ctx) => {
   await ctx.reply(
     "Welkom by AfriDeck! 🇿🇦\n\n" +
       "I'll help you learn Afrikaans vocabulary with spaced repetition and pronunciation audio.\n\n" +
-      "Send /review to review the cards due today."
+      "Send /review to review the cards due today, /grammar for a grammar topic, /quiz to " +
+      "test yourself, /progress for stats, or just send a message to chat."
   );
 });
 
@@ -284,6 +286,40 @@ bot.command("progress", async (ctx) => {
       `Review streak: ${streak} day${streak === 1 ? "" : "s"}`,
     ].join("\n")
   );
+});
+
+bot.command("grammar", async (ctx) => {
+  const topics = await listGrammarTopics();
+  if (topics.length === 0) {
+    await ctx.reply("No grammar topics loaded yet.");
+    return;
+  }
+
+  const keyboard = new InlineKeyboard();
+  for (const { cardId, card } of topics) {
+    keyboard.text(card.afrikaans_word, `grammar:${cardId}`).row();
+  }
+
+  await ctx.reply("📖 Pick a grammar topic:", { reply_markup: keyboard });
+});
+
+bot.callbackQuery(new RegExp(`^grammar:(${CARD_ID})$`), async (ctx) => {
+  const [, cardId] = ctx.match;
+  const [card, lesson] = await Promise.all([getCard("grammar", cardId), getGrammarLesson(cardId)]);
+  if (!card || !lesson) {
+    await ctx.answerCallbackQuery({ text: "Topic not found." });
+    return;
+  }
+
+  await ctx.answerCallbackQuery();
+  const lines = [
+    `📖 ${card.afrikaans_word} — ${card.english_translation}`,
+    "",
+    lesson.explanation,
+    "",
+    ...lesson.examples.flatMap((e) => [`${e.af}`, `${e.en}`, ""]),
+  ];
+  await ctx.editMessageText(lines.join("\n").trim());
 });
 
 // Fallback for anything that isn't a recognized command — must stay last so it only

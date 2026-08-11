@@ -129,6 +129,25 @@ about Afrikaans grammar, vocabulary, culture, or do short conversation practice.
 treating each one in isolation. Uses `GROQ_API_KEY` (see Phase 2 setup); without it configured this
 degrades to a "couldn't reply right now" message instead of breaking anything else.
 
+## Grammar
+
+`/grammar` shows a menu of 12 core Afrikaans grammar topics (word order, tenses, negation,
+pronouns, plurals, diminutives, adjective agreement, prepositions, question words); picking one
+shows a structured explanation with three examples. The same 12 topics also live as a `grammar`
+deck reviewed through the normal `/review` SM-2 flow, so the rules resurface over time instead of
+being a one-off read.
+
+Content is Groq-generated the same way as the vocabulary deck, then **fact-checked by hand** — the
+first generation pass had real errors (a hallucinated SOV word order that contradicted its own
+examples, a false present-tense conjugation rule, a gender-agreement rule borrowed from Dutch that
+doesn't apply to Afrikaans, etc.), corrected directly in `data/grammar-lessons.json` before seeding.
+Worth a spot-check if you ever regenerate this content.
+
+```
+npm run generate-grammar-lessons   # calls Groq per topic, writes data/grammar-lessons.json
+npm run seed-grammar                # loads topics into the grammar deck + lesson text into Redis
+```
+
 ## Phase 5 — quiz and progress
 
 - `/quiz` — a random card, multiple choice (correct translation + up to 3 distractors from other
@@ -167,6 +186,7 @@ lib/cards.ts                 Card storage, due-index, deck registry, mastery/str
 lib/sm2.ts                   SM-2 scheduling algorithm
 lib/quiz.ts                  /quiz session logic (separate from SRS scheduling)
 lib/chat.ts                   Groq-backed free chat fallback, per-chat history in Redis
+lib/grammar.ts                Grammar topic/lesson storage + retrieval
 lib/r2.ts                    Cloudflare R2 client (aws4fetch, S3-compatible)
 lib/tts.ts                   Google Translate TTS (unofficial) helper
 lib/audio.ts                 Reference audio caching + recording storage/listing
@@ -176,9 +196,13 @@ scripts/set-webhook.ts      One-off script to register the webhook URL with Tele
 scripts/build-wordlist.ts   Cross-checks the curated word list against the Wiktionary export
 scripts/generate-sentences.ts  Groq example-sentence generation
 scripts/seed-redis.ts       Loads finished cards into Upstash Redis
+scripts/generate-grammar-lessons.ts  Groq grammar lesson generation
+scripts/seed-grammar.ts     Loads grammar topics into the grammar deck + lesson text
 data/curated-words.json     Hand-picked 88-word/phrase seed list (greetings, everyday, work)
 data/seed-words.json        Curated list + Wiktionary cross-check (generated)
 data/seed-cards.json        Final cards with example sentences (generated)
+data/grammar-topics.json    Curated 12-topic grammar list
+data/grammar-lessons.json   Final grammar lessons (generated, hand-corrected)
 vercel.json                 Cron schedule for the daily reminder
 ```
 

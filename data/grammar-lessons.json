@@ -1,0 +1,230 @@
+[
+  {
+    "title_af": "Basiese woordorde",
+    "title_en": "Basic word order",
+    "explanation": "In Afrikaans main clauses, the basic word order is Subject-Verb-Object (SVO) — the same as English: subject first, then the verb, then the object. This differs from subordinate clauses (e.g. after 'dat' or 'omdat'), where the verb moves to the end of the clause, but that's a more advanced rule beyond this basic pattern.",
+    "examples": [
+      {
+        "af": "Ek eet 'n appel",
+        "en": "I eat an apple"
+      },
+      {
+        "af": "Die hond byt die man",
+        "en": "The dog bites the man"
+      },
+      {
+        "af": "Sy lees 'n boek",
+        "en": "She reads a book"
+      }
+    ]
+  },
+  {
+    "title_af": "Woordorde in vrae",
+    "title_en": "Word order in questions",
+    "explanation": "Afrikaans questions invert the subject and verb. Yes/no questions simply swap them: verb first, then subject (Gaan jy...? = 'Go you...?'). Wh-questions (who/what/where/etc.) put the question word first, then the verb, then the subject — question word, verb, subject.",
+    "examples": [
+      {
+        "af": "Gaan jy na die bioskoop?",
+        "en": "Are you going to the cinema?"
+      },
+      {
+        "af": "Waar loop die hond?",
+        "en": "Where is the dog walking?"
+      },
+      {
+        "af": "Het jy 'n boek gelees?",
+        "en": "Have you read a book?"
+      }
+    ]
+  },
+  {
+    "title_af": "Dubbele ontkenning",
+    "title_en": "Negation with nie...nie",
+    "explanation": "In Afrikaans, 'dubbele ontkenning' or double negation is used to emphasize a negative statement. This is done by using 'nie' at the beginning and end of a sentence. The rule is that when 'nie' is used at the start of a sentence, it must also appear at the end to complete the negation. This construction can change the meaning of the sentence to make it more absolute or emphatic.",
+    "examples": [
+      {
+        "af": "Ek het nie my huiswerk gemaak nie.",
+        "en": "I didn't do my homework."
+      },
+      {
+        "af": "Hy het nie die boek gelees nie.",
+        "en": "He didn't read the book."
+      },
+      {
+        "af": "Sy het nie die film gesien nie.",
+        "en": "She didn't see the movie."
+      }
+    ]
+  },
+  {
+    "title_af": "Teenwoordige tyd",
+    "title_en": "Present tense",
+    "explanation": "Afrikaans present tense verbs don't conjugate for person or number at all — the same base form of the verb is used for I, you, he/she, we, and they. This is a major simplification compared to English (which adds -s for 'he/she') or Dutch/German. Context (or the subject pronoun) makes clear who's doing the action.",
+    "examples": [
+      {
+        "af": "Ek eet 'n appel",
+        "en": "I eat an apple"
+      },
+      {
+        "af": "Sy eet 'n appel",
+        "en": "She eats an apple"
+      },
+      {
+        "af": "Hulle eet 'n appel",
+        "en": "They eat an apple"
+      }
+    ]
+  },
+  {
+    "title_af": "Verlede tyd",
+    "title_en": "Past tense (het ge-)",
+    "explanation": "The past tense in Afrikaans, also known as 'verlede tyd', is formed using the prefix 'het' and the verb in its past participle form, which usually ends in '-ge' for regular verbs. This tense is used to describe completed actions in the past. For example, the verb 'eet' (to eat) becomes 'het ge-eet' (has eaten) in the past tense.",
+    "examples": [
+      {
+        "af": "Ek het 'n appel ge-eet",
+        "en": "I ate an apple"
+      },
+      {
+        "af": "Hulle het gisteraand 'n film gekyk",
+        "en": "They watched a movie last night"
+      },
+      {
+        "af": "Sy het die brief gister geskryf",
+        "en": "She wrote the letter yesterday"
+      }
+    ]
+  },
+  {
+    "title_af": "Persoonlike voornaamwoorde",
+    "title_en": "Personal pronouns",
+    "explanation": "Personal pronouns replace nouns so you don't have to repeat names. The subject pronouns are: ek (I), jy/u (you), hy/sy/dit (he/she/it), ons (we), julle (you plural), hulle (they). Unlike English, Afrikaans doesn't distinguish subject and object pronoun forms as strictly — 'my' is used for both 'me' and, informally, in place of 'I' after certain constructions.",
+    "examples": [
+      {
+        "af": "Ek is moeg",
+        "en": "I am tired"
+      },
+      {
+        "af": "Sy het my gehelp",
+        "en": "She helped me"
+      },
+      {
+        "af": "Ons gaan môre",
+        "en": "We are going tomorrow"
+      }
+    ]
+  },
+  {
+    "title_af": "Besitlike voornaamwoorde",
+    "title_en": "Possessive pronouns",
+    "explanation": "In Afrikaans, possessive pronouns are used to show that something belongs to someone. The possessive pronouns in Afrikaans are similar to those in English, but with some differences in form and usage. For example, 'my' is 'my' in Afrikaans, 'your' is 'jou', and 'his' or 'her' is 'sy' or 'haar'. The possessive pronouns are used before the noun they describe.",
+    "examples": [
+      {
+        "af": "Die boek is myne",
+        "en": "The book is mine"
+      },
+      {
+        "af": "Sy hare is mooi",
+        "en": "Her hair is beautiful"
+      },
+      {
+        "af": "Jou vriend is baie aardig",
+        "en": "Your friend is very nice"
+      }
+    ]
+  },
+  {
+    "title_af": "Meervoude",
+    "title_en": "Plurals",
+    "explanation": "Most Afrikaans nouns form their plural by adding -e (hond → honde). Nouns ending in an unstressed syllable like -el, -er, -aar, or -en usually add -s instead (appel → appels). Some common nouns are irregular and don't follow either pattern, so they're worth memorizing individually, like kind → kinders.",
+    "examples": [
+      {
+        "af": "Die hond word honde",
+        "en": "The dog becomes dogs"
+      },
+      {
+        "af": "Die appel word appels",
+        "en": "The apple becomes apples"
+      },
+      {
+        "af": "Die kind word kinders",
+        "en": "The child becomes children (irregular)"
+      }
+    ]
+  },
+  {
+    "title_af": "Verkleinwoorde",
+    "title_en": "Diminutives (-tjie)",
+    "explanation": "Diminutives express smallness or affection. The most common suffix is -tjie, but the exact ending actually depends on the final sound of the word — for example, words ending in -s often take -ie instead (huis → huisie, not 'huistjie'). Don't worry about memorizing every variant early on; recognizing -tjie/-ie endings as 'small/cute version of the word' is the important part.",
+    "examples": [
+      {
+        "af": "Sy het 'n huisie by die see",
+        "en": "She has a little house by the sea"
+      },
+      {
+        "af": "Die kinders speel met 'n hondjie",
+        "en": "The children are playing with a little dog"
+      },
+      {
+        "af": "Hy het 'n boompie geplant",
+        "en": "He planted a little tree"
+      }
+    ]
+  },
+  {
+    "title_af": "Byvoeglike naamwoorde",
+    "title_en": "Adjectives and agreement",
+    "explanation": "Afrikaans doesn't have grammatical gender, so adjectives don't agree with 'masculine/feminine' nouns. Instead, many adjectives add an -e ending when placed directly before the noun (attributive position), but stay unchanged when they come after 'is' (predicative position). For example: 'n droë handdoek (attributive, +e) vs. die handdoek is droog (predicative, no -e).",
+    "examples": [
+      {
+        "af": "Die groot huis is myne",
+        "en": "The big house is mine"
+      },
+      {
+        "af": "'n Droë handdoek lê op die bed",
+        "en": "A dry towel is lying on the bed"
+      },
+      {
+        "af": "Die handdoek is droog",
+        "en": "The towel is dry"
+      }
+    ]
+  },
+  {
+    "title_af": "Voorsetsels",
+    "title_en": "Prepositions",
+    "explanation": "In Afrikaans, prepositions are used to show the relationship between a noun or pronoun and other words in a sentence, similar to English. They can indicate location, direction, time, and more. Afrikaans prepositions are often similar to their English counterparts, but the cases they govern may differ. Understanding prepositions is crucial for constructing correct sentences.",
+    "examples": [
+      {
+        "af": "Die boek lê op die tafel",
+        "en": "The book is on the table"
+      },
+      {
+        "af": "Ek gaan na die winkel",
+        "en": "I am going to the shop"
+      },
+      {
+        "af": "Die huis is naby die see",
+        "en": "The house is near the sea"
+      }
+    ]
+  },
+  {
+    "title_af": "Vraagwoorde",
+    "title_en": "Question words",
+    "explanation": "Vraagwoorde (question words) start a question: wie (who), wat (what), waar (where), wanneer (when), waarom (why), hoe (how). They're followed immediately by the verb, and the subject comes after that — question word, then verb, then subject.",
+    "examples": [
+      {
+        "af": "Wie is jou beste vriend?",
+        "en": "Who is your best friend?"
+      },
+      {
+        "af": "Waar gaan jy vir vakansie?",
+        "en": "Where are you going for vacation?"
+      },
+      {
+        "af": "Hoe laat is dit?",
+        "en": "What time is it?"
+      }
+    ]
+  }
+]

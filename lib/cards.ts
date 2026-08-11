@@ -46,6 +46,23 @@ export async function getAllCards(): Promise<Card[]> {
   return cards.filter((c): c is Card => c !== null);
 }
 
+/** Every card in a single deck, paired with its card id — e.g. building a topic menu. */
+export async function getCardsByDeck(deck: string): Promise<{ cardId: string; card: Card }[]> {
+  const members = await redis.smembers<string[]>(ALL_CARDS_KEY);
+  const deckMembers = members.filter((m) => m.startsWith(`${deck}:`));
+  if (deckMembers.length === 0) return [];
+
+  const keys = deckMembers.map((m) => {
+    const { deck: d, cardId } = parseMemberId(m);
+    return cardKey(d, cardId);
+  });
+  const cards = await redis.mget<(Card | null)[]>(keys);
+
+  return deckMembers
+    .map((m, i) => ({ cardId: parseMemberId(m).cardId, card: cards[i] }))
+    .filter((x): x is { cardId: string; card: Card } => x.card !== null);
+}
+
 /** Picks a random card, optionally excluding one member id (e.g. the quiz question itself). */
 export async function randomCard(excludeMember?: string): Promise<{ deck: string; cardId: string; card: Card } | null> {
   const candidates = await redis.srandmember<string[]>(ALL_CARDS_KEY, 5);
