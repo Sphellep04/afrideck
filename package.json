@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vercel dev",
-    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
     "set-webhook": "tsx --env-file=.env scripts/set-webhook.ts",
     "build-wordlist": "tsx scripts/build-wordlist.ts",
     "generate-sentences": "tsx --env-file=.env scripts/generate-sentences.ts",
