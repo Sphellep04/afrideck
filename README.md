@@ -33,9 +33,9 @@ Telegram Bot API · Vercel (serverless functions) · Upstash Redis · Cloudflare
    ```
    Note the deployment URL, e.g. `https://afrideck.vercel.app`.
 
-5. **Register the webhook with Telegram**
+5. **Register the webhook with Telegram** — `BOT_TOKEN`/`WEBHOOK_SECRET` load from `.env` automatically; only `WEBHOOK_URL` needs passing inline since it's deployment-specific:
    ```
-   BOT_TOKEN=xxx WEBHOOK_SECRET=xxx WEBHOOK_URL=https://afrideck.vercel.app/api/webhook npm run set-webhook
+   WEBHOOK_URL=https://afrideck.vercel.app/api/webhook npm run set-webhook
    ```
    This tells Telegram to POST every update to your Vercel function.
 

@@ -7,10 +7,10 @@
   "scripts": {
     "dev": "vercel dev",
     "build": "tsc --noEmit",
-    "set-webhook": "tsx scripts/set-webhook.ts",
+    "set-webhook": "tsx --env-file=.env scripts/set-webhook.ts",
     "build-wordlist": "tsx scripts/build-wordlist.ts",
-    "generate-sentences": "tsx scripts/generate-sentences.ts",
-    "seed-redis": "tsx scripts/seed-redis.ts"
+    "generate-sentences": "tsx --env-file=.env scripts/generate-sentences.ts",
+    "seed-redis": "tsx --env-file=.env scripts/seed-redis.ts"
   },
   "dependencies": {
     "@upstash/redis": "^1.34.0",

@@ -86,8 +86,8 @@ async function main() {
         example_sentence_en: "",
       });
     }
-    // Stay comfortably under Groq's free-tier rate limits.
-    await new Promise((r) => setTimeout(r, 300));
+    // Groq free tier caps llama-3.3-70b-versatile at 30 requests/minute; stay under that.
+    await new Promise((r) => setTimeout(r, 2100));
   }
 
   writeFileSync(new URL("../data/seed-cards.json", import.meta.url), JSON.stringify(cards, null, 2));
