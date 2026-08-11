@@ -2,7 +2,7 @@
   {
     "title_af": "Basiese woordorde",
     "title_en": "Basic word order",
-    "explanation": "In Afrikaans main clauses, the basic word order is Subject-Verb-Object (SVO) — the same as English: subject first, then the verb, then the object. This differs from subordinate clauses (e.g. after 'dat' or 'omdat'), where the verb moves to the end of the clause, but that's a more advanced rule beyond this basic pattern.",
+    "explanation": "In Afrikaans main clauses, the basic word order is Subject-Verb-Object (SVO), the same as English: subject first, then the verb, then the object. This differs from subordinate clauses (e.g. after 'dat' or 'omdat'), where the verb moves to the end of the clause, but that's a more advanced rule beyond this basic pattern.",
     "examples": [
       {
         "af": "Ek eet 'n appel",
@@ -21,7 +21,7 @@
   {
     "title_af": "Woordorde in vrae",
     "title_en": "Word order in questions",
-    "explanation": "Afrikaans questions invert the subject and verb. Yes/no questions simply swap them: verb first, then subject (Gaan jy...? = 'Go you...?'). Wh-questions (who/what/where/etc.) put the question word first, then the verb, then the subject — question word, verb, subject.",
+    "explanation": "Afrikaans questions invert the subject and verb. Yes/no questions simply swap them: verb first, then subject (Gaan jy...? = 'Go you...?'). Wh-questions (who/what/where/etc.) put the question word first, then the verb, then the subject, question word, verb, subject.",
     "examples": [
       {
         "af": "Gaan jy na die bioskoop?",
@@ -59,7 +59,7 @@
   {
     "title_af": "Teenwoordige tyd",
     "title_en": "Present tense",
-    "explanation": "Afrikaans present tense verbs don't conjugate for person or number at all — the same base form of the verb is used for I, you, he/she, we, and they. This is a major simplification compared to English (which adds -s for 'he/she') or Dutch/German. Context (or the subject pronoun) makes clear who's doing the action.",
+    "explanation": "Afrikaans present tense verbs don't conjugate for person or number at all, the same base form of the verb is used for I, you, he/she, we, and they. This is a major simplification compared to English (which adds -s for 'he/she') or Dutch/German. Context (or the subject pronoun) makes clear who's doing the action.",
     "examples": [
       {
         "af": "Ek eet 'n appel",
@@ -97,7 +97,7 @@
   {
     "title_af": "Persoonlike voornaamwoorde",
     "title_en": "Personal pronouns",
-    "explanation": "Personal pronouns replace nouns so you don't have to repeat names. The subject pronouns are: ek (I), jy/u (you), hy/sy/dit (he/she/it), ons (we), julle (you plural), hulle (they). Unlike English, Afrikaans doesn't distinguish subject and object pronoun forms as strictly — 'my' is used for both 'me' and, informally, in place of 'I' after certain constructions.",
+    "explanation": "Personal pronouns replace nouns so you don't have to repeat names. The subject pronouns are: ek (I), jy/u (you), hy/sy/dit (he/she/it), ons (we), julle (you plural), hulle (they). Unlike English, Afrikaans doesn't distinguish subject and object pronoun forms as strictly, 'my' is used for both 'me' and, informally, in place of 'I' after certain constructions.",
     "examples": [
       {
         "af": "Ek is moeg",
@@ -154,7 +154,7 @@
   {
     "title_af": "Verkleinwoorde",
     "title_en": "Diminutives (-tjie)",
-    "explanation": "Diminutives express smallness or affection. The most common suffix is -tjie, but the exact ending actually depends on the final sound of the word — for example, words ending in -s often take -ie instead (huis → huisie, not 'huistjie'). Don't worry about memorizing every variant early on; recognizing -tjie/-ie endings as 'small/cute version of the word' is the important part.",
+    "explanation": "Diminutives express smallness or affection. The most common suffix is -tjie, but the exact ending actually depends on the final sound of the word, for example, words ending in -s often take -ie instead (huis → huisie, not 'huistjie'). Don't worry about memorizing every variant early on; recognizing -tjie/-ie endings as 'small/cute version of the word' is the important part.",
     "examples": [
       {
         "af": "Sy het 'n huisie by die see",
@@ -211,7 +211,7 @@
   {
     "title_af": "Vraagwoorde",
     "title_en": "Question words",
-    "explanation": "Vraagwoorde (question words) start a question: wie (who), wat (what), waar (where), wanneer (when), waarom (why), hoe (how). They're followed immediately by the verb, and the subject comes after that — question word, then verb, then subject.",
+    "explanation": "Vraagwoorde (question words) start a question: wie (who), wat (what), waar (where), wanneer (when), waarom (why), hoe (how). They're followed immediately by the verb, and the subject comes after that, question word, then verb, then subject.",
     "examples": [
       {
         "af": "Wie is jou beste vriend?",

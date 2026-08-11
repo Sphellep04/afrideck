@@ -31,7 +31,7 @@ const MODEL = "llama-3.3-70b-versatile";
 async function generateLesson(topic: GrammarTopic): Promise<LessonContent> {
   const prompt = `You are an Afrikaans grammar teacher writing for an English-speaking beginner. For the grammar topic "${topic.title_af}" (${topic.title_en}), respond with strict JSON only, no markdown fences, in this exact shape:
 {"explanation": "a clear, concise English explanation of the rule, 2-4 sentences, beginner-friendly", "examples": [{"af": "an Afrikaans example sentence", "en": "its English translation"}, {"af": "...", "en": "..."}, {"af": "...", "en": "..."}]}
-Provide exactly 3 examples that clearly illustrate the rule.`;
+Provide exactly 3 examples that clearly illustrate the rule. Do not use em dashes; use commas or periods instead.`;
 
   const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: "POST",

@@ -29,7 +29,8 @@ const MODEL = "llama-3.3-70b-versatile";
 
 async function generateSentence(word: SeedWord): Promise<SentenceResult> {
   const prompt = `You are an Afrikaans language tutor. For the Afrikaans word or phrase "${word.afrikaans_word}" (draft English translation: "${word.english_translation}"), respond with strict JSON only, no markdown fences, in this exact shape:
-{"example_sentence_af": "a short, natural Afrikaans sentence using the word or phrase", "example_sentence_en": "the English translation of that example sentence", "confirmed_translation": "the correct, corrected English translation of the word or phrase itself"}`;
+{"example_sentence_af": "a short, natural Afrikaans sentence using the word or phrase", "example_sentence_en": "the English translation of that example sentence", "confirmed_translation": "the correct, corrected English translation of the word or phrase itself"}
+Do not use em dashes; use commas or periods instead.`;
 
   const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
     method: "POST",

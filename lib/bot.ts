@@ -28,8 +28,8 @@ export const bot = new Bot(token);
 
 bot.command("start", async (ctx) => {
   await ctx.reply(
-    "Hello, 👋 welcome to AfriDeck, your personal bot by Phellep 🇳🇦.\n" +
-      "Let us learn Afrikaans together, kom ons leer saam — vocabulary with spaced repetition, " +
+    "Hello, 👋 welcome to AfriDeck, your personal bot by Phellep 🇿🇦🇳🇦.\n\n" +
+      "Let us learn Afrikaans together, kom ons leer saam: vocabulary with spaced repetition, " +
       "grammar lessons, quizzes, and pronunciation audio.\n\n" +
       "Send /review to review the cards due today, /grammar for a grammar topic, /quiz to " +
       "test yourself, /progress for stats, or just send a message to chat."
@@ -77,7 +77,7 @@ async function nextCardMessage(): Promise<{ text: string; keyboard: InlineKeyboa
   const card = await getCard(deck, cardId);
   if (!card) {
     // due_index pointed at a card that no longer exists; skip it by asking the user to retry.
-    return { text: "Ran into a stale card — send /review again.", keyboard: new InlineKeyboard() };
+    return { text: "Ran into a stale card. Send /review again.", keyboard: new InlineKeyboard() };
   }
 
   return { text: frontText(card), keyboard: revealKeyboard(deck, cardId) };
@@ -116,7 +116,7 @@ bot.callbackQuery(new RegExp(`^rate:(again|hard|good|easy):(${CARD_ID}):(${CARD_
   await saveCard(deck, cardId, updated);
   await logReview(`${deck}:${cardId}`, rating as Rating);
   await ctx.answerCallbackQuery({
-    text: rating === "again" ? "Again — back to day 1" : `Next review in ${updated.interval_days}d`,
+    text: rating === "again" ? "Again, back to day 1" : `Next review in ${updated.interval_days}d`,
   });
 
   const { text, keyboard } = await nextCardMessage();
@@ -124,7 +124,7 @@ bot.callbackQuery(new RegExp(`^rate:(again|hard|good|easy):(${CARD_ID}):(${CARD_
 });
 
 const AUDIO_UNAVAILABLE_MESSAGE =
-  "Audio isn't set up yet (Cloudflare R2 not configured) — this will work once that's added.";
+  "Audio isn't set up yet (Cloudflare R2 not configured). This will work once that's added.";
 
 /** Audio (Phase 4) is optional infra; failures here shouldn't break the rest of the bot. */
 async function withAudioFallback(ctx: Context, action: () => Promise<void>): Promise<void> {
@@ -192,7 +192,7 @@ bot.on("message:voice", async (ctx) => {
 
   const file = await ctx.getFile();
   if (!file.file_path) {
-    await ctx.reply("Couldn't download that voice note — try again.");
+    await ctx.reply("Couldn't download that voice note. Try again.");
     return;
   }
 
@@ -241,7 +241,7 @@ bot.command("recordings", async (ctx) => {
 bot.command("quiz", async (ctx) => {
   const question = await startQuiz(ctx.chat.id);
   if (!question) {
-    await ctx.reply("No cards to quiz on yet — seed the deck first.");
+    await ctx.reply("No cards to quiz on yet. Seed the deck first.");
     return;
   }
 
@@ -261,7 +261,7 @@ bot.callbackQuery(/^quizans:([0-3])$/, async (ctx) => {
   const chosenIndex = Number(ctx.match[1]);
   const result = await answerQuiz(ctx.chat.id, chosenIndex);
   if (!result) {
-    await ctx.answerCallbackQuery({ text: "This quiz expired — send /quiz for a new one." });
+    await ctx.answerCallbackQuery({ text: "This quiz expired. Send /quiz for a new one." });
     return;
   }
 
@@ -314,7 +314,7 @@ bot.callbackQuery(new RegExp(`^grammar:(${CARD_ID})$`), async (ctx) => {
 
   await ctx.answerCallbackQuery();
   const lines = [
-    `📖 ${card.afrikaans_word} — ${card.english_translation}`,
+    `📖 ${card.afrikaans_word} (${card.english_translation})`,
     "",
     lesson.explanation,
     "",
@@ -332,6 +332,6 @@ bot.on("message:text", async (ctx) => {
     await ctx.reply(reply);
   } catch (err) {
     console.error("Chat reply failed:", err);
-    await ctx.reply("Sorry, I couldn't reply to that right now — try again in a moment.");
+    await ctx.reply("Sorry, I couldn't reply to that right now. Try again in a moment.");
   }
 });

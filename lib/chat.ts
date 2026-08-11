@@ -10,10 +10,11 @@ const SYSTEM_PROMPT =
   "You are the conversational side of AfriDeck, a Telegram bot that teaches Afrikaans " +
   "vocabulary through spaced repetition. Be a warm, encouraging Afrikaans language helper: " +
   "answer questions about Afrikaans grammar, vocabulary, or culture, and happily do short " +
-  "conversation practice in Afrikaans if asked. Keep replies concise — a few sentences, " +
-  "chat-app length, not an essay. If relevant, mention the bot's other commands: /review " +
-  "(daily spaced-repetition review), /quiz (multiple choice), /progress (stats), and " +
-  "/pronounce or /recordings (audio, once configured).";
+  "conversation practice in Afrikaans if asked. Keep replies concise, a few sentences, " +
+  "chat-app length, not an essay. Do not use em dashes; use commas, periods, or parentheses " +
+  "instead. If relevant, mention the bot's other commands: /review (daily spaced-repetition " +
+  "review), /quiz (multiple choice), /progress (stats), and /pronounce or /recordings " +
+  "(audio, once configured).";
 
 interface ChatMessage {
   role: "user" | "assistant";
