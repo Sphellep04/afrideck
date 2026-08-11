@@ -15,6 +15,7 @@ import { applySM2, type Rating } from "./sm2.js";
 import { getReferenceAudio, listRecordings, storeRecording } from "./audio.js";
 import { getObject } from "./r2.js";
 import { answerQuiz, startQuiz } from "./quiz.js";
+import { chatReply } from "./chat.js";
 import type { Card } from "./types.js";
 
 const token = process.env.BOT_TOKEN;
@@ -283,4 +284,17 @@ bot.command("progress", async (ctx) => {
       `Review streak: ${streak} day${streak === 1 ? "" : "s"}`,
     ].join("\n")
   );
+});
+
+// Fallback for anything that isn't a recognized command — must stay last so it only
+// catches messages every handler above didn't already consume.
+bot.on("message:text", async (ctx) => {
+  try {
+    await ctx.replyWithChatAction("typing");
+    const reply = await chatReply(ctx.chat.id, ctx.message.text);
+    await ctx.reply(reply);
+  } catch (err) {
+    console.error("Chat reply failed:", err);
+    await ctx.reply("Sorry, I couldn't reply to that right now — try again in a moment.");
+  }
 });

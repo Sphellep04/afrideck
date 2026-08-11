@@ -51,9 +51,11 @@ with Groq-generated example sentences.
    - [Upstash](https://console.upstash.com/) — create a Redis database (free tier, no card), copy the REST URL and token.
    - [Groq](https://console.groq.com/) — create an API key (free tier, no card).
 
-2. **Local env vars** — add to your `.env`:
-   - `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN` — from the Upstash console
-   - `GROQ_API_KEY` — from the Groq console
+2. **Local + Vercel env vars** — add to your `.env` and, once deployed, `npx vercel env add` each (or
+   Project Settings → Environment Variables): `UPSTASH_REDIS_REST_URL`, `UPSTASH_REDIS_REST_TOKEN`,
+   `GROQ_API_KEY`. Upstash is needed everywhere; Groq is used both by the local seed script below
+   *and* at runtime for free-form chat (see below), so it needs to be a Vercel env var too, not just
+   local.
 
 3. **Download the Wiktionary Afrikaans export** into `data/wiktionary-afrikaans-raw.jsonl` (not committed, ~13 MB):
    ```
@@ -119,6 +121,14 @@ message until R2 is configured.
    The TTS endpoint is unofficial and keyless, so it could change or stop working without notice;
    the documented fallback is `espeak-ng` (self-hosted, not yet wired up here).
 
+## Free chat
+
+Any message that isn't a recognized command falls through to a Groq-backed chat handler — ask it
+about Afrikaans grammar, vocabulary, culture, or do short conversation practice. Per-chat history
+(last 6 exchanges) is kept in Redis for 24h so it holds context across messages, rather than
+treating each one in isolation. Uses `GROQ_API_KEY` (see Phase 2 setup); without it configured this
+degrades to a "couldn't reply right now" message instead of breaking anything else.
+
 ## Phase 5 — quiz and progress
 
 - `/quiz` — a random card, multiple choice (correct translation + up to 3 distractors from other
@@ -156,6 +166,7 @@ lib/redis.ts                Upstash Redis client
 lib/cards.ts                 Card storage, due-index, deck registry, mastery/streak stats
 lib/sm2.ts                   SM-2 scheduling algorithm
 lib/quiz.ts                  /quiz session logic (separate from SRS scheduling)
+lib/chat.ts                   Groq-backed free chat fallback, per-chat history in Redis
 lib/r2.ts                    Cloudflare R2 client (aws4fetch, S3-compatible)
 lib/tts.ts                   Google Translate TTS (unofficial) helper
 lib/audio.ts                 Reference audio caching + recording storage/listing
