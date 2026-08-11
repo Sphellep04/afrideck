@@ -119,6 +119,19 @@ bot.callbackQuery(new RegExp(`^rate:(again|hard|good|easy):(${CARD_ID}):(${CARD_
   await ctx.editMessageText(text, { reply_markup: keyboard });
 });
 
+const AUDIO_UNAVAILABLE_MESSAGE =
+  "Audio isn't set up yet (Cloudflare R2 not configured) — this will work once that's added.";
+
+/** Audio (Phase 4) is optional infra; failures here shouldn't break the rest of the bot. */
+async function withAudioFallback(ctx: Context, action: () => Promise<void>): Promise<void> {
+  try {
+    await action();
+  } catch (err) {
+    console.error("Audio feature failed:", err);
+    await ctx.reply(AUDIO_UNAVAILABLE_MESSAGE);
+  }
+}
+
 async function sendPronunciation(ctx: Context, deck: string, cardId: string, card: Card): Promise<void> {
   const audio = await getReferenceAudio(deck, cardId, card);
   await ctx.replyWithAudio(new InputFile(audio, `${cardId}.mp3`), { title: card.afrikaans_word });
@@ -132,7 +145,7 @@ bot.callbackQuery(new RegExp(`^pronounce:(${CARD_ID}):(${CARD_ID})$`), async (ct
     return;
   }
   await ctx.answerCallbackQuery({ text: "Generating audio…" });
-  await sendPronunciation(ctx, deck, cardId, card);
+  await withAudioFallback(ctx, () => sendPronunciation(ctx, deck, cardId, card));
 });
 
 bot.command("pronounce", async (ctx) => {
@@ -148,7 +161,7 @@ bot.command("pronounce", async (ctx) => {
     return;
   }
 
-  await sendPronunciation(ctx, found.deck, found.cardId, found.card);
+  await withAudioFallback(ctx, () => sendPronunciation(ctx, found.deck, found.cardId, found.card));
 });
 
 function extractWordFromCardMessage(text: string): string | null {
@@ -181,11 +194,13 @@ bot.on("message:voice", async (ctx) => {
 
   const res = await fetch(`https://api.telegram.org/file/bot${token}/${file.file_path}`);
   const audio = new Uint8Array(await res.arrayBuffer());
-  await storeRecording(found.deck, found.cardId, audio);
 
-  await ctx.reply(
-    `Saved your recording for "${found.card.afrikaans_word}". Send /recordings ${found.card.afrikaans_word} to hear past attempts.`
-  );
+  await withAudioFallback(ctx, async () => {
+    await storeRecording(found.deck, found.cardId, audio);
+    await ctx.reply(
+      `Saved your recording for "${found.card.afrikaans_word}". Send /recordings ${found.card.afrikaans_word} to hear past attempts.`
+    );
+  });
 });
 
 bot.command("recordings", async (ctx) => {
@@ -201,20 +216,22 @@ bot.command("recordings", async (ctx) => {
     return;
   }
 
-  const recordings = await listRecordings(found.deck, found.cardId);
-  if (recordings.length === 0) {
-    await ctx.reply(
-      `No recordings yet for "${found.card.afrikaans_word}". Reply to a card message with a voice note to add one.`
-    );
-    return;
-  }
+  await withAudioFallback(ctx, async () => {
+    const recordings = await listRecordings(found.deck, found.cardId);
+    if (recordings.length === 0) {
+      await ctx.reply(
+        `No recordings yet for "${found.card.afrikaans_word}". Reply to a card message with a voice note to add one.`
+      );
+      return;
+    }
 
-  const recent = recordings.slice(-5);
-  for (const rec of recent) {
-    const audio = await getObject(rec.key);
-    if (!audio) continue;
-    await ctx.replyWithVoice(new InputFile(audio, "recording.ogg"), { caption: rec.lastModified });
-  }
+    const recent = recordings.slice(-5);
+    for (const rec of recent) {
+      const audio = await getObject(rec.key);
+      if (!audio) continue;
+      await ctx.replyWithVoice(new InputFile(audio, "recording.ogg"), { caption: rec.lastModified });
+    }
+  });
 });
 
 bot.command("quiz", async (ctx) => {
