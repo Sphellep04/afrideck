@@ -5,17 +5,17 @@ pronunciation audio, and free-form chat. Built entirely on free tiers.
 
 ## Features
 
-- **`/review`** — SM-2 spaced repetition over a vocabulary deck (greetings, everyday, work) and a
+- **`/review`**: SM-2 spaced repetition over a vocabulary deck (greetings, everyday, work) and a
   grammar deck, one card at a time
-- **`/grammar`** — menu of 12 core Afrikaans grammar topics, each with a structured explanation and
+- **`/grammar`**: menu of 12 core Afrikaans grammar topics, each with a structured explanation and
   examples
-- **`/quiz`** — multiple choice, kept separate from review scheduling so it doesn't distort timing
-- **`/progress`** — cards mastered, due today, and a review streak
-- **`/pronounce`, voice notes, `/recordings`** — reference pronunciation (cached TTS) and your own
+- **`/quiz`**: multiple choice, kept separate from review scheduling so it doesn't distort timing
+- **`/progress`**: cards mastered, due today, and a review streak
+- **`/pronounce`, voice notes, `/recordings`**: reference pronunciation (cached TTS) and your own
   practice recordings, optional (needs Cloudflare R2)
-- **Free chat** — anything that isn't a command gets a Groq-backed reply, with short-term memory per
+- **Free chat**: anything that isn't a command gets a Groq-backed reply, with short-term memory per
   chat
-- **Daily reminder** — a Vercel Cron job nudges you if cards are due
+- **Daily reminder**: a Vercel Cron job nudges you if cards are due
 
 ## Stack
 
@@ -26,11 +26,11 @@ Telegram Bot API · Vercel (serverless functions + cron) · Upstash Redis · Clo
 
 1. Create a bot via [@BotFather](https://t.me/BotFather) → `BOT_TOKEN`
 2. `npm install`, then copy `.env.example` → `.env` and fill in credentials:
-   - `WEBHOOK_SECRET` — any random string
-   - `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` — free Redis at [upstash.com](https://console.upstash.com/)
-   - `GROQ_API_KEY` — free at [console.groq.com](https://console.groq.com/)
-   - `R2_*` — optional, Cloudflare R2 for audio (needs a card on file even on the free tier)
-   - `TELEGRAM_CHAT_ID` / `CRON_SECRET` — optional, for the daily reminder
+   - `WEBHOOK_SECRET`: any random string
+   - `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN`: free Redis at [upstash.com](https://console.upstash.com/)
+   - `GROQ_API_KEY`: free at [console.groq.com](https://console.groq.com/)
+   - `R2_*`: optional, Cloudflare R2 for audio (needs a card on file even on the free tier)
+   - `TELEGRAM_CHAT_ID` / `CRON_SECRET`: optional, for the daily reminder
 3. Seed the vocabulary deck:
    ```
    npm run build-wordlist && npm run generate-sentences && npm run seed-redis
@@ -45,7 +45,7 @@ Telegram Bot API · Vercel (serverless functions + cron) · Upstash Redis · Clo
    WEBHOOK_URL=https://<your-deployment>/api/webhook npm run set-webhook
    ```
 
-Everything except Redis degrades gracefully if unconfigured — audio and chat reply with a friendly
+Everything except Redis degrades gracefully if unconfigured: audio and chat reply with a friendly
 "not set up yet" instead of breaking anything else.
 
 ## Project layout
