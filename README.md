@@ -1,6 +1,6 @@
 # AfriDeck 🇳🇦
 
-A personal Afrikaans-learning Telegram bot: spaced repetition flashcards, grammar lessons, quizzes,
+A personal Afrikaans-learning Telegram bot with paced repetition flashcards, grammar lessons, quizzes,
 pronunciation audio, and free-form chat. Built entirely on free tiers.
 
 ## Features
