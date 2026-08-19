@@ -25,7 +25,7 @@ interface SeedCard extends SeedWord {
   example_sentence_en: string;
 }
 
-const MODEL = "llama-3.3-70b-versatile";
+const MODEL = "openai/gpt-oss-120b";
 
 async function generateSentence(word: SeedWord): Promise<SentenceResult> {
   const prompt = `You are an Afrikaans language tutor. For the Afrikaans word or phrase "${word.afrikaans_word}" (draft English translation: "${word.english_translation}"), respond with strict JSON only, no markdown fences, in this exact shape:
@@ -87,7 +87,7 @@ async function main() {
         example_sentence_en: "",
       });
     }
-    // Groq free tier caps llama-3.3-70b-versatile at 30 requests/minute; stay under that.
+    // Conservative pacing to stay well under Groq's rate limits.
     await new Promise((r) => setTimeout(r, 2100));
   }
 

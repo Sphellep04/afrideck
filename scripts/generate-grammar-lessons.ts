@@ -26,7 +26,7 @@ interface GrammarLessonRecord extends GrammarTopic {
   examples: GrammarExample[];
 }
 
-const MODEL = "llama-3.3-70b-versatile";
+const MODEL = "openai/gpt-oss-120b";
 
 async function generateLesson(topic: GrammarTopic): Promise<LessonContent> {
   const prompt = `You are an Afrikaans grammar teacher writing for an English-speaking beginner. For the grammar topic "${topic.title_af}" (${topic.title_en}), respond with strict JSON only, no markdown fences, in this exact shape:
@@ -78,7 +78,7 @@ async function main() {
       console.error(err);
       lessons.push({ ...topic, explanation: "", examples: [] });
     }
-    // Groq free tier caps llama-3.3-70b-versatile at 30 requests/minute; stay under that.
+    // Conservative pacing to stay well under Groq's rate limits.
     await new Promise((r) => setTimeout(r, 2100));
   }
 

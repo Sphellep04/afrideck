@@ -1,6 +1,6 @@
 # AfriDeck 🇳🇦
 
-A personal Afrikaans-learning Telegram bot with paced repetition flashcards, grammar lessons, quizzes,
+A personal Afrikaans-learning Telegram bot with spaced repetition flashcards, grammar lessons, quizzes,
 pronunciation audio, and free-form chat. Built entirely on free tiers.
 
 ## Features
@@ -20,7 +20,7 @@ pronunciation audio, and free-form chat. Built entirely on free tiers.
 ## Stack
 
 Telegram Bot API · Vercel (serverless functions + cron) · Upstash Redis · Cloudflare R2 · Groq
-(Llama 3.3) · Google Translate TTS (unofficial)
+(openai/gpt-oss-120b) · Google Translate TTS (unofficial)
 
 ## Setup
 
