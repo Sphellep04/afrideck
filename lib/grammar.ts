@@ -30,3 +30,15 @@ export async function getGrammarLesson(cardId: string): Promise<GrammarLesson | 
 export async function listGrammarTopics(): Promise<{ cardId: string; content: CardContent }[]> {
   return getCardContentByDeck(GRAMMAR_DECK);
 }
+
+/** Shared rendering for a full grammar lesson — used by /grammar and the /review back text alike. */
+export function formatGrammarLesson(content: CardContent, lesson: GrammarLesson): string {
+  const lines = [
+    `📖 ${content.afrikaans_word} (${content.english_translation})`,
+    "",
+    lesson.explanation,
+    "",
+    ...lesson.examples.flatMap((e) => [e.af, e.en, ""]),
+  ];
+  return lines.join("\n").trim();
+}

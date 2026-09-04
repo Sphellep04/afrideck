@@ -12,13 +12,14 @@ import {
   nextDueMember,
   parseMemberId,
   saveProgress,
+  suggestCards,
 } from "./cards.js";
 import { applySM2, type Rating } from "./sm2.js";
 import { getReferenceAudio, listRecordings, storeRecording } from "./audio.js";
 import { getObject, isR2Configured } from "./r2.js";
 import { answerQuiz, startQuiz } from "./quiz.js";
 import { chatReply } from "./chat.js";
-import { getGrammarLesson, listGrammarTopics } from "./grammar.js";
+import { formatGrammarLesson, getGrammarLesson, GRAMMAR_DECK, listGrammarTopics } from "./grammar.js";
 import { getActiveCard, setActiveCard } from "./review-session.js";
 import type { CardContent } from "./types.js";
 
@@ -88,7 +89,16 @@ function frontText(content: CardContent): string {
   return `📇 ${content.afrikaans_word}`;
 }
 
-function backText(content: CardContent): string {
+/**
+ * Grammar cards get the full structured lesson (same as /grammar) rather than just the title
+ * and one example, since that's the whole point of reviewing one.
+ */
+async function backText(deck: string, cardId: string, content: CardContent): Promise<string> {
+  if (deck === GRAMMAR_DECK) {
+    const lesson = await getGrammarLesson(cardId);
+    if (lesson) return formatGrammarLesson(content, lesson);
+  }
+
   const lines = [`📇 ${content.afrikaans_word}`, `🇬🇧 ${content.english_translation}`];
   if (content.example_sentence_af) {
     lines.push("", content.example_sentence_af);
@@ -98,7 +108,7 @@ function backText(content: CardContent): string {
 }
 
 async function nextCardMessage(chatId: number): Promise<{ text: string; keyboard: InlineKeyboard }> {
-  const member = await nextDueMember(chatId);
+  const [member, due] = await Promise.all([nextDueMember(chatId), countDue(chatId)]);
   if (!member) {
     return { text: "No cards due right now. 🎉 Come back later!", keyboard: new InlineKeyboard() };
   }
@@ -117,7 +127,8 @@ async function nextCardMessage(chatId: number): Promise<{ text: string; keyboard
     english_translation: content.english_translation,
   });
 
-  return { text: frontText(content), keyboard: revealKeyboard(deck, cardId) };
+  const remaining = `${due} card${due === 1 ? "" : "s"} left today`;
+  return { text: `${frontText(content)}\n\n${remaining}`, keyboard: revealKeyboard(deck, cardId) };
 }
 
 bot.command("review", async (ctx) => {
@@ -138,7 +149,8 @@ bot.callbackQuery(new RegExp(`^reveal:(${CARD_ID}):(${CARD_ID})$`), async (ctx) 
     return;
   }
   await ctx.answerCallbackQuery();
-  await ctx.editMessageText(backText(content), { reply_markup: ratingKeyboard(deck, cardId) });
+  const text = await backText(deck, cardId, content);
+  await ctx.editMessageText(text, { reply_markup: ratingKeyboard(deck, cardId) });
 });
 
 bot.callbackQuery(new RegExp(`^rate:(again|hard|good|easy):(${CARD_ID}):(${CARD_ID})$`), async (ctx) => {
@@ -195,6 +207,16 @@ bot.callbackQuery(new RegExp(`^pronounce:(${CARD_ID}):(${CARD_ID})$`), async (ct
   await withAudioFallback(ctx, () => sendPronunciation(ctx, deck, cardId, content));
 });
 
+async function notFoundReply(ctx: Context, word: string): Promise<void> {
+  const suggestions = await suggestCards(word);
+  if (suggestions.length === 0) {
+    await ctx.reply(`Couldn't find a card for "${word}".`);
+    return;
+  }
+  const names = suggestions.map((s) => `"${s.content.afrikaans_word}"`).join(", ");
+  await ctx.reply(`Couldn't find a card for "${word}". Did you mean: ${names}?`);
+}
+
 bot.command("pronounce", async (ctx) => {
   const word = ctx.match.trim();
   if (!word) {
@@ -204,7 +226,7 @@ bot.command("pronounce", async (ctx) => {
 
   const found = await findCardByWord(word);
   if (!found) {
-    await ctx.reply(`Couldn't find a card for "${word}".`);
+    await notFoundReply(ctx, word);
     return;
   }
 
@@ -213,8 +235,10 @@ bot.command("pronounce", async (ctx) => {
 
 function extractWordFromCardMessage(text: string): string | null {
   const firstLine = text.split("\n")[0];
-  const match = /^📇\s*(.+)$/u.exec(firstLine);
-  return match ? match[1].trim() : null;
+  const match = /^[📇📖]\s*(.+)$/u.exec(firstLine);
+  if (!match) return null;
+  // Grammar's back text is "📖 word (translation)"; strip the trailing parenthetical if present.
+  return match[1].replace(/\s*\([^)]*\)\s*$/, "").trim();
 }
 
 bot.on("message:voice", async (ctx) => {
@@ -259,7 +283,7 @@ bot.command("recordings", async (ctx) => {
 
   const found = await findCardByWord(word);
   if (!found) {
-    await ctx.reply(`Couldn't find a card for "${word}".`);
+    await notFoundReply(ctx, word);
     return;
   }
 
@@ -350,21 +374,14 @@ bot.command("grammar", async (ctx) => {
 
 bot.callbackQuery(new RegExp(`^grammar:(${CARD_ID})$`), async (ctx) => {
   const [, cardId] = ctx.match;
-  const [content, lesson] = await Promise.all([getCardContent("grammar", cardId), getGrammarLesson(cardId)]);
+  const [content, lesson] = await Promise.all([getCardContent(GRAMMAR_DECK, cardId), getGrammarLesson(cardId)]);
   if (!content || !lesson) {
     await ctx.answerCallbackQuery({ text: "Topic not found." });
     return;
   }
 
   await ctx.answerCallbackQuery();
-  const lines = [
-    `📖 ${content.afrikaans_word} (${content.english_translation})`,
-    "",
-    lesson.explanation,
-    "",
-    ...lesson.examples.flatMap((e) => [`${e.af}`, `${e.en}`, ""]),
-  ];
-  await ctx.editMessageText(lines.join("\n").trim());
+  await ctx.editMessageText(formatGrammarLesson(content, lesson));
 });
 
 // Fallback for anything that isn't a recognized command — must stay last so it only

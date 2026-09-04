@@ -26,6 +26,10 @@ function reviewDatesKey(chatId: number): string {
   return `review_dates:${chatId}`;
 }
 
+function newCardsTodayKey(chatId: number, date: string): string {
+  return `new_cards:${chatId}:${date}`;
+}
+
 export function memberId(deck: string, cardId: string): string {
   return `${deck}:${cardId}`;
 }
@@ -135,6 +139,24 @@ export async function findCardByWord(
   return null;
 }
 
+/** Loose substring match against word or translation — a "did you mean" fallback for a missed exact lookup. */
+export async function suggestCards(
+  query: string,
+  limit = 3
+): Promise<{ deck: string; cardId: string; content: CardContent }[]> {
+  const q = query.trim().toLowerCase();
+  if (!q) return [];
+
+  const all = await getAllCardContent();
+  return all
+    .filter(
+      (c) =>
+        c.content.afrikaans_word.toLowerCase().includes(q) ||
+        c.content.english_translation.toLowerCase().includes(q)
+    )
+    .slice(0, limit);
+}
+
 // ---- Progress: private per user ----
 
 async function trackUser(chatId: number): Promise<void> {
@@ -163,20 +185,40 @@ export async function saveProgress(
   await trackUser(chatId);
 }
 
+const DAILY_NEW_CARD_LIMIT = 20;
+
 /**
- * Ensures a user has progress (and a due-index entry) for every card in the shared catalog,
- * creating default SM-2 state for anything missing. Covers both first-time enrollment and
+ * Ensures a user has progress (and a due-index entry) for their next batch of unseen cards,
+ * creating default SM-2 state for each one introduced. Covers both first-time enrollment and
  * picking up newly added content for existing users — same operation either way. Cheap
  * (one SDIFF) when there's nothing new, so safe to call on every /review or /progress.
+ *
+ * Caps how many *new* (never-before-seen) cards get introduced per calendar day, same idea as
+ * Anki's daily new-card limit — a first-time user gets a first batch of 20 to review, not the
+ * entire 363-card catalog dumped on them at once. Cards already in progress (due for
+ * re-review) aren't affected by this cap at all, only ones never seen before.
  */
 export async function ensureEnrolled(chatId: number): Promise<void> {
   const missing = (await redis.sdiff(ALL_CARDS_KEY, enrolledKey(chatId))) as string[];
   if (missing.length === 0) return;
 
   const today = todayString();
-  for (const member of missing) {
+  const introducedKey = newCardsTodayKey(chatId, today);
+  const introducedToday = (await redis.get<number>(introducedKey)) ?? 0;
+  const budget = DAILY_NEW_CARD_LIMIT - introducedToday;
+  if (budget <= 0) return;
+
+  // Deterministic order (alphabetical by deck, then card) rather than the arbitrary set-diff
+  // order, so a new user's first batch is a stable, reasonable slice, not shuffled every call.
+  const toIntroduce = missing.sort().slice(0, budget);
+  for (const member of toIntroduce) {
     const { deck, cardId } = parseMemberId(member);
     await saveProgress(chatId, deck, cardId, { ...DEFAULT_PROGRESS, next_review_date: today });
+  }
+
+  if (toIntroduce.length > 0) {
+    // TTL well past a day is just cheap self-cleanup; the date-scoped key is what actually resets it.
+    await redis.set(introducedKey, introducedToday + toIntroduce.length, { ex: 60 * 60 * 24 * 2 });
   }
 }
 

@@ -16,16 +16,21 @@ pronunciation audio, and free-form chat. Built entirely on free tiers.
 
 - **Multi-user**: anyone who messages the bot gets their own SM-2 progress, streak, and mastery
   stats. Vocabulary and grammar content is shared (seeded once); scheduling, review history, and
-  recordings are private per person, auto-enrolled the moment someone sends `/review`
+  recordings are private per person. New cards are introduced gradually, up to 20/day per user
+  (like Anki's daily new-card limit), rather than dumping the full 363-card catalog on day one
 - **`/review`**: SM-2 spaced repetition over 363 cards across 13 vocabulary decks (greetings,
   everyday, work, numbers, time, food, travel, family, home, weather/nature, money, health,
-  technology) and a grammar deck, one card at a time
+  technology) and a grammar deck, one card at a time, with a running "N left today" count.
+  Answering in free text instead of tapping a button (e.g. typing "it means small") still gets
+  graded in context by the chat handler, though only the buttons record the actual review
 - **`/grammar`**: menu of 20 core Afrikaans grammar topics, each with a structured explanation and
-  examples
+  examples. Reviewing a grammar card via `/review` shows the same full lesson, not a truncated
+  version
 - **`/quiz`**: multiple choice, kept separate from review scheduling so it doesn't distort timing
 - **`/progress`**: cards mastered, due today, and a review streak
 - **`/pronounce`, voice notes, `/recordings`**: reference pronunciation (cached TTS, shared) and
-  your own practice recordings (private per person), optional (needs Cloudflare R2)
+  your own practice recordings (private per person), optional (needs Cloudflare R2). A typo that
+  misses gets a "did you mean" suggestion instead of a flat not-found
 - **Free chat**: anything that isn't a command gets a Groq-backed reply, with short-term memory per
   chat
 - **Daily reminder**: a Vercel Cron job checks every user's due count and nudges anyone who has
@@ -64,7 +69,7 @@ Everything except Redis degrades gracefully if unconfigured: audio and chat repl
 "not set up yet" instead of breaking anything else.
 
 Content (vocab examples and grammar explanations) is Groq-generated, then spot-checked by hand
-before seeding — regeneration isn't deterministic and has produced real errors more than once
+before seeding: regeneration isn't deterministic and has produced real errors more than once
 (mistranslations, invented grammar rules that contradicted their own examples), so treat any
 regenerated content as a draft to verify, not a finished deck.
 
