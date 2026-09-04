@@ -17,9 +17,10 @@ pronunciation audio, and free-form chat. Built entirely on free tiers.
 - **Multi-user**: anyone who messages the bot gets their own SM-2 progress, streak, and mastery
   stats. Vocabulary and grammar content is shared (seeded once); scheduling, review history, and
   recordings are private per person, auto-enrolled the moment someone sends `/review`
-- **`/review`**: SM-2 spaced repetition over a vocabulary deck (greetings, everyday, work) and a
-  grammar deck, one card at a time
-- **`/grammar`**: menu of 12 core Afrikaans grammar topics, each with a structured explanation and
+- **`/review`**: SM-2 spaced repetition over 363 cards across 13 vocabulary decks (greetings,
+  everyday, work, numbers, time, food, travel, family, home, weather/nature, money, health,
+  technology) and a grammar deck, one card at a time
+- **`/grammar`**: menu of 20 core Afrikaans grammar topics, each with a structured explanation and
   examples
 - **`/quiz`**: multiple choice, kept separate from review scheduling so it doesn't distort timing
 - **`/progress`**: cards mastered, due today, and a review streak
@@ -60,6 +61,11 @@ Telegram Bot API · Vercel (serverless functions + cron) · Upstash Redis · Clo
 
 Everything except Redis degrades gracefully if unconfigured: audio and chat reply with a friendly
 "not set up yet" instead of breaking anything else.
+
+Content (vocab examples and grammar explanations) is Groq-generated, then spot-checked by hand
+before seeding — regeneration isn't deterministic and has produced real errors more than once
+(mistranslations, invented grammar rules that contradicted their own examples), so treat any
+regenerated content as a draft to verify, not a finished deck.
 
 ## Project layout
 

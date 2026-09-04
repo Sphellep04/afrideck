@@ -614,5 +614,1790 @@
     "english_translation": "Promote",
     "wiktionary_match": false,
     "wiktionary_gloss": null
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Een",
+    "english_translation": "One",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "one"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Twee",
+    "english_translation": "Two",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "two"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Drie",
+    "english_translation": "Three",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "three"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Vier",
+    "english_translation": "Four",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "four"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Vyf",
+    "english_translation": "Five",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "five"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Ses",
+    "english_translation": "Six",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "six"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Sewe",
+    "english_translation": "Seven",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "seven"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Agt",
+    "english_translation": "Eight",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "eight"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Nege",
+    "english_translation": "Nine",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "nine"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Tien",
+    "english_translation": "Ten",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "ten"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Elf",
+    "english_translation": "Eleven",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "eleven"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Twaalf",
+    "english_translation": "Twelve",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "twelve"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Twintig",
+    "english_translation": "Twenty",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "twenty"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Dertig",
+    "english_translation": "Thirty",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "thirty"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Vyftig",
+    "english_translation": "Fifty",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "fifty"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Honderd",
+    "english_translation": "A hundred",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "hundred"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Duisend",
+    "english_translation": "A thousand",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "thousand"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Eerste",
+    "english_translation": "First",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "first"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Tweede",
+    "english_translation": "Second",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "second"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Derde",
+    "english_translation": "Third",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "third"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Nul",
+    "english_translation": "Zero",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "zero"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Hoeveel",
+    "english_translation": "How many",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "how much, how many"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Nommer",
+    "english_translation": "Number",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "number"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Paar",
+    "english_translation": "A couple / a few",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "pair"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Baie",
+    "english_translation": "Many / a lot",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "very, much"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Maandag",
+    "english_translation": "Monday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Monday"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Dinsdag",
+    "english_translation": "Tuesday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Tuesday"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Woensdag",
+    "english_translation": "Wednesday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Wednesday"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Donderdag",
+    "english_translation": "Thursday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Thursday"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Vrydag",
+    "english_translation": "Friday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Friday"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Saterdag",
+    "english_translation": "Saturday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Saturday"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Sondag",
+    "english_translation": "Sunday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Sunday"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Week",
+    "english_translation": "Week",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "week"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Maand",
+    "english_translation": "Month",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A month."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Jaar",
+    "english_translation": "Year",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A year."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Uur",
+    "english_translation": "Hour",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "hour"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Minuut",
+    "english_translation": "Minute",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "minute (unit of time)"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Sekonde",
+    "english_translation": "Second (time)",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "second (unit of time)"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Oggend",
+    "english_translation": "Morning",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "morning"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Middag",
+    "english_translation": "Afternoon",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "An afternoon."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Aand",
+    "english_translation": "Evening",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "evening"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Nag",
+    "english_translation": "Night",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "The period between sunset and sunrise, when the sky is dark; night."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Nou-nou",
+    "english_translation": "In a moment",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "now-now, in a moment, soon"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Altyd",
+    "english_translation": "Always",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "always"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Nooit",
+    "english_translation": "Never",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "never"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Somtyds",
+    "english_translation": "Sometimes",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Vroeg",
+    "english_translation": "Early",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "early"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Laat",
+    "english_translation": "Late",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "to cause to, to make; forms a causative phrase."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Hoe laat is dit?",
+    "english_translation": "What time is it?",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Wanneer",
+    "english_translation": "When",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "when"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Brood",
+    "english_translation": "Bread",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A loaf of bread."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Botter",
+    "english_translation": "Butter",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "butter; a soft, fatty foodstuff made from the cream of milk"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Kaas",
+    "english_translation": "Cheese",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "cheese"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Vleis",
+    "english_translation": "Meat",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "meat"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Hoender",
+    "english_translation": "Chicken",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "chicken"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Vis",
+    "english_translation": "Fish",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "fish (aquatic organism)"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Groente",
+    "english_translation": "Vegetables",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Vegetables."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Vrugte",
+    "english_translation": "Fruit",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "plural of vrug"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Rys",
+    "english_translation": "Rice",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "rice"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Aartappel",
+    "english_translation": "Potato",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "potato"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Eier",
+    "english_translation": "Egg",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "egg"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Melk",
+    "english_translation": "Milk",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "milk"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Suiker",
+    "english_translation": "Sugar",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "sugar"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Sout",
+    "english_translation": "Salt",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "salt"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Koffie",
+    "english_translation": "Coffee",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "coffee"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Tee",
+    "english_translation": "Tea",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "tea"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Wyn",
+    "english_translation": "Wine",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "wine"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Bier",
+    "english_translation": "Beer",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "beer (alcoholic drink brewed from grains or other starch material)"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Ontbyt",
+    "english_translation": "Breakfast",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "breakfast"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Middagete",
+    "english_translation": "Lunch",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "lunch, luncheon"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Aandete",
+    "english_translation": "Dinner",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "supper, dinner, evening meal"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Restaurant",
+    "english_translation": "Restaurant",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "restaurant"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Spyskaart",
+    "english_translation": "Menu",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "menu"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Rekening",
+    "english_translation": "Bill (at a restaurant)",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Lekker eet!",
+    "english_translation": "Enjoy your meal!",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Ek is versadig",
+    "english_translation": "I am full",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Vurk",
+    "english_translation": "Fork",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "fork"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Lepel",
+    "english_translation": "Spoon",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Mes",
+    "english_translation": "Knife",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "knife"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Bord",
+    "english_translation": "Plate",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Trein",
+    "english_translation": "Train",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "train (railway vehicle)"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Bus",
+    "english_translation": "Bus",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "bus"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Vliegtuig",
+    "english_translation": "Airplane",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "aeroplane, aircraft"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Vlughawe",
+    "english_translation": "Airport",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Stasie",
+    "english_translation": "Station",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "station"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Kaartjie",
+    "english_translation": "Ticket",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Reis",
+    "english_translation": "Journey / trip",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "journey, trip, voyage"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Links",
+    "english_translation": "Left",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Regs",
+    "english_translation": "Right",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "On the right"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Reguit",
+    "english_translation": "Straight ahead",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "straight, straight on"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Naby",
+    "english_translation": "Near",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "near (in the vicinity of)"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Ver",
+    "english_translation": "Far",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "far, distant"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Hier",
+    "english_translation": "Here",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "here"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Daar",
+    "english_translation": "There",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "there"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Kaart",
+    "english_translation": "Map",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "map"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Paspoort",
+    "english_translation": "Passport",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "passport"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Hotel",
+    "english_translation": "Hotel",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Toer",
+    "english_translation": "Tour",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Bagasie",
+    "english_translation": "Luggage",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Waar is die stasie?",
+    "english_translation": "Where is the station?",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Ek is verlore",
+    "english_translation": "I am lost",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Straat",
+    "english_translation": "Street",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "street, road"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Dorp",
+    "english_translation": "Town",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "town"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Land",
+    "english_translation": "Country",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "country; nation"
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Grens",
+    "english_translation": "Border",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "border, frontier"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Ma",
+    "english_translation": "Mom",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "mom, mother"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Pa",
+    "english_translation": "Dad",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "dad, father"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Broer",
+    "english_translation": "Brother",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "brother"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Suster",
+    "english_translation": "Sister",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "sister"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Seun",
+    "english_translation": "Son",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "son"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Dogter",
+    "english_translation": "Daughter",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "daughter"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Oupa",
+    "english_translation": "Grandpa",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "grandfather"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Ouma",
+    "english_translation": "Grandma",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "grandmother"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Tante",
+    "english_translation": "Aunt",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "aunt"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Oom",
+    "english_translation": "Uncle",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "uncle"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Neef",
+    "english_translation": "Cousin (male) / nephew",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "nephew"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Niggie",
+    "english_translation": "Cousin (female) / niece",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "niece"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Kind",
+    "english_translation": "Child",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "child"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Kinders",
+    "english_translation": "Children",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "plural of kind"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Man",
+    "english_translation": "Husband / man",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "man"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Vrou",
+    "english_translation": "Wife / woman",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "woman"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Baba",
+    "english_translation": "Baby",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "baby"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Vriendin",
+    "english_translation": "Girlfriend / close female friend",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "female friend"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Buurman",
+    "english_translation": "Neighbour",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "neighbour (male)"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Familielid",
+    "english_translation": "Family member",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "family member, relative"
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Getroud",
+    "english_translation": "Married",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Enkellopend",
+    "english_translation": "Single (relationship status)",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Broers en susters",
+    "english_translation": "Siblings",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Voog",
+    "english_translation": "Guardian",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Tweeling",
+    "english_translation": "Twins",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "twin"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Woonstel",
+    "english_translation": "Apartment / flat",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "An apartment."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Kamer",
+    "english_translation": "Room",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A room, a chamber."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Kombuis",
+    "english_translation": "Kitchen",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "kitchen"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Slaapkamer",
+    "english_translation": "Bedroom",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "bedroom"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Badkamer",
+    "english_translation": "Bathroom",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Sitkamer",
+    "english_translation": "Living room",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "sitting room"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Tuin",
+    "english_translation": "Garden",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A garden, yard."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Deur",
+    "english_translation": "Door",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "door"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Venster",
+    "english_translation": "Window",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "window"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Vloer",
+    "english_translation": "Floor",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A floor."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Dak",
+    "english_translation": "Roof",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "roof"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Muur",
+    "english_translation": "Wall",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "wall"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Tafel",
+    "english_translation": "Table",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "table"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Stoel",
+    "english_translation": "Chair",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "chair"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Bed",
+    "english_translation": "Bed",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "bed"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Kas",
+    "english_translation": "Cupboard / closet",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A cupboard."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Yskas",
+    "english_translation": "Fridge",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "refrigerator"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Stoof",
+    "english_translation": "Stove",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "stove"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Sleutel",
+    "english_translation": "Key",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "key (tool for locking and unlocking; something that unlocks)"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Huur",
+    "english_translation": "Rent",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "rent"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Eienaar",
+    "english_translation": "Owner",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "owner"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Skoon",
+    "english_translation": "Clean",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "clean; cleansed"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Vuil",
+    "english_translation": "Dirty",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "dirty, not clean"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Tuisblyer",
+    "english_translation": "Homebody",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Wind",
+    "english_translation": "Wind",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "wind (movement of air)"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Wolk",
+    "english_translation": "Cloud",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "cloud"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Sneeu",
+    "english_translation": "Snow",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "snow"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Storm",
+    "english_translation": "Storm",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "storm"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Onweer",
+    "english_translation": "Thunderstorm",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "thunderstorm"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Blits",
+    "english_translation": "Lightning",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "lightning"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Reënboog",
+    "english_translation": "Rainbow",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "rainbow"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Hemel",
+    "english_translation": "Sky",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "sky"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Boom",
+    "english_translation": "Tree",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "tree"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Blom",
+    "english_translation": "Flower",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "flower"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Gras",
+    "english_translation": "Grass",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "grass"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Berg",
+    "english_translation": "Mountain",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "mountain"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Rivier",
+    "english_translation": "River",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "river"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "See",
+    "english_translation": "Sea",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "sea"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Strand",
+    "english_translation": "Beach",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "beach"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Woestyn",
+    "english_translation": "Desert",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "desert"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Bos",
+    "english_translation": "Forest",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "wood, forest"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Dier",
+    "english_translation": "Animal",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "animal"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Voël",
+    "english_translation": "Bird",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A bird."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Hond",
+    "english_translation": "Dog",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "dog"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Kat",
+    "english_translation": "Cat",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "cat"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Sonskyn",
+    "english_translation": "Sunshine",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Mis",
+    "english_translation": "Fog / mist",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "to miss"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Somer",
+    "english_translation": "Summer",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "summer"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Winter",
+    "english_translation": "Winter",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "winter"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Lente",
+    "english_translation": "Spring (season)",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "spring, the season between winter and summer"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Herfs",
+    "english_translation": "Autumn",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "autumn, fall"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Rand",
+    "english_translation": "Rand (currency)",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "edge, border"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Sent",
+    "english_translation": "Cent",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "cent (one hundredth of a currency)"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Prys",
+    "english_translation": "Price",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "price"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Duur",
+    "english_translation": "Expensive",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "expensive"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Goedkoop",
+    "english_translation": "Cheap",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Betaal",
+    "english_translation": "Pay",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "pay"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Koop",
+    "english_translation": "Buy",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "To buy."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Verkoop",
+    "english_translation": "Sell",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Korting",
+    "english_translation": "Discount",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Kwitansie",
+    "english_translation": "Receipt",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Kredietkaart",
+    "english_translation": "Credit card",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Kontant",
+    "english_translation": "Cash",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Bank",
+    "english_translation": "Bank",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "bench, couch"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Spaar",
+    "english_translation": "Save (money)",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Skuld",
+    "english_translation": "Debt",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "guilt, fault"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Ryk",
+    "english_translation": "Rich",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "rich, wealthy"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Bekostigbaar",
+    "english_translation": "Affordable",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Klerewinkel",
+    "english_translation": "Clothing shop",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A clothes shop."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Kruidenierswinkel",
+    "english_translation": "Grocery store",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Kassier",
+    "english_translation": "Cashier",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Trollie",
+    "english_translation": "Trolley / cart",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Baie duur!",
+    "english_translation": "Very expensive!",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Kan ek betaal met kaart?",
+    "english_translation": "Can I pay by card?",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Wisselgeld",
+    "english_translation": "Change (money)",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Kop",
+    "english_translation": "Head",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "head"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Hand",
+    "english_translation": "Hand",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A hand."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Voet",
+    "english_translation": "Foot",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "foot"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Oog",
+    "english_translation": "Eye",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "eye"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Oor",
+    "english_translation": "Ear",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "ear"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Neus",
+    "english_translation": "Nose",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "nose"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Mond",
+    "english_translation": "Mouth",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "mouth"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Maag",
+    "english_translation": "Stomach",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "stomach"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Hart",
+    "english_translation": "Heart",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "heart"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Rug",
+    "english_translation": "Back",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "back (rear of the body)"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Been",
+    "english_translation": "Leg",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "leg of a human or humanoid"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Arm",
+    "english_translation": "Arm (body part)",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "arm"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Vinger",
+    "english_translation": "Finger",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "finger"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Siek",
+    "english_translation": "Sick",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "ill, sick, unwell"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Gesond",
+    "english_translation": "Healthy",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "healthy"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Dokter",
+    "english_translation": "Doctor",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "medical doctor, physician"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Hospitaal",
+    "english_translation": "Hospital",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "hospital"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Apteek",
+    "english_translation": "Pharmacy",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "pharmacy; chemist (a place where prescription drugs are sold or dispensed)"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Pyn",
+    "english_translation": "Pain",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "pain"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Koors",
+    "english_translation": "Fever",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "fever"
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Hoes",
+    "english_translation": "Cough",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Medisyne",
+    "english_translation": "Medicine",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Ek voel siek",
+    "english_translation": "I feel sick",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Ek het 'n hoofpyn",
+    "english_translation": "I have a headache",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Bloeddruk",
+    "english_translation": "Blood pressure",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Selfoon",
+    "english_translation": "Cellphone",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Internet",
+    "english_translation": "Internet",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "the Internet"
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Wagwoord",
+    "english_translation": "Password",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "password"
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Toepassing",
+    "english_translation": "App / application",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "application, act of applying knowledge or a skill"
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Sagteware",
+    "english_translation": "Software",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "software (collective name for programs that can be executed by a computer)"
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Programmeerder",
+    "english_translation": "Programmer",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Kode",
+    "english_translation": "Code",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Databasis",
+    "english_translation": "Database",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "database"
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Bediener",
+    "english_translation": "Server",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Netwerk",
+    "english_translation": "Network",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "network"
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Laai af",
+    "english_translation": "Download",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Laai op",
+    "english_translation": "Upload",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Stoor",
+    "english_translation": "Save (a file)",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "to store, to storage"
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Verwyder",
+    "english_translation": "Delete",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "to remove"
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Toetsbord",
+    "english_translation": "Keyboard",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Muis",
+    "english_translation": "Mouse (computer)",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A mouse (rodent)."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Battery",
+    "english_translation": "Battery",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Kortpad",
+    "english_translation": "Shortcut",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Fout",
+    "english_translation": "Bug / error",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Herstel",
+    "english_translation": "Fix / repair",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Opdatering",
+    "english_translation": "Update",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Rugsteun",
+    "english_translation": "Backup",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Die skerm het vasgehak",
+    "english_translation": "The screen has frozen",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Dit werk nie",
+    "english_translation": "It doesn't work",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Suksesvol gestoor",
+    "english_translation": "Successfully saved",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null
   }
 ]

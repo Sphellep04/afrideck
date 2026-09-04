@@ -14,17 +14,17 @@
     "english_translation": "Good morning",
     "wiktionary_match": true,
     "wiktionary_gloss": "good morning",
-    "example_sentence_af": "Ek sê goeiemôre aan my vriend toe ek hom sien",
-    "example_sentence_en": "I say good morning to my friend when I see him"
+    "example_sentence_af": "Goeiemôre, hoe gaan dit?",
+    "example_sentence_en": "Good morning, how are you?"
   },
   {
     "deck": "greetings",
     "afrikaans_word": "Goeiemiddag",
-    "english_translation": "Good day",
+    "english_translation": "Good afternoon",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek sê goeiemiddag vir my vriendin as ek haar sien",
-    "example_sentence_en": "I say good afternoon to my friend when I see her"
+    "example_sentence_af": "Goeiemiddag, hoe gaan dit met jou?",
+    "example_sentence_en": "Good afternoon, how are you doing?"
   },
   {
     "deck": "greetings",
@@ -32,8 +32,8 @@
     "english_translation": "Good evening",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek wens jou 'n goeienaand, hoop jy het 'n lekker dag gehad",
-    "example_sentence_en": "I wish you a good evening, hope you had a nice day"
+    "example_sentence_af": "Goeienaand, hoe was jou dag?",
+    "example_sentence_en": "Good evening, how was your day?"
   },
   {
     "deck": "greetings",
@@ -41,8 +41,8 @@
     "english_translation": "Good night",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek wens jou 'n goeienag, slaap lekker",
-    "example_sentence_en": "I wish you a good night, sleep well"
+    "example_sentence_af": "Ek sê vir jou, Goeienag!",
+    "example_sentence_en": "I say to you, good night!"
   },
   {
     "deck": "greetings",
@@ -50,8 +50,8 @@
     "english_translation": "Goodbye",
     "wiktionary_match": true,
     "wiktionary_gloss": "Goodbye, farewell.",
-    "example_sentence_af": "Ek sien jou later, totsiens",
-    "example_sentence_en": "I'll see you later, goodbye"
+    "example_sentence_af": "Ek sê totsiens aan my vriende.",
+    "example_sentence_en": "I say goodbye to my friends."
   },
   {
     "deck": "greetings",
@@ -59,17 +59,17 @@
     "english_translation": "Thank you very much",
     "wiktionary_match": true,
     "wiktionary_gloss": "thanks a lot; thank you very much",
-    "example_sentence_af": "Ek waardeer jou hulp, baie dankie",
-    "example_sentence_en": "I appreciate your help, thank you very much"
+    "example_sentence_af": "Baie dankie vir jou hulp.",
+    "example_sentence_en": "Thank you very much for your help."
   },
   {
     "deck": "greetings",
     "afrikaans_word": "Dankie",
-    "english_translation": "Thank you",
+    "english_translation": "Thanks",
     "wiktionary_match": true,
     "wiktionary_gloss": "thanks",
-    "example_sentence_af": "Ek sê dankie vir jou hulp",
-    "example_sentence_en": "I say thank you for your help"
+    "example_sentence_af": "Dankie vir jou hulp.",
+    "example_sentence_en": "Thanks for your help."
   },
   {
     "deck": "greetings",
@@ -77,8 +77,8 @@
     "english_translation": "Please",
     "wiktionary_match": true,
     "wiktionary_gloss": "please; used to make a polite request",
-    "example_sentence_af": "Kan jy my asseblief help?",
-    "example_sentence_en": "Can you please help me?"
+    "example_sentence_af": "Kan jy asseblief die deur toe maak?",
+    "example_sentence_en": "Could you please close the door?"
   },
   {
     "deck": "greetings",
@@ -86,8 +86,8 @@
     "english_translation": "Sorry",
     "wiktionary_match": true,
     "wiktionary_gloss": "sorry",
-    "example_sentence_af": "Ek is jammer dat ek jou seer gemaak het",
-    "example_sentence_en": "I am sorry that I hurt you"
+    "example_sentence_af": "Jammer, ek het jou oproep gemis.",
+    "example_sentence_en": "Sorry, I missed your call."
   },
   {
     "deck": "greetings",
@@ -95,8 +95,8 @@
     "english_translation": "Excuse me",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Verskoon my, waar is die badkamer?",
-    "example_sentence_en": "Excuse me, where is the restroom?"
+    "example_sentence_af": "Verskoon my, ek het per ongeluk jou stoel omgegooi.",
+    "example_sentence_en": "Excuse me, I accidentally knocked over your chair."
   },
   {
     "deck": "greetings",
@@ -104,8 +104,8 @@
     "english_translation": "Yes",
     "wiktionary_match": true,
     "wiktionary_gloss": "yes",
-    "example_sentence_af": "Ek het 'n vraag, ja, ek weet die antwoord",
-    "example_sentence_en": "I have a question, yes, I know the answer"
+    "example_sentence_af": "Ja, ek kom môre.",
+    "example_sentence_en": "Yes, I am coming tomorrow."
   },
   {
     "deck": "greetings",
@@ -113,8 +113,8 @@
     "english_translation": "No",
     "wiktionary_match": true,
     "wiktionary_gloss": "no",
-    "example_sentence_af": "Ek het gesê nee, want ek is moeg.",
-    "example_sentence_en": "I said no, because I am tired."
+    "example_sentence_af": "Nee, ek wil nie gaan nie.",
+    "example_sentence_en": "No, I don't want to go."
   },
   {
     "deck": "greetings",
@@ -122,17 +122,17 @@
     "english_translation": "How are you?",
     "wiktionary_match": true,
     "wiktionary_gloss": "How are you?",
-    "example_sentence_af": "Hoe gaan dit met jou vandag?",
-    "example_sentence_en": "How are you today?"
+    "example_sentence_af": "Hoe gaan dit met jou?",
+    "example_sentence_en": "How are you?"
   },
   {
     "deck": "greetings",
     "afrikaans_word": "Goed, dankie",
-    "english_translation": "Fine, thank you",
+    "english_translation": "Fine, thanks",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Hoe gaan dit met jou, goed, dankie",
-    "example_sentence_en": "How are you, fine, thanks"
+    "example_sentence_af": "Ek voel goed, dankie.",
+    "example_sentence_en": "I feel good, thanks."
   },
   {
     "deck": "greetings",
@@ -140,8 +140,8 @@
     "english_translation": "What is your name?",
     "wiktionary_match": true,
     "wiktionary_gloss": "What is your name?",
-    "example_sentence_af": "Ek wil weet, wat is jou naam?",
-    "example_sentence_en": "I want to know, what is your name?"
+    "example_sentence_af": "Kan jy vir my sê, wat is jou naam?",
+    "example_sentence_en": "Can you tell me, what is your name?"
   },
   {
     "deck": "greetings",
@@ -149,26 +149,26 @@
     "english_translation": "My name is",
     "wiktionary_match": true,
     "wiktionary_gloss": "my name is",
-    "example_sentence_af": "My naam is Jan en ek is 'n onderwyser",
-    "example_sentence_en": "My name is Jan and I am a teacher"
+    "example_sentence_af": "My naam is Jan.",
+    "example_sentence_en": "My name is Jan."
   },
   {
     "deck": "greetings",
     "afrikaans_word": "Aangename kennis",
-    "english_translation": "Pleasure to meet you",
+    "english_translation": "Nice to meet you",
     "wiktionary_match": true,
     "wiktionary_gloss": "pleased to meet you",
-    "example_sentence_af": "Ek is baie bly om jou te ontmoet, aangename kennis",
-    "example_sentence_en": "I'm very glad to meet you, nice to meet you"
+    "example_sentence_af": "Aangename kennis, ek is Sarah.",
+    "example_sentence_en": "Nice to meet you, I am Sarah."
   },
   {
     "deck": "greetings",
     "afrikaans_word": "Waar kom jy vandaan?",
-    "english_translation": "Where do you come from?",
+    "english_translation": "Where are you from?",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek het my vriend gevra waar kom jy vandaan?",
-    "example_sentence_en": "I asked my friend where are you from?"
+    "example_sentence_af": "Kan jy my vertel, waar kom jy vandaan?",
+    "example_sentence_en": "Can you tell me where you are from?"
   },
   {
     "deck": "greetings",
@@ -176,8 +176,8 @@
     "english_translation": "I don't understand",
     "wiktionary_match": true,
     "wiktionary_gloss": "I don't understand",
-    "example_sentence_af": "Ek verstaan nie wat jy sê nie",
-    "example_sentence_en": "I don't understand what you're saying"
+    "example_sentence_af": "Ek verstaan nie wat jy sê nie.",
+    "example_sentence_en": "I don't understand what you're saying."
   },
   {
     "deck": "greetings",
@@ -185,8 +185,8 @@
     "english_translation": "Do you speak English?",
     "wiktionary_match": true,
     "wiktionary_gloss": "do you speak English?",
-    "example_sentence_af": "Ek vra die toeris: Praat jy Engels?",
-    "example_sentence_en": "I ask the tourist: Do you speak English?"
+    "example_sentence_af": "Praat jy Engels?",
+    "example_sentence_en": "Do you speak English?"
   },
   {
     "deck": "greetings",
@@ -194,8 +194,8 @@
     "english_translation": "Welcome",
     "wiktionary_match": true,
     "wiktionary_gloss": "welcome",
-    "example_sentence_af": "Die gastehuis het my 'n warm welkom gegee toe ek aankom",
-    "example_sentence_en": "The guesthouse gave me a warm welcome when I arrived"
+    "example_sentence_af": "Welkom by ons huis!",
+    "example_sentence_en": "Welcome to our house!"
   },
   {
     "deck": "greetings",
@@ -203,8 +203,8 @@
     "english_translation": "See you later",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek sien jou later by die winkel, tot later",
-    "example_sentence_en": "I'll see you later at the shop, see you later"
+    "example_sentence_af": "Tot later, ons gesels weer.",
+    "example_sentence_en": "See you later, we'll talk again."
   },
   {
     "deck": "greetings",
@@ -212,8 +212,8 @@
     "english_translation": "See you tomorrow",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek sal jou by die winkel ontmoet, tot môre dan",
-    "example_sentence_en": "I will meet you at the store, see you tomorrow then"
+    "example_sentence_af": "Tot môre, ek sien jou by die kantoor.",
+    "example_sentence_en": "See you tomorrow, I will meet you at the office."
   },
   {
     "deck": "greetings",
@@ -221,8 +221,8 @@
     "english_translation": "Greetings",
     "wiktionary_match": true,
     "wiktionary_gloss": "plural of groet",
-    "example_sentence_af": "Ek stuur groete aan my vriende",
-    "example_sentence_en": "I send greetings to my friends"
+    "example_sentence_af": "Groete aan almal wat hier is.",
+    "example_sentence_en": "Greetings to everyone who is here."
   },
   {
     "deck": "greetings",
@@ -230,26 +230,26 @@
     "english_translation": "Sleep well",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek wens jou lekker slaap vanaand",
-    "example_sentence_en": "I wish you a good sleep tonight"
+    "example_sentence_af": "Lekker slaap, tot môre!",
+    "example_sentence_en": "Sleep well, see you tomorrow!"
   },
   {
     "deck": "greetings",
     "afrikaans_word": "Voorspoedige verjaarsdag",
-    "english_translation": "Happy birthday",
+    "english_translation": "Prosperous birthday",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek wens jou 'n voorspoedige verjaarsdag met baie liefde en geluk",
-    "example_sentence_en": "I wish you a happy birthday with lots of love and happiness"
+    "example_sentence_af": "Voorspoedige verjaarsdag, Jan! Mag al jou drome waar word.",
+    "example_sentence_en": "Prosperous birthday, Jan! May all your dreams come true."
   },
   {
     "deck": "greetings",
     "afrikaans_word": "Geluk",
-    "english_translation": "Congratulations",
+    "english_translation": "luck",
     "wiktionary_match": true,
     "wiktionary_gloss": "luck, good luck",
-    "example_sentence_af": "Baie geluk met jou verjaarsdag",
-    "example_sentence_en": "Congratulations on your birthday"
+    "example_sentence_af": "Geluk met jou nuwe werk!",
+    "example_sentence_en": "Good luck with your new job!"
   },
   {
     "deck": "greetings",
@@ -257,8 +257,8 @@
     "english_translation": "All the best",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek wens jou alles van die beste vir jou verjaarsdag",
-    "example_sentence_en": "I wish you all the best on your birthday"
+    "example_sentence_af": "Ek wens jou alles van die beste toe.",
+    "example_sentence_en": "I wish you all the best."
   },
   {
     "deck": "everyday",
@@ -266,8 +266,8 @@
     "english_translation": "Water",
     "wiktionary_match": true,
     "wiktionary_gloss": "water",
-    "example_sentence_af": "Ek gaan water drink voor ek na die park toe gaan.",
-    "example_sentence_en": "I'm going to drink water before I go to the park."
+    "example_sentence_af": "Ek drink water elke dag.",
+    "example_sentence_en": "I drink water every day."
   },
   {
     "deck": "everyday",
@@ -275,8 +275,8 @@
     "english_translation": "Food",
     "wiktionary_match": true,
     "wiktionary_gloss": "food",
-    "example_sentence_af": "Ek het kos vir die hond gekoop",
-    "example_sentence_en": "I bought food for the dog"
+    "example_sentence_af": "Ek het kos vir die partytjie voorberei.",
+    "example_sentence_en": "I prepared food for the party."
   },
   {
     "deck": "everyday",
@@ -284,8 +284,8 @@
     "english_translation": "House",
     "wiktionary_match": true,
     "wiktionary_gloss": "A house, residence.",
-    "example_sentence_af": "Ek gaan na my huis toe",
-    "example_sentence_en": "I'm going to my house"
+    "example_sentence_af": "Die kinders speel in die huis.",
+    "example_sentence_en": "The children are playing in the house."
   },
   {
     "deck": "everyday",
@@ -293,8 +293,8 @@
     "english_translation": "Family",
     "wiktionary_match": true,
     "wiktionary_gloss": "family",
-    "example_sentence_af": "My familie gaan more na die strand toe.",
-    "example_sentence_en": "My family is going to the beach tomorrow."
+    "example_sentence_af": "My familie gaan elke Saterdag saam eet.",
+    "example_sentence_en": "My family eats together every Saturday."
   },
   {
     "deck": "everyday",
@@ -302,8 +302,8 @@
     "english_translation": "Friend",
     "wiktionary_match": true,
     "wiktionary_gloss": "friend",
-    "example_sentence_af": "Ek het 'n nuwe vriend in my klas gekry.",
-    "example_sentence_en": "I got a new friend in my class."
+    "example_sentence_af": "My vriend kom vandag na die partytjie.",
+    "example_sentence_en": "My friend is coming today to the party."
   },
   {
     "deck": "everyday",
@@ -311,8 +311,8 @@
     "english_translation": "Time",
     "wiktionary_match": true,
     "wiktionary_gloss": "time",
-    "example_sentence_af": "Ek het nie veel tyd om te oefen nie",
-    "example_sentence_en": "I don't have much time to practice"
+    "example_sentence_af": "Ek het nie genoeg tyd om dit te doen nie.",
+    "example_sentence_en": "I don't have enough time to do it."
   },
   {
     "deck": "everyday",
@@ -320,8 +320,8 @@
     "english_translation": "Today",
     "wiktionary_match": true,
     "wiktionary_gloss": "today",
-    "example_sentence_af": "Ek het vandag 'n nuwe boek gekoop",
-    "example_sentence_en": "I bought a new book today"
+    "example_sentence_af": "Vandag gaan ek na die winkel.",
+    "example_sentence_en": "Today I am going to the store."
   },
   {
     "deck": "everyday",
@@ -329,17 +329,17 @@
     "english_translation": "Yesterday",
     "wiktionary_match": true,
     "wiktionary_gloss": "yesterday; the previous day",
-    "example_sentence_af": "Ek het gister vir my vriendin gebel.",
-    "example_sentence_en": "I called my girlfriend yesterday."
+    "example_sentence_af": "Gister het ek die fliek gesien.",
+    "example_sentence_en": "Yesterday I saw the movie."
   },
   {
     "deck": "everyday",
     "afrikaans_word": "Nou",
-    "english_translation": "now",
+    "english_translation": "Now",
     "wiktionary_match": true,
     "wiktionary_gloss": "now (at this time)",
-    "example_sentence_af": "Ek kom nou na jou toe",
-    "example_sentence_en": "I'm coming to you now"
+    "example_sentence_af": "Ek gaan nou huis toe.",
+    "example_sentence_en": "I am going home now."
   },
   {
     "deck": "everyday",
@@ -347,8 +347,8 @@
     "english_translation": "Later",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek sal jou later sien",
-    "example_sentence_en": "I will see you later"
+    "example_sentence_af": "Ek kom later.",
+    "example_sentence_en": "I'll come later."
   },
   {
     "deck": "everyday",
@@ -356,8 +356,8 @@
     "english_translation": "How much does it cost?",
     "wiktionary_match": true,
     "wiktionary_gloss": "How much is it?",
-    "example_sentence_af": "Ek wil 'n nuwe selfoon koop, hoeveel kos dit?",
-    "example_sentence_en": "I want to buy a new cellphone, how much does it cost?"
+    "example_sentence_af": "Hoeveel kos dit?",
+    "example_sentence_en": "How much does it cost?"
   },
   {
     "deck": "everyday",
@@ -365,8 +365,8 @@
     "english_translation": "Where is the bathroom?",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek soek die badkamer, want ek moet myself was",
-    "example_sentence_en": "I'm looking for the bathroom, because I need to wash myself"
+    "example_sentence_af": "Waar is die badkamer?",
+    "example_sentence_en": "Where is the bathroom?"
   },
   {
     "deck": "everyday",
@@ -374,8 +374,8 @@
     "english_translation": "I am hungry",
     "wiktionary_match": true,
     "wiktionary_gloss": "I'm hungry",
-    "example_sentence_af": "Ek is honger, ek wil 'n broodjie eet",
-    "example_sentence_en": "I am hungry, I want to eat a sandwich"
+    "example_sentence_af": "Ek is honger, so ek gaan eet.",
+    "example_sentence_en": "I am hungry, so I am going to eat."
   },
   {
     "deck": "everyday",
@@ -383,17 +383,17 @@
     "english_translation": "I am thirsty",
     "wiktionary_match": true,
     "wiktionary_gloss": "I'm thirsty",
-    "example_sentence_af": "Ek is dors en wil 'n glas water hê",
-    "example_sentence_en": "I am thirsty and want a glass of water"
+    "example_sentence_af": "Ek is dors na die oefening",
+    "example_sentence_en": "I am thirsty after the exercise"
   },
   {
     "deck": "everyday",
     "afrikaans_word": "Lekker",
-    "english_translation": "Nice / delicious / enjoyable / pleasant",
+    "english_translation": "nice",
     "wiktionary_match": true,
     "wiktionary_gloss": "having a nice taste, tasty, good, delicious",
-    "example_sentence_af": "Die kos by die restaurant was lekker.",
-    "example_sentence_en": "The food at the restaurant was nice."
+    "example_sentence_af": "Dit was 'n lekker ete.",
+    "example_sentence_en": "It was a nice meal."
   },
   {
     "deck": "everyday",
@@ -401,17 +401,17 @@
     "english_translation": "Beautiful",
     "wiktionary_match": true,
     "wiktionary_gloss": "beautiful, pretty",
-    "example_sentence_af": "Die sonsak oor die see is mooi.",
-    "example_sentence_en": "The sunset over the sea is beautiful."
+    "example_sentence_af": "Die tuin is mooi.",
+    "example_sentence_en": "The garden is beautiful."
   },
   {
     "deck": "everyday",
     "afrikaans_word": "Groot",
-    "english_translation": "Large",
+    "english_translation": "big",
     "wiktionary_match": true,
     "wiktionary_gloss": "great; big; large",
-    "example_sentence_af": "Die groot huis is geleë in die middel van die dorp",
-    "example_sentence_en": "The big house is located in the middle of the village"
+    "example_sentence_af": "Die huis is groot.",
+    "example_sentence_en": "The house is big."
   },
   {
     "deck": "everyday",
@@ -419,17 +419,17 @@
     "english_translation": "Small",
     "wiktionary_match": true,
     "wiktionary_gloss": "small, little",
-    "example_sentence_af": "Die klein seun het 'n klein hondjie",
-    "example_sentence_en": "The small boy had a small dog"
+    "example_sentence_af": "Die hond is klein.",
+    "example_sentence_en": "The dog is small."
   },
   {
     "deck": "everyday",
     "afrikaans_word": "Warm",
-    "english_translation": "Warm",
+    "english_translation": "warm",
     "wiktionary_match": true,
     "wiktionary_gloss": "warm",
-    "example_sentence_af": "Die koffie is warm en smaaklik.",
-    "example_sentence_en": "The coffee is warm and tasty."
+    "example_sentence_af": "Dit is warm vandag.",
+    "example_sentence_en": "It is warm today."
   },
   {
     "deck": "everyday",
@@ -437,8 +437,8 @@
     "english_translation": "Cold",
     "wiktionary_match": true,
     "wiktionary_gloss": "cold (of low temperature)",
-    "example_sentence_af": "Die water in die see is koud.",
-    "example_sentence_en": "The water in the sea is cold."
+    "example_sentence_af": "Dit is koud vandag.",
+    "example_sentence_en": "It is cold today."
   },
   {
     "deck": "everyday",
@@ -446,8 +446,8 @@
     "english_translation": "Shop",
     "wiktionary_match": true,
     "wiktionary_gloss": "A shop.",
-    "example_sentence_af": "Ek gaan vandag na die winkel om brood te koop",
-    "example_sentence_en": "I'm going to the shop today to buy bread"
+    "example_sentence_af": "Ek gaan na die winkel om brood te koop.",
+    "example_sentence_en": "I am going to the shop to buy bread."
   },
   {
     "deck": "everyday",
@@ -455,8 +455,8 @@
     "english_translation": "Money",
     "wiktionary_match": true,
     "wiktionary_gloss": "money",
-    "example_sentence_af": "Ek het nie genoeg geld om 'n nuwe kar te koop nie",
-    "example_sentence_en": "I don't have enough money to buy a new car"
+    "example_sentence_af": "Ek spaar elke maand geld vir my vakansie.",
+    "example_sentence_en": "I save money every month for my holiday."
   },
   {
     "deck": "everyday",
@@ -464,17 +464,17 @@
     "english_translation": "Car",
     "wiktionary_match": true,
     "wiktionary_gloss": "car, automobile",
-    "example_sentence_af": "Ek het my motor gewas en gepoets",
-    "example_sentence_en": "I washed and polished my car"
+    "example_sentence_af": "Ek het my motor geparkeer.",
+    "example_sentence_en": "I parked my car."
   },
   {
     "deck": "everyday",
     "afrikaans_word": "Pad",
-    "english_translation": "Path",
+    "english_translation": "road",
     "wiktionary_match": true,
     "wiktionary_gloss": "path; way; street",
-    "example_sentence_af": "Ek ry vandag oor die pad na my ouers se huis.",
-    "example_sentence_en": "I am driving over the road to my parents' house today."
+    "example_sentence_af": "Die pad is nat na die reën.",
+    "example_sentence_en": "The road is wet after the rain."
   },
   {
     "deck": "everyday",
@@ -482,8 +482,8 @@
     "english_translation": "City",
     "wiktionary_match": true,
     "wiktionary_gloss": "city",
-    "example_sentence_af": "Ek woon in die stad",
-    "example_sentence_en": "I live in the city"
+    "example_sentence_af": "Ek woon in 'n groot stad.",
+    "example_sentence_en": "I live in a big city."
   },
   {
     "deck": "everyday",
@@ -491,8 +491,8 @@
     "english_translation": "Rain",
     "wiktionary_match": true,
     "wiktionary_gloss": "rain",
-    "example_sentence_af": "Die reën val vanaand oor die stad",
-    "example_sentence_en": "The rain falls tonight over the city"
+    "example_sentence_af": "Dit begin reën toe ons by die huis aankom.",
+    "example_sentence_en": "It started to rain when we arrived at the house."
   },
   {
     "deck": "everyday",
@@ -500,26 +500,26 @@
     "english_translation": "Sun",
     "wiktionary_match": true,
     "wiktionary_gloss": "Sun, sun (star of the solar system)",
-    "example_sentence_af": "Die son skyn helder in die somer",
-    "example_sentence_en": "The sun shines brightly in the summer"
+    "example_sentence_af": "Die son skyn helder vandag.",
+    "example_sentence_en": "The sun shines brightly today."
   },
   {
     "deck": "everyday",
     "afrikaans_word": "Weer",
-    "english_translation": "Weather",
+    "english_translation": "weather",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Die weer in Suid-Afrika is baie warm in die somer.",
-    "example_sentence_en": "The weather in South Africa is very warm in the summer."
+    "example_sentence_af": "Het jy die weer vandag gesien?",
+    "example_sentence_en": "Did you see the weather today?"
   },
   {
     "deck": "everyday",
     "afrikaans_word": "Help my asseblief",
-    "english_translation": "Help me please",
+    "english_translation": "Help me, please",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek het my selfoon verloor, help my asseblief om dit te vind",
-    "example_sentence_en": "I lost my cell phone, help me please to find it"
+    "example_sentence_af": "Help my asseblief, ek het hulp nodig.",
+    "example_sentence_en": "Help my please, I need help."
   },
   {
     "deck": "work",
@@ -527,26 +527,26 @@
     "english_translation": "Work",
     "wiktionary_match": true,
     "wiktionary_gloss": "work",
-    "example_sentence_af": "Ek gaan more werk",
-    "example_sentence_en": "I'm going to work tomorrow"
+    "example_sentence_af": "Ek moet vandag hard werk.",
+    "example_sentence_en": "I have to work hard today."
   },
   {
     "deck": "work",
     "afrikaans_word": "Kantoor",
-    "english_translation": "Office",
+    "english_translation": "office",
     "wiktionary_match": true,
     "wiktionary_gloss": "office",
-    "example_sentence_af": "Ek gaan nou na die kantoor om my dokumente te teken",
-    "example_sentence_en": "I'm going to the office now to sign my documents"
+    "example_sentence_af": "Ek werk elke dag in die kantoor.",
+    "example_sentence_en": "I work every day in the office."
   },
   {
     "deck": "work",
     "afrikaans_word": "Baas",
-    "english_translation": "Master, Boss, Sir",
+    "english_translation": "Boss",
     "wiktionary_match": true,
     "wiktionary_gloss": "boss",
-    "example_sentence_af": "Ek het vir my baas gesê dat ek vandag laat sal wees.",
-    "example_sentence_en": "I told my boss that I will be late today."
+    "example_sentence_af": "My baas het die vergadering gelei.",
+    "example_sentence_en": "My boss led the meeting."
   },
   {
     "deck": "work",
@@ -554,8 +554,8 @@
     "english_translation": "Colleague",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek het my kollega gehelp met die projek",
-    "example_sentence_en": "I helped my colleague with the project"
+    "example_sentence_af": "My kollega het die verslag gister ingedien.",
+    "example_sentence_en": "My colleague submitted the report yesterday."
   },
   {
     "deck": "work",
@@ -563,8 +563,8 @@
     "english_translation": "Meeting",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Die bestuur het 'n vergadering geskeduleer vir volgende week.",
-    "example_sentence_en": "The management has scheduled a meeting for next week."
+    "example_sentence_af": "Ons het 'n vergadering vir môre gepland.",
+    "example_sentence_en": "We have a meeting scheduled for tomorrow."
   },
   {
     "deck": "work",
@@ -572,8 +572,8 @@
     "english_translation": "Email",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek het 'n e-pos van my vriend ontvang.",
-    "example_sentence_en": "I received an email from my friend."
+    "example_sentence_af": "Ek het die faktuur per e-pos ontvang.",
+    "example_sentence_en": "I received the invoice by email."
   },
   {
     "deck": "work",
@@ -581,17 +581,17 @@
     "english_translation": "Computer",
     "wiktionary_match": true,
     "wiktionary_gloss": "computer",
-    "example_sentence_af": "Ek het 'n rekenaar by my huis",
-    "example_sentence_en": "I have a computer at my house"
+    "example_sentence_af": "Ek gebruik my rekenaar elke dag.",
+    "example_sentence_en": "I use my computer every day."
   },
   {
     "deck": "work",
     "afrikaans_word": "Skerm",
-    "english_translation": "Screen",
+    "english_translation": "screen",
     "wiktionary_match": true,
     "wiktionary_gloss": "screen",
-    "example_sentence_af": "Ek het my selfoon se skerm gebreek toe ek dit laat val het",
-    "example_sentence_en": "I broke my phone's screen when I dropped it"
+    "example_sentence_af": "Ek het die skerm van my rekenaar skoonmaak.",
+    "example_sentence_en": "I cleaned the screen of my computer."
   },
   {
     "deck": "work",
@@ -599,17 +599,17 @@
     "english_translation": "Report",
     "wiktionary_match": true,
     "wiktionary_gloss": "report",
-    "example_sentence_af": "Ek moet vandag nog my verslag oor die projek by my baas indien.",
-    "example_sentence_en": "I still have to submit my report on the project to my boss today."
+    "example_sentence_af": "Ek het die verslag ingedien.",
+    "example_sentence_en": "I submitted the report."
   },
   {
     "deck": "work",
     "afrikaans_word": "Sperdatum",
-    "english_translation": "Deadline",
+    "english_translation": "deadline",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Die sperdatum vir die projek is Vrydag",
-    "example_sentence_en": "The deadline for the project is Friday"
+    "example_sentence_af": "Die sperdatum vir die projek is volgende week.",
+    "example_sentence_en": "The deadline for the project is next week."
   },
   {
     "deck": "work",
@@ -617,8 +617,8 @@
     "english_translation": "Salary",
     "wiktionary_match": true,
     "wiktionary_gloss": "salary",
-    "example_sentence_af": "My salaris word elke maand op die 25ste oorbetaal.",
-    "example_sentence_en": "My salary is paid out every month on the 25th."
+    "example_sentence_af": "My salaris is vorige maand verhoog.",
+    "example_sentence_en": "My salary was increased last month."
   },
   {
     "deck": "work",
@@ -626,17 +626,17 @@
     "english_translation": "Contract",
     "wiktionary_match": true,
     "wiktionary_gloss": "contract",
-    "example_sentence_af": "Die werknemer het die kontrak geteken voordat hy begin werk het",
-    "example_sentence_en": "The employee signed the contract before he started working"
+    "example_sentence_af": "Ons moet die kontrak vandag onderteken.",
+    "example_sentence_en": "We must sign the contract today."
   },
   {
     "deck": "work",
     "afrikaans_word": "Onderhoud",
-    "english_translation": "Maintenance, interview or conversation",
+    "english_translation": "interview",
     "wiktionary_match": true,
     "wiktionary_gloss": "interview",
-    "example_sentence_af": "Die joernalis het 'n onderhoud met die beroemde akteur gevoer.",
-    "example_sentence_en": "The journalist conducted an interview with the famous actor."
+    "example_sentence_af": "Ek het gister 'n onderhoud gehad vir die nuwe pos.",
+    "example_sentence_en": "I had an interview yesterday for the new position."
   },
   {
     "deck": "work",
@@ -644,8 +644,8 @@
     "english_translation": "Application",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek het 'n aansoek vir die pos by die maatskappy ingedien.",
-    "example_sentence_en": "I submitted an application for the position at the company."
+    "example_sentence_af": "Ek het vandag my aansoek vir die werk ingedien.",
+    "example_sentence_en": "I submitted my application for the job today."
   },
   {
     "deck": "work",
@@ -653,8 +653,8 @@
     "english_translation": "Team",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Die span het hulle beste gedoen om die wedstryd te wen.",
-    "example_sentence_en": "The team did their best to win the game."
+    "example_sentence_af": "Ons span het die wedstryd gewen.",
+    "example_sentence_en": "Our team won the match."
   },
   {
     "deck": "work",
@@ -662,8 +662,8 @@
     "english_translation": "Project",
     "wiktionary_match": true,
     "wiktionary_gloss": "project",
-    "example_sentence_af": "Die projek om die nuwe gebou te bou, het reeds 'n jaar gelede begin.",
-    "example_sentence_en": "The project to build the new building started already a year ago."
+    "example_sentence_af": "Ons begin die nuwe projek môre.",
+    "example_sentence_en": "We start the new project tomorrow."
   },
   {
     "deck": "work",
@@ -671,26 +671,26 @@
     "english_translation": "Task",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek moet my taak vandag voltooi",
-    "example_sentence_en": "I must complete my task today"
+    "example_sentence_af": "Ek moet die taak voltooi voordat ek kan gaan.",
+    "example_sentence_en": "I must complete the task before I can leave."
   },
   {
     "deck": "work",
     "afrikaans_word": "Besig",
-    "english_translation": "Occupied",
+    "english_translation": "Busy",
     "wiktionary_match": true,
     "wiktionary_gloss": "busy",
-    "example_sentence_af": "Ek is besig met my huiswerk",
-    "example_sentence_en": "I am busy with my homework"
+    "example_sentence_af": "Ek is besig met my huiswerk.",
+    "example_sentence_en": "I am busy with my homework."
   },
   {
     "deck": "work",
     "afrikaans_word": "Klaar",
-    "english_translation": "Finished / Ready",
+    "english_translation": "finished",
     "wiktionary_match": true,
     "wiktionary_gloss": "ready, prepared",
-    "example_sentence_af": "Ek is nou klaar met my werk",
-    "example_sentence_en": "I am now finished with my work"
+    "example_sentence_af": "Ek is klaar met die huiswerk.",
+    "example_sentence_en": "I am finished with the homework."
   },
   {
     "deck": "work",
@@ -698,8 +698,8 @@
     "english_translation": "Important",
     "wiktionary_match": true,
     "wiktionary_gloss": "important (having relevant and crucial value)",
-    "example_sentence_af": "Die nuus oor die aardbewing is baie belangrik vir die mense in die geteisterde gebied.",
-    "example_sentence_en": "The news about the earthquake is very important to the people in the affected area."
+    "example_sentence_af": "Dit is belangrik om vroeg op te staan.",
+    "example_sentence_en": "It is important to get up early."
   },
   {
     "deck": "work",
@@ -707,17 +707,17 @@
     "english_translation": "Urgent",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Die situasie is dringend en ons moet onmiddellik optree.",
-    "example_sentence_en": "The situation is urgent and we must act immediately."
+    "example_sentence_af": "Dit is dringend om die verslag vandag in te dien.",
+    "example_sentence_en": "It is urgent to submit the report today."
   },
   {
     "deck": "work",
     "afrikaans_word": "Vakansie",
-    "english_translation": "Vacation",
+    "english_translation": "holiday",
     "wiktionary_match": true,
     "wiktionary_gloss": "holiday, vacation",
-    "example_sentence_af": "Ek gaan saam met my gesin op vakansie na die see",
-    "example_sentence_en": "I'm going on vacation to the sea with my family"
+    "example_sentence_af": "Ons gaan volgende week na die see vir vakansie.",
+    "example_sentence_en": "We are going to the sea next week for a holiday."
   },
   {
     "deck": "work",
@@ -725,8 +725,8 @@
     "english_translation": "Sick leave",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Ek het siekverlof geneem omdat ek siek was.",
-    "example_sentence_en": "I took sick leave because I was ill."
+    "example_sentence_af": "Ek moet môre siekverlof neem omdat ek griep het.",
+    "example_sentence_en": "I need to take sick leave tomorrow because I have the flu."
   },
   {
     "deck": "work",
@@ -734,8 +734,8 @@
     "english_translation": "Discussion",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Die bespreking oor die nuwe projek het 'n paar uur geduur.",
-    "example_sentence_en": "The discussion about the new project lasted a few hours."
+    "example_sentence_af": "Ons hou 'n bespreking oor die projek.",
+    "example_sentence_en": "We are having a discussion about the project."
   },
   {
     "deck": "work",
@@ -743,8 +743,8 @@
     "english_translation": "Decision",
     "wiktionary_match": true,
     "wiktionary_gloss": "to decide",
-    "example_sentence_af": "Die regering het 'n belangrike besluit geneem om die nuwe wet te implementeer.",
-    "example_sentence_en": "The government made an important decision to implement the new law."
+    "example_sentence_af": "Ek moet 'n besluit neem oor die nuwe projek.",
+    "example_sentence_en": "I have to make a decision about the new project."
   },
   {
     "deck": "work",
@@ -752,8 +752,8 @@
     "english_translation": "Problem",
     "wiktionary_match": true,
     "wiktionary_gloss": "problem",
-    "example_sentence_af": "Die groot probleem is dat ons nie genoeg geld het nie.",
-    "example_sentence_en": "The big problem is that we don't have enough money."
+    "example_sentence_af": "Ek het 'n probleem met my rekenaar.",
+    "example_sentence_en": "I have a problem with my computer."
   },
   {
     "deck": "work",
@@ -761,8 +761,8 @@
     "english_translation": "Solution",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Die wetenskaplikes het 'n oplossing vir die probleem gevind.",
-    "example_sentence_en": "The scientists found a solution to the problem."
+    "example_sentence_af": "Die oplossing vir die probleem is eenvoudig.",
+    "example_sentence_en": "The solution to the problem is simple."
   },
   {
     "deck": "work",
@@ -770,8 +770,8 @@
     "english_translation": "Schedule",
     "wiktionary_match": true,
     "wiktionary_gloss": "schedule",
-    "example_sentence_af": "Ek moet my skedule vir die week hersien",
-    "example_sentence_en": "I need to review my schedule for the week"
+    "example_sentence_af": "Ek het my skedule vir môre nagegaan.",
+    "example_sentence_en": "I checked my schedule for tomorrow."
   },
   {
     "deck": "work",
@@ -779,16 +779,2311 @@
     "english_translation": "Company",
     "wiktionary_match": true,
     "wiktionary_gloss": "company, partnership",
-    "example_sentence_af": "Die maatskappy het 'n nuwe produk geloods",
-    "example_sentence_en": "The company has launched a new product"
+    "example_sentence_af": "Die maatskappy het sy nuwe produk gister bekend gemaak.",
+    "example_sentence_en": "The company announced its new product yesterday."
   },
   {
     "deck": "work",
     "afrikaans_word": "Bevorder",
-    "english_translation": "Promote",
+    "english_translation": "to promote",
     "wiktionary_match": false,
     "wiktionary_gloss": null,
-    "example_sentence_af": "Die maatskappy sal die nuwe produk bevorder deur middel van sosiale media.",
-    "example_sentence_en": "The company will promote the new product through social media."
+    "example_sentence_af": "Ons moet gesonde gewoontes bevorder.",
+    "example_sentence_en": "We should promote healthy habits."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Een",
+    "english_translation": "One",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "one",
+    "example_sentence_af": "Een mens moet elke dag lees.",
+    "example_sentence_en": "One person should read every day."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Twee",
+    "english_translation": "Two",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "two",
+    "example_sentence_af": "Ek het twee appels.",
+    "example_sentence_en": "I have two apples."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Drie",
+    "english_translation": "Three",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "three",
+    "example_sentence_af": "Ek het drie appels.",
+    "example_sentence_en": "I have three apples."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Vier",
+    "english_translation": "Four",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "four",
+    "example_sentence_af": "Ek het vier appels.",
+    "example_sentence_en": "I have four apples."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Vyf",
+    "english_translation": "Five",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "five",
+    "example_sentence_af": "Vyf mense het die wedstryd gekyk.",
+    "example_sentence_en": "Five people watched the match."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Ses",
+    "english_translation": "Six",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "six",
+    "example_sentence_af": "Ek het ses appels.",
+    "example_sentence_en": "I have six apples."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Sewe",
+    "english_translation": "seven",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "seven",
+    "example_sentence_af": "Ek het sewe appels gekry.",
+    "example_sentence_en": "I got seven apples."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Agt",
+    "english_translation": "Eight",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "eight",
+    "example_sentence_af": "Ek het agt appels.",
+    "example_sentence_en": "I have eight apples."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Nege",
+    "english_translation": "nine",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "nine",
+    "example_sentence_af": "Ek het nege appels.",
+    "example_sentence_en": "I have nine apples."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Tien",
+    "english_translation": "Ten",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "ten",
+    "example_sentence_af": "Ek het tien appels gekry.",
+    "example_sentence_en": "I got ten apples."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Elf",
+    "english_translation": "Eleven",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "eleven",
+    "example_sentence_af": "Ek het elf appels gekoop.",
+    "example_sentence_en": "I bought eleven apples."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Twaalf",
+    "english_translation": "twelve",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "twelve",
+    "example_sentence_af": "Ek het twaalf appels in die mand gesit.",
+    "example_sentence_en": "I placed twelve apples in the basket."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Twintig",
+    "english_translation": "Twenty",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "twenty",
+    "example_sentence_af": "Ek het twintig appels gepluk.",
+    "example_sentence_en": "I picked twenty apples."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Dertig",
+    "english_translation": "Thirty",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "thirty",
+    "example_sentence_af": "Ek het dertig appels gekry.",
+    "example_sentence_en": "I got thirty apples."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Vyftig",
+    "english_translation": "fifty",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "fifty",
+    "example_sentence_af": "Hy is vyftig jaar oud.",
+    "example_sentence_en": "He is fifty years old."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Honderd",
+    "english_translation": "a hundred",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "hundred",
+    "example_sentence_af": "Ek het honderd appels gekry.",
+    "example_sentence_en": "I got a hundred apples."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Duisend",
+    "english_translation": "a thousand",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "thousand",
+    "example_sentence_af": "Daar is duisend sterre aan die hemel.",
+    "example_sentence_en": "There are a thousand stars in the sky."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Eerste",
+    "english_translation": "First",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "first",
+    "example_sentence_af": "Dit is die eerste keer dat ek dit doen.",
+    "example_sentence_en": "This is the first time I have done it."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Tweede",
+    "english_translation": "Second",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "second",
+    "example_sentence_af": "Die tweede boek op die rak is my gunsteling.",
+    "example_sentence_en": "The second book on the shelf is my favorite."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Derde",
+    "english_translation": "Third",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "third",
+    "example_sentence_af": "Dit is die derde keer dat ek dit doen.",
+    "example_sentence_en": "This is the third time I have done it."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Nul",
+    "english_translation": "Zero",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "zero",
+    "example_sentence_af": "Die temperatuur daal tot nul grade Celsius.",
+    "example_sentence_en": "The temperature drops to zero degrees Celsius."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Hoeveel",
+    "english_translation": "How many",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "how much, how many",
+    "example_sentence_af": "Hoeveel appels wil jy hê?",
+    "example_sentence_en": "How many apples do you want?"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Nommer",
+    "english_translation": "Number",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "number",
+    "example_sentence_af": "Wat is jou huisnommer?",
+    "example_sentence_en": "What is your house number?"
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Paar",
+    "english_translation": "a few",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "pair",
+    "example_sentence_af": "Ek het 'n paar appels gekoop.",
+    "example_sentence_en": "I bought a few apples."
+  },
+  {
+    "deck": "numbers",
+    "afrikaans_word": "Baie",
+    "english_translation": "many",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "very, much",
+    "example_sentence_af": "Ek het baie appels gekry.",
+    "example_sentence_en": "I got many apples."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Maandag",
+    "english_translation": "Monday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Monday",
+    "example_sentence_af": "Ek werk elke Maandag.",
+    "example_sentence_en": "I work every Monday."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Dinsdag",
+    "english_translation": "Tuesday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Tuesday",
+    "example_sentence_af": "Ek het Dinsdag 'n afspraak.",
+    "example_sentence_en": "I have an appointment on Tuesday."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Woensdag",
+    "english_translation": "Wednesday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Wednesday",
+    "example_sentence_af": "Ons gaan die museum besoek op Woensdag.",
+    "example_sentence_en": "We are going to visit the museum on Wednesday."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Donderdag",
+    "english_translation": "Thursday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Thursday",
+    "example_sentence_af": "Ons gaan Donderdag na die see toe.",
+    "example_sentence_en": "We are going to the sea on Thursday."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Vrydag",
+    "english_translation": "Friday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Friday",
+    "example_sentence_af": "Ons gaan Vrydag na die strand.",
+    "example_sentence_en": "We are going to the beach on Friday."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Saterdag",
+    "english_translation": "Saturday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Saturday",
+    "example_sentence_af": "Ons gaan Saterdag na die strand.",
+    "example_sentence_en": "We are going to the beach on Saturday."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Sondag",
+    "english_translation": "Sunday",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Sunday",
+    "example_sentence_af": "Ek gaan Sondag na die kerk.",
+    "example_sentence_en": "I am going to church on Sunday."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Week",
+    "english_translation": "Week",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "week",
+    "example_sentence_af": "Ek gaan volgende week op vakansie.",
+    "example_sentence_en": "I am going on vacation next week."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Maand",
+    "english_translation": "Month",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A month.",
+    "example_sentence_af": "Dit is my gunsteling maand van die jaar.",
+    "example_sentence_en": "It is my favourite month of the year."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Jaar",
+    "english_translation": "Year",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A year.",
+    "example_sentence_af": "Dit is my eerste jaar as onderwyser.",
+    "example_sentence_en": "This is my first year as a teacher."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Uur",
+    "english_translation": "Hour",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "hour",
+    "example_sentence_af": "Ek sal jou oor een uur ontmoet.",
+    "example_sentence_en": "I will meet you in one hour."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Minuut",
+    "english_translation": "Minute",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "minute (unit of time)",
+    "example_sentence_af": "Ek wag net nog twee minute voordat die trein vertrek.",
+    "example_sentence_en": "I am only waiting two minutes before the train leaves."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Sekonde",
+    "english_translation": "second",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "second (unit of time)",
+    "example_sentence_af": "Ek wag net nog een sekonde.",
+    "example_sentence_en": "I am waiting just one more second."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Oggend",
+    "english_translation": "Morning",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "morning",
+    "example_sentence_af": "Ek staan vroeg op in die oggend.",
+    "example_sentence_en": "I get up early in the morning."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Middag",
+    "english_translation": "Afternoon",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "An afternoon.",
+    "example_sentence_af": "Ons ontmoet mekaar môre middag by die kafee.",
+    "example_sentence_en": "We will meet each other tomorrow afternoon at the cafe."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Aand",
+    "english_translation": "Evening",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "evening",
+    "example_sentence_af": "Ek gaan vanaand vroeg slaap omdat die aand koel is.",
+    "example_sentence_en": "I will go to sleep early tonight because the evening is cool."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Nag",
+    "english_translation": "Night",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "The period between sunset and sunrise, when the sky is dark; night.",
+    "example_sentence_af": "Goeie nag, slaap lekker.",
+    "example_sentence_en": "Good night, sleep well."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Nou-nou",
+    "english_translation": "In a moment",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "now-now, in a moment, soon",
+    "example_sentence_af": "Ek kom nou-nou terug.",
+    "example_sentence_en": "I'll be back in a moment."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Altyd",
+    "english_translation": "Always",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "always",
+    "example_sentence_af": "Ek is altyd laat vir die les.",
+    "example_sentence_en": "I am always late for the class."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Nooit",
+    "english_translation": "Never",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "never",
+    "example_sentence_af": "Ek kom nooit te laat nie.",
+    "example_sentence_en": "I never arrive late."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Somtyds",
+    "english_translation": "Sometimes",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Somtyds gaan ek stap in die park.",
+    "example_sentence_en": "Sometimes I go for a walk in the park."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Vroeg",
+    "english_translation": "Early",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "early",
+    "example_sentence_af": "Ek staan vroeg op.",
+    "example_sentence_en": "I get up early."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Laat",
+    "english_translation": "Late",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "to cause to, to make; forms a causative phrase.",
+    "example_sentence_af": "Ek is laat vir die vergadering.",
+    "example_sentence_en": "I am late for the meeting."
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Hoe laat is dit?",
+    "english_translation": "What time is it?",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Hoe laat is dit?",
+    "example_sentence_en": "What time is it?"
+  },
+  {
+    "deck": "time",
+    "afrikaans_word": "Wanneer",
+    "english_translation": "When",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "when",
+    "example_sentence_af": "Wanneer kom die trein?",
+    "example_sentence_en": "When does the train arrive?"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Brood",
+    "english_translation": "Bread",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A loaf of bread.",
+    "example_sentence_af": "Ek eet elke dag vars brood.",
+    "example_sentence_en": "I eat fresh bread every day."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Botter",
+    "english_translation": "Butter",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "butter; a soft, fatty foodstuff made from the cream of milk",
+    "example_sentence_af": "Ek smeer botter op die brood.",
+    "example_sentence_en": "I spread butter on the bread."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Kaas",
+    "english_translation": "Cheese",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "cheese",
+    "example_sentence_af": "Ek eet graag kaas vir ontbyt.",
+    "example_sentence_en": "I like to eat cheese for breakfast."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Vleis",
+    "english_translation": "Meat",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "meat",
+    "example_sentence_af": "Ek koop vleis by die slaghuis.",
+    "example_sentence_en": "I buy meat at the butcher's."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Hoender",
+    "english_translation": "Chicken",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "chicken",
+    "example_sentence_af": "Die hoender kraai elke oggend.",
+    "example_sentence_en": "The chicken crows every morning."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Vis",
+    "english_translation": "Fish",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "fish (aquatic organism)",
+    "example_sentence_af": "Ek vang 'n groot vis in die rivier.",
+    "example_sentence_en": "I catch a big fish in the river."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Groente",
+    "english_translation": "vegetables",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "Vegetables.",
+    "example_sentence_af": "Ek koop vars groente by die mark.",
+    "example_sentence_en": "I buy fresh vegetables at the market."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Vrugte",
+    "english_translation": "Fruits",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "plural of vrug",
+    "example_sentence_af": "Ek eet graag verskeie vrugte elke dag.",
+    "example_sentence_en": "I like to eat various fruits every day."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Rys",
+    "english_translation": "Rice",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "rice",
+    "example_sentence_af": "Ek kook elke dag rys vir die gesin.",
+    "example_sentence_en": "I cook rice every day for the family."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Aartappel",
+    "english_translation": "Potato",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "potato",
+    "example_sentence_af": "Ek het 'n aartappel gesny.",
+    "example_sentence_en": "I sliced a potato."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Eier",
+    "english_translation": "Egg",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "egg",
+    "example_sentence_af": "Ek breek 'n eier in die pan.",
+    "example_sentence_en": "I crack an egg into the pan."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Melk",
+    "english_translation": "Milk",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "milk",
+    "example_sentence_af": "Ek drink elke dag melk.",
+    "example_sentence_en": "I drink milk every day."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Suiker",
+    "english_translation": "Sugar",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "sugar",
+    "example_sentence_af": "Ek voeg suiker by die tee.",
+    "example_sentence_en": "I add sugar to the tea."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Sout",
+    "english_translation": "Salt",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "salt",
+    "example_sentence_af": "Ek voeg sout by die sop.",
+    "example_sentence_en": "I add salt to the soup."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Koffie",
+    "english_translation": "Coffee",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "coffee",
+    "example_sentence_af": "Ek drink elke oggend koffie.",
+    "example_sentence_en": "I drink coffee every morning."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Tee",
+    "english_translation": "Tea",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "tea",
+    "example_sentence_af": "Ek drink elke oggend tee.",
+    "example_sentence_en": "I drink tea every morning."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Wyn",
+    "english_translation": "Wine",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "wine",
+    "example_sentence_af": "Ek drink graag wyn by die vuur.",
+    "example_sentence_en": "I like to drink wine by the fire."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Bier",
+    "english_translation": "Beer",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "beer (alcoholic drink brewed from grains or other starch material)",
+    "example_sentence_af": "Ek drink graag 'n koud bier na die werk.",
+    "example_sentence_en": "I like to drink a cold beer after work."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Ontbyt",
+    "english_translation": "Breakfast",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "breakfast",
+    "example_sentence_af": "Ek eet elke oggend ontbyt voordat ek werk toe gaan.",
+    "example_sentence_en": "I eat breakfast every morning before I go to work."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Middagete",
+    "english_translation": "Lunch",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "lunch, luncheon",
+    "example_sentence_af": "Ons gaan vandag middagete by die park.",
+    "example_sentence_en": "We are going to have lunch at the park today."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Aandete",
+    "english_translation": "Dinner",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "supper, dinner, evening meal",
+    "example_sentence_af": "Ons het om ses uur 'n heerlike aandete gehad.",
+    "example_sentence_en": "We had a delicious dinner at six o'clock."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Restaurant",
+    "english_translation": "Restaurant",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "restaurant",
+    "example_sentence_af": "Ons gaan môre na die restaurant om ete te eet.",
+    "example_sentence_en": "We are going to the restaurant tomorrow to have a meal."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Spyskaart",
+    "english_translation": "Menu",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "menu",
+    "example_sentence_af": "Ek het die spyskaart bestudeer voordat ek my bestelling gemaak het.",
+    "example_sentence_en": "I studied the menu before I placed my order."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Rekening",
+    "english_translation": "bill",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Kan ek die rekening kry, asseblief?",
+    "example_sentence_en": "Can I have the bill, please?"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Lekker eet!",
+    "english_translation": "Enjoy your meal!",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Lekker eet, my vriend!",
+    "example_sentence_en": "Enjoy your meal, my friend!"
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Ek is versadig",
+    "english_translation": "I am full",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek is versadig na die groot ete.",
+    "example_sentence_en": "I am full after the big meal."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Vurk",
+    "english_translation": "fork",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "fork",
+    "example_sentence_af": "Ek gebruik die vurk om my slaai te eet.",
+    "example_sentence_en": "I use the fork to eat my salad."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Lepel",
+    "english_translation": "Spoon",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek gebruik die lepel om my sop te eet.",
+    "example_sentence_en": "I use the spoon to eat my soup."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Mes",
+    "english_translation": "knife",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "knife",
+    "example_sentence_af": "Ek sny die brood met 'n mes.",
+    "example_sentence_en": "I cut the bread with a knife."
+  },
+  {
+    "deck": "food",
+    "afrikaans_word": "Bord",
+    "english_translation": "Plate",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek leg die kos op die bord.",
+    "example_sentence_en": "I put the food on the plate."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Trein",
+    "english_translation": "train",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "train (railway vehicle)",
+    "example_sentence_af": "Ek neem die trein na Kaapstad.",
+    "example_sentence_en": "I take the train to Cape Town."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Bus",
+    "english_translation": "bus",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "bus",
+    "example_sentence_af": "Ek stap na die bus.",
+    "example_sentence_en": "I walk to the bus."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Vliegtuig",
+    "english_translation": "airplane",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "aeroplane, aircraft",
+    "example_sentence_af": "Die vliegtuig steeg op en vloei oor die berge.",
+    "example_sentence_en": "The airplane rose and flew over the mountains."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Vlughawe",
+    "english_translation": "Airport",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ons gaan na die vlughawe om ons vriende te ontmoet.",
+    "example_sentence_en": "We are going to the airport to meet our friends."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Stasie",
+    "english_translation": "Station",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "station",
+    "example_sentence_af": "Ek wag vir die trein by die stasie.",
+    "example_sentence_en": "I wait for the train at the station."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Kaartjie",
+    "english_translation": "Ticket",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek het my kaartjie vir die konsert nog nie ontvang nie.",
+    "example_sentence_en": "I haven't received my ticket for the concert yet."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Reis",
+    "english_translation": "journey",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "journey, trip, voyage",
+    "example_sentence_af": "Ek maak elke jaar 'n reis na die kus.",
+    "example_sentence_en": "I take a trip to the coast every year."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Links",
+    "english_translation": "Left",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek hou die boek links van die tafel.",
+    "example_sentence_en": "I keep the book to the left of the table."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Regs",
+    "english_translation": "right",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "On the right",
+    "example_sentence_af": "Jy het regs van die huis afgegaan.",
+    "example_sentence_en": "You went right away from the house."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Reguit",
+    "english_translation": "Straight ahead",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "straight, straight on",
+    "example_sentence_af": "Ons gaan reguit na die winkel.",
+    "example_sentence_en": "We go straight to the shop."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Naby",
+    "english_translation": "Near",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "near (in the vicinity of)",
+    "example_sentence_af": "Die winkel is naby my huis.",
+    "example_sentence_en": "The shop is near my house."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Ver",
+    "english_translation": "far",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "far, distant",
+    "example_sentence_af": "Die dorp is ver van hier.",
+    "example_sentence_en": "The town is far from here."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Hier",
+    "english_translation": "Here",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "here",
+    "example_sentence_af": "Hier is die boek wat jy soek.",
+    "example_sentence_en": "Here is the book you are looking for."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Daar",
+    "english_translation": "There",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "there",
+    "example_sentence_af": "Daar is 'n mooi tuin.",
+    "example_sentence_en": "There is a beautiful garden."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Kaart",
+    "english_translation": "Map",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "map",
+    "example_sentence_af": "Ek het die stad se kaart bestudeer.",
+    "example_sentence_en": "I studied the city's map."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Paspoort",
+    "english_translation": "passport",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "passport",
+    "example_sentence_af": "Ek moet my paspoort by die kantoor afhaal.",
+    "example_sentence_en": "I have to pick up my passport at the office."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Hotel",
+    "english_translation": "Hotel",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek het in die hotel gekom vir die konferensie.",
+    "example_sentence_en": "I arrived at the hotel for the conference."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Toer",
+    "english_translation": "Tour",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ons gaan môre op 'n toer langs die kus.",
+    "example_sentence_en": "We are going on a tour along the coast tomorrow."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Bagasie",
+    "english_translation": "Luggage",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek pak my bagasie vir die vakansie.",
+    "example_sentence_en": "I pack my luggage for the holiday."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Waar is die stasie?",
+    "english_translation": "Where is the station?",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Waar is die stasie? Ek moet die trein nie misloop nie.",
+    "example_sentence_en": "Where is the station? I must not miss the train."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Ek is verlore",
+    "english_translation": "I am lost",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek is verlore in die stad.",
+    "example_sentence_en": "I am lost in the city."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Straat",
+    "english_translation": "street",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "street, road",
+    "example_sentence_af": "Ek stap op die straat.",
+    "example_sentence_en": "I am walking on the street."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Dorp",
+    "english_translation": "Town",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "town",
+    "example_sentence_af": "Ons gaan vandag na die dorp toe.",
+    "example_sentence_en": "We are going to the town today."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Land",
+    "english_translation": "Country",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "country; nation",
+    "example_sentence_af": "Ons moet ons land beskerm.",
+    "example_sentence_en": "We must protect our country."
+  },
+  {
+    "deck": "travel",
+    "afrikaans_word": "Grens",
+    "english_translation": "Border",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "border, frontier",
+    "example_sentence_af": "Die grens tussen Suid-Afrika en Namibië is lang.",
+    "example_sentence_en": "The border between South Africa and Namibia is long."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Ma",
+    "english_translation": "Mom",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "mom, mother",
+    "example_sentence_af": "Ek gaan na Ma toe.",
+    "example_sentence_en": "I am going to Mom."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Pa",
+    "english_translation": "Dad",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "dad, father",
+    "example_sentence_af": "Pa gaan vandag na die winkel.",
+    "example_sentence_en": "Dad is going to the shop today."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Broer",
+    "english_translation": "Brother",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "brother",
+    "example_sentence_af": "My broer kom môre terug.",
+    "example_sentence_en": "My brother is coming back tomorrow."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Suster",
+    "english_translation": "Sister",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "sister",
+    "example_sentence_af": "My suster kom later.",
+    "example_sentence_en": "My sister is coming later."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Seun",
+    "english_translation": "son",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "son",
+    "example_sentence_af": "Die seun speel in die tuin.",
+    "example_sentence_en": "The boy is playing in the garden."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Dogter",
+    "english_translation": "daughter",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "daughter",
+    "example_sentence_af": "My dogter speel in die tuin.",
+    "example_sentence_en": "My daughter is playing in the garden."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Oupa",
+    "english_translation": "Grandfather",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "grandfather",
+    "example_sentence_af": "Oupa gaan elke Saterdag by die kerk.",
+    "example_sentence_en": "Grandpa goes to church every Saturday."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Ouma",
+    "english_translation": "Grandma",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "grandmother",
+    "example_sentence_af": "Ouma bak koek elke Saterdag.",
+    "example_sentence_en": "Grandma bakes cake every Saturday."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Tante",
+    "english_translation": "Aunt",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "aunt",
+    "example_sentence_af": "My tante kom vandag vir ete.",
+    "example_sentence_en": "My aunt is coming today for dinner."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Oom",
+    "english_translation": "Uncle",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "uncle",
+    "example_sentence_af": "My oom kom vandag op besoek.",
+    "example_sentence_en": "My uncle is coming to visit today."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Neef",
+    "english_translation": "cousin (male) / nephew",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "nephew",
+    "example_sentence_af": "My neef kom vandag op besoek.",
+    "example_sentence_en": "My cousin is coming to visit today."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Niggie",
+    "english_translation": "niece (female) / female cousin",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "niece",
+    "example_sentence_af": "My niggie kom vandag na die partytjie.",
+    "example_sentence_en": "My niece is coming today to the party."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Kind",
+    "english_translation": "Child",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "child",
+    "example_sentence_af": "Die kind speel in die tuin.",
+    "example_sentence_en": "The child plays in the garden."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Kinders",
+    "english_translation": "Children",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "plural of kind",
+    "example_sentence_af": "Die kinders speel buite.",
+    "example_sentence_en": "The children are playing outside."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Man",
+    "english_translation": "man / husband",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "man",
+    "example_sentence_af": "My man is lief vir my.",
+    "example_sentence_en": "My husband loves me."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Vrou",
+    "english_translation": "woman",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "woman",
+    "example_sentence_af": "My vrou hou van lees.",
+    "example_sentence_en": "My wife likes to read."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Baba",
+    "english_translation": "Baby",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "baby",
+    "example_sentence_af": "Die baba lag.",
+    "example_sentence_en": "The baby laughs."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Vriendin",
+    "english_translation": "girlfriend",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "female friend",
+    "example_sentence_af": "My vriendin kom vandag na die partytjie.",
+    "example_sentence_en": "My girlfriend is coming to the party today."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Buurman",
+    "english_translation": "Neighbour",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "neighbour (male)",
+    "example_sentence_af": "My buurman kom elke oggend met die koerier.",
+    "example_sentence_en": "My neighbour comes every morning with the courier."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Familielid",
+    "english_translation": "family member",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "family member, relative",
+    "example_sentence_af": "My broer is ook 'n familielid.",
+    "example_sentence_en": "My brother is also a family member."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Getroud",
+    "english_translation": "married",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Sy is getroud en het twee kinders.",
+    "example_sentence_en": "She is married and has two children."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Enkellopend",
+    "english_translation": "single (relationship status)",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Sy is enkellopend.",
+    "example_sentence_en": "She is single."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Broers en susters",
+    "english_translation": "Siblings",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "My broers en susters kom vandag na die partytjie.",
+    "example_sentence_en": "My siblings are coming to the party today."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Voog",
+    "english_translation": "Guardian",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "My broer is my voog nadat ons ouers oorlede is.",
+    "example_sentence_en": "My brother is my guardian after our parents died."
+  },
+  {
+    "deck": "family",
+    "afrikaans_word": "Tweeling",
+    "english_translation": "Twins",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "twin",
+    "example_sentence_af": "My tweeling en ek speel saam.",
+    "example_sentence_en": "My twin and I play together."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Woonstel",
+    "english_translation": "apartment",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "An apartment.",
+    "example_sentence_af": "Ek het 'n nuwe woonstel in die sentrum gehuur.",
+    "example_sentence_en": "I rented a new apartment in the city centre."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Kamer",
+    "english_translation": "Room",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A room, a chamber.",
+    "example_sentence_af": "Die kamer is baie ruim.",
+    "example_sentence_en": "The room is very spacious."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Kombuis",
+    "english_translation": "Kitchen",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "kitchen",
+    "example_sentence_af": "Ek kook in die kombuis.",
+    "example_sentence_en": "I cook in the kitchen."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Slaapkamer",
+    "english_translation": "Bedroom",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "bedroom",
+    "example_sentence_af": "Die kind het sy speelgoed in die slaapkamer neergesit.",
+    "example_sentence_en": "The child put his toys down in the bedroom."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Badkamer",
+    "english_translation": "Bathroom",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek gaan nou na die badkamer om te dou.",
+    "example_sentence_en": "I am going to the bathroom to take a shower."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Sitkamer",
+    "english_translation": "Living room",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "sitting room",
+    "example_sentence_af": "Ek sit in die sitkamer en lees 'n boek.",
+    "example_sentence_en": "I sit in the living room and read a book."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Tuin",
+    "english_translation": "Garden",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A garden, yard.",
+    "example_sentence_af": "Ek werk graag in my tuin.",
+    "example_sentence_en": "I like working in my garden."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Deur",
+    "english_translation": "Door",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "door",
+    "example_sentence_af": "Ek stap deur die huis.",
+    "example_sentence_en": "I walk through the house."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Venster",
+    "english_translation": "window",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "window",
+    "example_sentence_af": "Ek het die venster oopgemaak om vars lug binne te laat.",
+    "example_sentence_en": "I opened the window to let fresh air in."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Vloer",
+    "english_translation": "Floor",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A floor.",
+    "example_sentence_af": "Die kind speel op die vloer.",
+    "example_sentence_en": "The child is playing on the floor."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Dak",
+    "english_translation": "Roof",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "roof",
+    "example_sentence_af": "Die dak is gereed om te verf.",
+    "example_sentence_en": "The roof is ready to be painted."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Muur",
+    "english_translation": "Wall",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "wall",
+    "example_sentence_af": "Die kind hang die tekening aan die muur.",
+    "example_sentence_en": "The child hangs the picture on the wall."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Tafel",
+    "english_translation": "Table",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "table",
+    "example_sentence_af": "Die boek ligt op die tafel.",
+    "example_sentence_en": "The book is on the table."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Stoel",
+    "english_translation": "chair",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "chair",
+    "example_sentence_af": "Die stoel is gemaklik.",
+    "example_sentence_en": "The chair is comfortable."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Bed",
+    "english_translation": "Bed",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "bed",
+    "example_sentence_af": "Ek gaan nou na die bed toe.",
+    "example_sentence_en": "I am going to the bed now."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Kas",
+    "english_translation": "cupboard / closet",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A cupboard.",
+    "example_sentence_af": "Ek het die skoene in die kas gesit.",
+    "example_sentence_en": "I put the shoes in the cupboard."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Yskas",
+    "english_translation": "Fridge",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "refrigerator",
+    "example_sentence_af": "Die yskas is vol vars vrugte.",
+    "example_sentence_en": "The fridge is full of fresh fruit."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Stoof",
+    "english_translation": "stove",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "stove",
+    "example_sentence_af": "Die stoof in die kombuis is nuut en skoon.",
+    "example_sentence_en": "The stove in the kitchen is new and clean."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Sleutel",
+    "english_translation": "key",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "key (tool for locking and unlocking; something that unlocks)",
+    "example_sentence_af": "Kan jy die sleutel van die deur gee?",
+    "example_sentence_en": "Can you give the key to the door?"
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Huur",
+    "english_translation": "Rent",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "rent",
+    "example_sentence_af": "Ek moet die huis elke maand betaal, want ek huur dit.",
+    "example_sentence_en": "I have to pay for the house every month because I rent it."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Eienaar",
+    "english_translation": "Owner",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "owner",
+    "example_sentence_af": "Die eienaar van die huis het die tuin versier.",
+    "example_sentence_en": "The owner of the house has decorated the garden."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Skoon",
+    "english_translation": "Clean",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "clean; cleansed",
+    "example_sentence_af": "Die kamer is heeltemal skoon.",
+    "example_sentence_en": "The room is completely clean."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Vuil",
+    "english_translation": "dirty",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "dirty, not clean",
+    "example_sentence_af": "Die vloer is vuil.",
+    "example_sentence_en": "The floor is dirty."
+  },
+  {
+    "deck": "home",
+    "afrikaans_word": "Tuisblyer",
+    "english_translation": "Homebody",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Sy is 'n tuisblyer en spandeer die meeste tyd by die huis.",
+    "example_sentence_en": "She is a homebody and spends most of her time at home."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Wind",
+    "english_translation": "Wind",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "wind (movement of air)",
+    "example_sentence_af": "Die wind waai hard.",
+    "example_sentence_en": "The wind blows hard."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Wolk",
+    "english_translation": "cloud",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "cloud",
+    "example_sentence_af": "Die wolk het die son verskuil.",
+    "example_sentence_en": "The cloud has hidden the sun."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Sneeu",
+    "english_translation": "Snow",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "snow",
+    "example_sentence_af": "Sneeu val stadig oor die berge.",
+    "example_sentence_en": "Snow falls slowly over the mountains."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Storm",
+    "english_translation": "storm",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "storm",
+    "example_sentence_af": "Die storm het die takke van die bome gebreek.",
+    "example_sentence_en": "The storm broke the branches of the trees."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Onweer",
+    "english_translation": "Thunderstorm",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "thunderstorm",
+    "example_sentence_af": "Het jy die onweer gisteragter gehoor?",
+    "example_sentence_en": "Did you hear the thunderstorm last night?"
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Blits",
+    "english_translation": "Lightning",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "lightning",
+    "example_sentence_af": "Die blits sloeg oor die veld.",
+    "example_sentence_en": "The lightning struck across the field."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Reënboog",
+    "english_translation": "Rainbow",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "rainbow",
+    "example_sentence_af": "Na die reën het ons 'n pragtige reënboog gesien.",
+    "example_sentence_en": "After the rain we saw a beautiful rainbow."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Hemel",
+    "english_translation": "Sky",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "sky",
+    "example_sentence_af": "Die hemel is helder vandag.",
+    "example_sentence_en": "The sky is clear today."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Boom",
+    "english_translation": "Tree",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "tree",
+    "example_sentence_af": "Die boom staan in die tuin.",
+    "example_sentence_en": "The tree stands in the garden."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Blom",
+    "english_translation": "Flower",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "flower",
+    "example_sentence_af": "Die blom staan in die tuin.",
+    "example_sentence_en": "The flower stands in the garden."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Gras",
+    "english_translation": "grass",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "grass",
+    "example_sentence_af": "Die kind speel op die groen gras.",
+    "example_sentence_en": "The child plays on the green grass."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Berg",
+    "english_translation": "Mountain",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "mountain",
+    "example_sentence_af": "Die berg is bedek met sneeu.",
+    "example_sentence_en": "The mountain is covered with snow."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Rivier",
+    "english_translation": "River",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "river",
+    "example_sentence_af": "Die rivier stroom deur die dorp.",
+    "example_sentence_en": "The river flows through the town."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "See",
+    "english_translation": "Sea",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "sea",
+    "example_sentence_af": "Die see is kalm vandag.",
+    "example_sentence_en": "The sea is calm today."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Strand",
+    "english_translation": "Beach",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "beach",
+    "example_sentence_af": "Ons gaan môre na die strand.",
+    "example_sentence_en": "We are going to the beach tomorrow."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Woestyn",
+    "english_translation": "Desert",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "desert",
+    "example_sentence_af": "Die woestyn is droog en stil.",
+    "example_sentence_en": "The desert is dry and quiet."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Bos",
+    "english_translation": "forest",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "wood, forest",
+    "example_sentence_af": "Die kinders speel in die bos.",
+    "example_sentence_en": "The children play in the forest."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Dier",
+    "english_translation": "Animal",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "animal",
+    "example_sentence_af": "Die dier loop in die veld.",
+    "example_sentence_en": "The animal walks in the field."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Voël",
+    "english_translation": "Bird",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A bird.",
+    "example_sentence_af": "Die voël sing in die bome.",
+    "example_sentence_en": "The bird sings in the trees."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Hond",
+    "english_translation": "Dog",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "dog",
+    "example_sentence_af": "Die hond hardloop in die park.",
+    "example_sentence_en": "The dog runs in the park."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Kat",
+    "english_translation": "Cat",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "cat",
+    "example_sentence_af": "Die kat slaap op die stoep.",
+    "example_sentence_en": "The cat sleeps on the porch."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Sonskyn",
+    "english_translation": "Sunshine",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Die sonskyn maak die dag vrolik.",
+    "example_sentence_en": "The sunshine makes the day cheerful."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Mis",
+    "english_translation": "fog",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "to miss",
+    "example_sentence_af": "Die mis het die pad onduidelik gemaak.",
+    "example_sentence_en": "The fog made the road unclear."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Somer",
+    "english_translation": "Summer",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "summer",
+    "example_sentence_af": "Ons gaan hierdie somer na die strand toe.",
+    "example_sentence_en": "We are going to the beach this summer."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Winter",
+    "english_translation": "Winter",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "winter",
+    "example_sentence_af": "In die winter is dit koud en nat.",
+    "example_sentence_en": "In winter it is cold and wet."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Lente",
+    "english_translation": "Spring",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "spring, the season between winter and summer",
+    "example_sentence_af": "Die blomme blom in die lente.",
+    "example_sentence_en": "The flowers bloom in the spring."
+  },
+  {
+    "deck": "weather-nature",
+    "afrikaans_word": "Herfs",
+    "english_translation": "Autumn",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "autumn, fall",
+    "example_sentence_af": "Ek hou van die koel bries in herfs.",
+    "example_sentence_en": "I enjoy the cool breeze in autumn."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Rand",
+    "english_translation": "South African rand",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "edge, border",
+    "example_sentence_af": "Ek betaal die rekening met rand.",
+    "example_sentence_en": "I pay the bill with rand."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Sent",
+    "english_translation": "cent",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "cent (one hundredth of a currency)",
+    "example_sentence_af": "Ek het twee sent by die winkel betaal.",
+    "example_sentence_en": "I paid two cents at the shop."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Prys",
+    "english_translation": "price",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "price",
+    "example_sentence_af": "Wat is die prys van die boek?",
+    "example_sentence_en": "What is the price of the book?"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Duur",
+    "english_translation": "expensive",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "expensive",
+    "example_sentence_af": "Die nuwe motor is baie duur.",
+    "example_sentence_en": "The new car is very expensive."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Goedkoop",
+    "english_translation": "Cheap",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Die jas is goedkoop, maar van goeie gehalte.",
+    "example_sentence_en": "The coat is cheap, but of good quality."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Betaal",
+    "english_translation": "Pay",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "pay",
+    "example_sentence_af": "Kan jy asseblief die rekening betaal?",
+    "example_sentence_en": "Can you please pay the bill?"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Koop",
+    "english_translation": "Buy",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "To buy.",
+    "example_sentence_af": "Ek wil 'n nuwe fiets koop.",
+    "example_sentence_en": "I want to buy a new bike."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Verkoop",
+    "english_translation": "Sell",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek verkoop my motor.",
+    "example_sentence_en": "I sell my car."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Korting",
+    "english_translation": "Discount",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek het tien persent korting op die nuwe jas.",
+    "example_sentence_en": "I got a ten percent discount on the new coat."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Kwitansie",
+    "english_translation": "receipt",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Kan jy my asseblief die kwitansie vir die aankoop gee?",
+    "example_sentence_en": "Can you please give me the receipt for the purchase?"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Kredietkaart",
+    "english_translation": "credit card",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek het my kredietkaart gebruik om die fliekskaart te betaal.",
+    "example_sentence_en": "I used my credit card to pay for the movie tickets."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Kontant",
+    "english_translation": "Cash",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek betaal die rekening kontant.",
+    "example_sentence_en": "I pay the bill in cash."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Bank",
+    "english_translation": "Bank",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "bench, couch",
+    "example_sentence_af": "Ek gaan geld by die bank trek.",
+    "example_sentence_en": "I am going to withdraw money at the bank."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Spaar",
+    "english_translation": "Save (money)",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek spaar elke maand vir my vakansie.",
+    "example_sentence_en": "I save each month for my vacation."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Skuld",
+    "english_translation": "Debt",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "guilt, fault",
+    "example_sentence_af": "Hy kon sy skuld nie betaal nie.",
+    "example_sentence_en": "He could not pay his debt."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Ryk",
+    "english_translation": "Rich",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "rich, wealthy",
+    "example_sentence_af": "Die ryk man het 'n pragtige huis.",
+    "example_sentence_en": "The rich man has a beautiful house."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Bekostigbaar",
+    "english_translation": "Affordable",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Die nuwe telefoon is bekostigbaar.",
+    "example_sentence_en": "The new phone is affordable."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Klerewinkel",
+    "english_translation": "clothing shop",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A clothes shop.",
+    "example_sentence_af": "Ek gaan môre na die klerewinkel om 'n nuwe jas te koop.",
+    "example_sentence_en": "I am going to the clothing shop tomorrow to buy a new coat."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Kruidenierswinkel",
+    "english_translation": "grocery store",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek gaan na die kruidenierswinkel om brood en melk te koop.",
+    "example_sentence_en": "I am going to the grocery store to buy bread and milk."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Kassier",
+    "english_translation": "Cashier",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Die kassier het my aankoop verwerk.",
+    "example_sentence_en": "The cashier processed my purchase."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Trollie",
+    "english_translation": "trolley",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek het die inkopies in die trollie gesit.",
+    "example_sentence_en": "I put the groceries in the trolley."
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Baie duur!",
+    "english_translation": "Very expensive!",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Die nuwe telefoon is baie duur!",
+    "example_sentence_en": "The new phone is very expensive!"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Kan ek betaal met kaart?",
+    "english_translation": "Can I pay by card?",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Kan ek betaal met kaart?",
+    "example_sentence_en": "Can I pay with a card?"
+  },
+  {
+    "deck": "money",
+    "afrikaans_word": "Wisselgeld",
+    "english_translation": "Change (money)",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek het wat wisselgeld nodig om die parkering te betaal.",
+    "example_sentence_en": "I need some change to pay for the parking."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Kop",
+    "english_translation": "head",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "head",
+    "example_sentence_af": "Ek het my kop gesny toe ek van die trap geval het.",
+    "example_sentence_en": "I hurt my head when I fell down the stairs."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Hand",
+    "english_translation": "hand",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A hand.",
+    "example_sentence_af": "Ek hou die bal in my hand.",
+    "example_sentence_en": "I hold the ball in my hand."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Voet",
+    "english_translation": "Foot",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "foot",
+    "example_sentence_af": "Ek het my voet gesny toe ek op die rots geval het.",
+    "example_sentence_en": "I cut my foot when I fell on the rock."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Oog",
+    "english_translation": "Eye",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "eye",
+    "example_sentence_af": "Sy het haar oog gekrap.",
+    "example_sentence_en": "She scratched her eye."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Oor",
+    "english_translation": "ear",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "ear",
+    "example_sentence_af": "Hy het 'n seer oor.",
+    "example_sentence_en": "He has a sore ear."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Neus",
+    "english_translation": "Nose",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "nose",
+    "example_sentence_af": "Hy snif met sy neus.",
+    "example_sentence_en": "He sniffs with his nose."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Mond",
+    "english_translation": "Mouth",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "mouth",
+    "example_sentence_af": "Hy het sy mond gesluit.",
+    "example_sentence_en": "He closed his mouth."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Maag",
+    "english_translation": "stomach",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "stomach",
+    "example_sentence_af": "My maag maak gek nie, ek moet dit laat rus.",
+    "example_sentence_en": "My stomach is acting up, I need to let it rest."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Hart",
+    "english_translation": "Heart",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "heart",
+    "example_sentence_af": "My hart klop vinnig.",
+    "example_sentence_en": "My heart beats fast."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Rug",
+    "english_translation": "Back",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "back (rear of the body)",
+    "example_sentence_af": "Hy het sy rug gekrap.",
+    "example_sentence_en": "He scratched his back."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Been",
+    "english_translation": "leg",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "leg of a human or humanoid",
+    "example_sentence_af": "Hy breek sy been toe hy op die trap val.",
+    "example_sentence_en": "He broke his leg when he fell down the stairs."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Arm",
+    "english_translation": "Arm",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "arm",
+    "example_sentence_af": "Hy het sy arm gebreek toe hy van die trap geval.",
+    "example_sentence_en": "He broke his arm when he fell down the stairs."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Vinger",
+    "english_translation": "Finger",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "finger",
+    "example_sentence_af": "Hy druk sy vinger op die glas.",
+    "example_sentence_en": "He presses his finger on the glass."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Siek",
+    "english_translation": "Sick",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "ill, sick, unwell",
+    "example_sentence_af": "Ek voel baie siek vandag.",
+    "example_sentence_en": "I feel very sick today."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Gesond",
+    "english_translation": "Healthy",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "healthy",
+    "example_sentence_af": "Sy eet gesonde kos en gaan elke dag stap.",
+    "example_sentence_en": "She eats healthy food and goes for a walk every day."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Dokter",
+    "english_translation": "Doctor",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "medical doctor, physician",
+    "example_sentence_af": "Ek gaan môre na die dokter.",
+    "example_sentence_en": "I am going to the doctor tomorrow."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Hospitaal",
+    "english_translation": "Hospital",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "hospital",
+    "example_sentence_af": "Sy is toe in die hospitaal toe sy seer was.",
+    "example_sentence_en": "She was in the hospital when she was ill."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Apteek",
+    "english_translation": "Pharmacy",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "pharmacy; chemist (a place where prescription drugs are sold or dispensed)",
+    "example_sentence_af": "Ek gaan na die apteek om my resep in te haal.",
+    "example_sentence_en": "I am going to the pharmacy to pick up my prescription."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Pyn",
+    "english_translation": "Pain",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "pain",
+    "example_sentence_af": "Ek voel pyn in my knie.",
+    "example_sentence_en": "I feel pain in my knee."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Koors",
+    "english_translation": "Fever",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "fever",
+    "example_sentence_af": "Hy lig met koors en moet rus.",
+    "example_sentence_en": "He is lying with a fever and must rest."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Hoes",
+    "english_translation": "cough",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek hoes elke keer as ek rook.",
+    "example_sentence_en": "I cough every time I smoke."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Medisyne",
+    "english_translation": "Medicine",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek moet my medisyne elke dag inneem.",
+    "example_sentence_en": "I must take my medicine every day."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Ek voel siek",
+    "english_translation": "I feel sick",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek voel siek en moet rus.",
+    "example_sentence_en": "I feel sick and need to rest."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Ek het 'n hoofpyn",
+    "english_translation": "I have a headache",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek het 'n hoofpyn, so ek gaan rus.",
+    "example_sentence_en": "I have a headache, so I'm going to rest."
+  },
+  {
+    "deck": "health",
+    "afrikaans_word": "Bloeddruk",
+    "english_translation": "blood pressure",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "My dokter het my bloeddruk gemonitor terwyl ek oefen.",
+    "example_sentence_en": "My doctor monitored my blood pressure while I exercised."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Selfoon",
+    "english_translation": "Cellphone",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek het my selfoon verloor.",
+    "example_sentence_en": "I lost my cellphone."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Internet",
+    "english_translation": "Internet",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "the Internet",
+    "example_sentence_af": "Ek gebruik die Internet elke dag om nuus te lees.",
+    "example_sentence_en": "I use the Internet every day to read news."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Wagwoord",
+    "english_translation": "Password",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "password",
+    "example_sentence_af": "Jy moet jou wagwoord elke drie maande verander.",
+    "example_sentence_en": "You must change your password every three months."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Toepassing",
+    "english_translation": "application",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "application, act of applying knowledge or a skill",
+    "example_sentence_af": "Die toepassing op my telefoon werk nie meer.",
+    "example_sentence_en": "The application on my phone no longer works."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Sagteware",
+    "english_translation": "Software",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "software (collective name for programs that can be executed by a computer)",
+    "example_sentence_af": "Die nuwe sagteware verbeter die rekenaar se snelheid.",
+    "example_sentence_en": "The new software improves the computer's speed."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Programmeerder",
+    "english_translation": "programmer",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Die programmeerder skryf die kode vir die nuwe app.",
+    "example_sentence_en": "The programmer writes the code for the new app."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Kode",
+    "english_translation": "Code",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Die programmeringskode is foutloos.",
+    "example_sentence_en": "The programming code is flawless."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Databasis",
+    "english_translation": "Database",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "database",
+    "example_sentence_af": "Die databasis bevat al die kliëntinligting.",
+    "example_sentence_en": "The database contains all the client information."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Bediener",
+    "english_translation": "Server",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Die bediener het die versoek vinnig verwerk.",
+    "example_sentence_en": "The server processed the request quickly."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Netwerk",
+    "english_translation": "Network",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "network",
+    "example_sentence_af": "Ons gebruik die netwerk om inligting te deel.",
+    "example_sentence_en": "We use the network to share information."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Laai af",
+    "english_translation": "Download",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Kan jy die lêer vir my laai af?",
+    "example_sentence_en": "Can you download the file for me?"
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Laai op",
+    "english_translation": "Upload",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Kan jy die foto op die webwerf laai op?",
+    "example_sentence_en": "Can you upload the photo to the website?"
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Stoor",
+    "english_translation": "Save",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "to store, to storage",
+    "example_sentence_af": "Stoor die dokument voordat jy afsluit.",
+    "example_sentence_en": "Save the document before you close."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Verwyder",
+    "english_translation": "Delete",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "to remove",
+    "example_sentence_af": "Verwyder die lêer voordat jy die program sluit.",
+    "example_sentence_en": "Delete the file before you close the program."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Toetsbord",
+    "english_translation": "keyboard",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek het my toetsbord skoon gemaak.",
+    "example_sentence_en": "I cleaned my keyboard."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Muis",
+    "english_translation": "Mouse (computer)",
+    "wiktionary_match": true,
+    "wiktionary_gloss": "A mouse (rodent).",
+    "example_sentence_af": "Ek klik met die muis om die dokument te bekyk.",
+    "example_sentence_en": "I click with the mouse to view the document."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Battery",
+    "english_translation": "Battery",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "My telefoon se battery is leeg.",
+    "example_sentence_en": "My phone's battery is dead."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Kortpad",
+    "english_translation": "Shortcut",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek het 'n kortpad na die skool gekry.",
+    "example_sentence_en": "I found a shortcut to the school."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Fout",
+    "english_translation": "error",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek het 'n fout gemaak in die kode.",
+    "example_sentence_en": "I made a mistake in the code."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Herstel",
+    "english_translation": "repair",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek moet die fiets herstel.",
+    "example_sentence_en": "I need to repair the bike."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Opdatering",
+    "english_translation": "Update",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek het die program se opdatering geïnstalleer.",
+    "example_sentence_en": "I installed the program's update."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Rugsteun",
+    "english_translation": "Backup",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Ek het 'n rugsteun nodig vir my projek.",
+    "example_sentence_en": "I need a backup for my project."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Die skerm het vasgehak",
+    "english_translation": "The screen has frozen",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Die skerm het vasgehak toe ek die video wou speel.",
+    "example_sentence_en": "The screen froze when I tried to play the video."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Dit werk nie",
+    "english_translation": "It doesn't work",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Die rekenaar skerm wys 'n fout, dit werk nie.",
+    "example_sentence_en": "The computer screen shows an error, it doesn't work."
+  },
+  {
+    "deck": "technology",
+    "afrikaans_word": "Suksesvol gestoor",
+    "english_translation": "Successfully saved",
+    "wiktionary_match": false,
+    "wiktionary_gloss": null,
+    "example_sentence_af": "Die dokument is suksesvol gestoor.",
+    "example_sentence_en": "The document was successfully saved."
   }
 ]
