@@ -1,6 +1,7 @@
 import { Bot, InlineKeyboard, InputFile, type Context } from "grammy";
 import {
   countAllCards,
+  countCardsPerDeck,
   countDue,
   countMastered,
   findCardByWord,
@@ -33,9 +34,35 @@ bot.command("start", async (ctx) => {
       "Let us learn Afrikaans together, kom ons leer saam: vocabulary with spaced repetition, " +
       "grammar lessons, quizzes, and pronunciation audio.\n\n" +
       "Send /review to review the cards due today, /grammar for a grammar topic, /quiz to " +
-      "test yourself, /progress for stats, or just send a message to chat. Everyone gets their " +
-      "own progress, so review at your own pace."
+      "test yourself, /progress for stats, /help for everything else, or just send a message " +
+      "to chat. Everyone gets their own progress, so review at your own pace."
   );
+});
+
+bot.command("help", async (ctx) => {
+  await ctx.reply(
+    [
+      "📚 Commands",
+      "",
+      "/review: review cards due today, spaced repetition (SM-2)",
+      "/grammar: pick a grammar topic for a structured explanation",
+      "/quiz: multiple-choice test, doesn't affect review scheduling",
+      "/progress: cards mastered, due today, and your review streak",
+      "/decks: see every deck and how many cards it has",
+      "/pronounce <word>: hear a word's reference pronunciation",
+      "/recordings <word>: replay your last 5 practice recordings for a word",
+      "",
+      "Reply to any card message with a voice note to save a practice recording for it.",
+      "Anything else you type just goes to free chat: ask about grammar, vocabulary, or " +
+        "practice a conversation.",
+    ].join("\n")
+  );
+});
+
+bot.command("decks", async (ctx) => {
+  const [total, perDeck] = await Promise.all([countAllCards(), countCardsPerDeck()]);
+  const lines = perDeck.map(({ deck, count }) => `${deck}: ${count}`);
+  await ctx.reply(["📇 Decks", `Total: ${total} cards`, "", ...lines].join("\n"));
 });
 
 const CARD_ID = "[a-z0-9-]+";

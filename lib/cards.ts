@@ -76,6 +76,17 @@ export async function countAllCards(): Promise<number> {
   return redis.scard(ALL_CARDS_KEY);
 }
 
+/** Card count per deck — for an overview like /decks. */
+export async function countCardsPerDeck(): Promise<{ deck: string; count: number }[]> {
+  const members = await redis.smembers<string[]>(ALL_CARDS_KEY);
+  const counts = new Map<string, number>();
+  for (const m of members) {
+    const { deck } = parseMemberId(m);
+    counts.set(deck, (counts.get(deck) ?? 0) + 1);
+  }
+  return [...counts.entries()].map(([deck, count]) => ({ deck, count })).sort((a, b) => a.deck.localeCompare(b.deck));
+}
+
 /** Every card's content across every deck — the full shared catalog. */
 export async function getAllCardContent(): Promise<{ deck: string; cardId: string; content: CardContent }[]> {
   const members = await redis.smembers<string[]>(ALL_CARDS_KEY);

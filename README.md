@@ -30,6 +30,7 @@ pronunciation audio, and free-form chat. Built entirely on free tiers.
   chat
 - **Daily reminder**: a Vercel Cron job checks every user's due count and nudges anyone who has
   cards waiting
+- **`/help`, `/decks`**: full command reference, and a per-deck card count for orientation
 
 ## Stack
 
