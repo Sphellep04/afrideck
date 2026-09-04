@@ -42,29 +42,6 @@ pronunciation audio, and free-form chat. Built entirely on free tiers.
 Telegram Bot API · Vercel (serverless functions + cron) · Upstash Redis · Cloudflare R2 · Groq
 (openai/gpt-oss-120b) · Google Translate TTS (unofficial)
 
-## Setup
-
-1. Create a bot via [@BotFather](https://t.me/BotFather) → `BOT_TOKEN`
-2. `npm install`, then copy `.env.example` → `.env` and fill in credentials:
-   - `WEBHOOK_SECRET`: any random string
-   - `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN`: free Redis at [upstash.com](https://console.upstash.com/)
-   - `GROQ_API_KEY`: free at [console.groq.com](https://console.groq.com/)
-   - `R2_*`: optional, Cloudflare R2 for audio (needs a card on file even on the free tier)
-   - `CRON_SECRET`: optional, any random string, guards the otherwise-public daily reminder endpoint
-3. Seed the vocabulary deck:
-   ```
-   npm run build-wordlist && npm run generate-sentences && npm run seed-redis
-   ```
-4. Seed the grammar deck:
-   ```
-   npm run generate-grammar-lessons && npm run seed-grammar
-   ```
-5. Deploy (`npx vercel --prod`, or connect the repo at vercel.com) and add the same env vars there
-6. Register the webhook:
-   ```
-   WEBHOOK_URL=https://<your-deployment>/api/webhook npm run set-webhook
-   ```
-
 Everything except Redis degrades gracefully if unconfigured: audio and chat reply with a friendly
 "not set up yet" instead of breaking anything else.
 
