@@ -15,10 +15,11 @@ import {
 } from "./cards.js";
 import { applySM2, type Rating } from "./sm2.js";
 import { getReferenceAudio, listRecordings, storeRecording } from "./audio.js";
-import { getObject } from "./r2.js";
+import { getObject, isR2Configured } from "./r2.js";
 import { answerQuiz, startQuiz } from "./quiz.js";
 import { chatReply } from "./chat.js";
 import { getGrammarLesson, listGrammarTopics } from "./grammar.js";
+import { getActiveCard, setActiveCard } from "./review-session.js";
 import type { CardContent } from "./types.js";
 
 const token = process.env.BOT_TOKEN;
@@ -68,15 +69,15 @@ bot.command("decks", async (ctx) => {
 const CARD_ID = "[a-z0-9-]+";
 
 function revealKeyboard(deck: string, cardId: string): InlineKeyboard {
-  return new InlineKeyboard()
-    .text("🔊 Pronounce", `pronounce:${deck}:${cardId}`)
-    .text("Show answer", `reveal:${deck}:${cardId}`);
+  const keyboard = new InlineKeyboard();
+  if (isR2Configured()) keyboard.text("🔊 Pronounce", `pronounce:${deck}:${cardId}`);
+  return keyboard.text("Show answer", `reveal:${deck}:${cardId}`);
 }
 
 function ratingKeyboard(deck: string, cardId: string): InlineKeyboard {
-  return new InlineKeyboard()
-    .text("🔊 Pronounce", `pronounce:${deck}:${cardId}`)
-    .row()
+  const keyboard = new InlineKeyboard();
+  if (isR2Configured()) keyboard.text("🔊 Pronounce", `pronounce:${deck}:${cardId}`).row();
+  return keyboard
     .text("Again", `rate:again:${deck}:${cardId}`)
     .text("Hard", `rate:hard:${deck}:${cardId}`)
     .text("Good", `rate:good:${deck}:${cardId}`)
@@ -108,6 +109,13 @@ async function nextCardMessage(chatId: number): Promise<{ text: string; keyboard
     // due_index pointed at a card that no longer exists; skip it by asking the user to retry.
     return { text: "Ran into a stale card. Send /review again.", keyboard: new InlineKeyboard() };
   }
+
+  await setActiveCard(chatId, {
+    deck,
+    cardId,
+    afrikaans_word: content.afrikaans_word,
+    english_translation: content.english_translation,
+  });
 
   return { text: frontText(content), keyboard: revealKeyboard(deck, cardId) };
 }
@@ -364,7 +372,8 @@ bot.callbackQuery(new RegExp(`^grammar:(${CARD_ID})$`), async (ctx) => {
 bot.on("message:text", async (ctx) => {
   try {
     await ctx.replyWithChatAction("typing");
-    const reply = await chatReply(ctx.chat.id, ctx.message.text);
+    const activeCard = await getActiveCard(ctx.chat.id);
+    const reply = await chatReply(ctx.chat.id, ctx.message.text, activeCard ?? undefined);
     await ctx.reply(reply);
   } catch (err) {
     console.error("Chat reply failed:", err);

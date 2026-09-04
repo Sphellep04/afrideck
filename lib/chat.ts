@@ -11,8 +11,8 @@ const SYSTEM_PROMPT =
   "vocabulary through spaced repetition. Be a warm, encouraging Afrikaans language helper: " +
   "answer questions about Afrikaans grammar, vocabulary, or culture, and happily do short " +
   "conversation practice in Afrikaans if asked. Keep replies concise, a few sentences, " +
-  "chat-app length, not an essay. Do not use em dashes; use commas, periods, or parentheses " +
-  "instead. If relevant, mention the bot's other commands: /review (daily spaced-repetition " +
+  "chat-app length, not an essay. Do not use em dashes or en dashes; use commas, periods, or " +
+  "parentheses instead. If relevant, mention the bot's other commands: /review (daily spaced-repetition " +
   "review), /quiz (multiple choice), /progress (stats), and /pronounce or /recordings " +
   "(audio, once configured).";
 
@@ -21,8 +21,22 @@ interface ChatMessage {
   content: string;
 }
 
-/** Generates a reply via Groq, keeping short-lived per-chat conversation history in Redis. */
-export async function chatReply(chatId: number, userMessage: string): Promise<string> {
+export interface ActiveCardContext {
+  afrikaans_word: string;
+  english_translation: string;
+}
+
+/**
+ * Generates a reply via Groq, keeping short-lived per-chat conversation history in Redis.
+ * If the user was just shown a review card, pass it as `activeCard` so a free-text reply like
+ * "it means small" gets graded in context instead of answered as an unrelated question. This
+ * hint is injected fresh per call, not stored in history, so it doesn't stick around once stale.
+ */
+export async function chatReply(
+  chatId: number,
+  userMessage: string,
+  activeCard?: ActiveCardContext
+): Promise<string> {
   const apiKey = process.env.GROQ_API_KEY;
   if (!apiKey) {
     throw new Error("GROQ_API_KEY environment variable is not set");
@@ -31,6 +45,20 @@ export async function chatReply(chatId: number, userMessage: string): Promise<st
   const historyKey = `${HISTORY_KEY_PREFIX}${chatId}`;
   const history = (await redis.get<ChatMessage[]>(historyKey)) ?? [];
 
+  const activeCardHint = activeCard
+    ? [
+        {
+          role: "system" as const,
+          content:
+            `The user was just shown a flashcard for the Afrikaans word or phrase "${activeCard.afrikaans_word}" ` +
+            `(correct translation: "${activeCard.english_translation}"). If their message looks like an attempt ` +
+            "to answer it, say clearly and directly whether they're right or wrong before anything else, then " +
+            "remind them to tap Again/Hard/Good/Easy on the card itself to actually record the review (this chat " +
+            "reply does not do that). If their message is unrelated to the card, just respond normally.",
+        },
+      ]
+    : [];
+
   const res = await fetch(GROQ_ENDPOINT, {
     method: "POST",
     headers: { "content-type": "application/json", authorization: `Bearer ${apiKey}` },
@@ -38,6 +66,7 @@ export async function chatReply(chatId: number, userMessage: string): Promise<st
       model: MODEL,
       messages: [
         { role: "system", content: SYSTEM_PROMPT },
+        ...activeCardHint,
         ...history,
         { role: "user", content: userMessage },
       ],
@@ -50,10 +79,12 @@ export async function chatReply(chatId: number, userMessage: string): Promise<st
   }
 
   const data = (await res.json()) as { choices?: { message?: { content?: string } }[] };
-  const reply = data.choices?.[0]?.message?.content?.trim();
-  if (!reply) {
+  const rawReply = data.choices?.[0]?.message?.content?.trim();
+  if (!rawReply) {
     throw new Error("No content in Groq chat response");
   }
+  // The system prompt asks for no em/en dashes, but that's not reliably honored — enforce it.
+  const reply = rawReply.replace(/ ?[—–] ?/g, ", ");
 
   const updatedHistory: ChatMessage[] = [
     ...history,
