@@ -14,17 +14,21 @@ pronunciation audio, and free-form chat. Built entirely on free tiers.
 
 ## Features
 
+- **Multi-user**: anyone who messages the bot gets their own SM-2 progress, streak, and mastery
+  stats. Vocabulary and grammar content is shared (seeded once); scheduling, review history, and
+  recordings are private per person, auto-enrolled the moment someone sends `/review`
 - **`/review`**: SM-2 spaced repetition over a vocabulary deck (greetings, everyday, work) and a
   grammar deck, one card at a time
 - **`/grammar`**: menu of 12 core Afrikaans grammar topics, each with a structured explanation and
   examples
 - **`/quiz`**: multiple choice, kept separate from review scheduling so it doesn't distort timing
 - **`/progress`**: cards mastered, due today, and a review streak
-- **`/pronounce`, voice notes, `/recordings`**: reference pronunciation (cached TTS) and your own
-  practice recordings, optional (needs Cloudflare R2)
+- **`/pronounce`, voice notes, `/recordings`**: reference pronunciation (cached TTS, shared) and
+  your own practice recordings (private per person), optional (needs Cloudflare R2)
 - **Free chat**: anything that isn't a command gets a Groq-backed reply, with short-term memory per
   chat
-- **Daily reminder**: a Vercel Cron job nudges you if cards are due
+- **Daily reminder**: a Vercel Cron job checks every user's due count and nudges anyone who has
+  cards waiting
 
 ## Stack
 
@@ -39,7 +43,7 @@ Telegram Bot API · Vercel (serverless functions + cron) · Upstash Redis · Clo
    - `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN`: free Redis at [upstash.com](https://console.upstash.com/)
    - `GROQ_API_KEY`: free at [console.groq.com](https://console.groq.com/)
    - `R2_*`: optional, Cloudflare R2 for audio (needs a card on file even on the free tier)
-   - `TELEGRAM_CHAT_ID` / `CRON_SECRET`: optional, for the daily reminder
+   - `CRON_SECRET`: optional, any random string, guards the otherwise-public daily reminder endpoint
 3. Seed the vocabulary deck:
    ```
    npm run build-wordlist && npm run generate-sentences && npm run seed-redis
@@ -65,6 +69,6 @@ api/cron/daily-reminder.ts  Daily due-cards nudge
 lib/bot.ts                 Command handlers and all bot flows
 lib/cards.ts, sm2.ts        Card storage + SM-2 scheduling
 lib/quiz.ts, chat.ts, grammar.ts, audio.ts, r2.ts, tts.ts, redis.ts, slug.ts, types.ts
-scripts/                   One-off content generation and seeding scripts
+scripts/                   One-off content generation, seeding, and migration scripts
 data/                      Curated + generated deck content
 ```

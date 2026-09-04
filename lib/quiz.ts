@@ -1,5 +1,5 @@
 import { redis } from "./redis.js";
-import { memberId, randomCard } from "./cards.js";
+import { memberId, randomCardContent } from "./cards.js";
 
 interface QuizSession {
   afrikaans_word: string;
@@ -29,25 +29,25 @@ export interface QuizQuestion {
 
 /** Starts a new multiple-choice quiz question for a chat, independent of SRS scheduling. */
 export async function startQuiz(chatId: number): Promise<QuizQuestion | null> {
-  const question = await randomCard();
+  const question = await randomCardContent();
   if (!question) return null;
 
   const distractors: string[] = [];
-  const seen = new Set([question.card.english_translation]);
+  const seen = new Set([question.content.english_translation]);
   const excluded = memberId(question.deck, question.cardId);
 
   for (let attempts = 0; attempts < 5 && distractors.length < 3; attempts++) {
-    const candidate = await randomCard(excluded);
-    if (candidate && !seen.has(candidate.card.english_translation)) {
-      seen.add(candidate.card.english_translation);
-      distractors.push(candidate.card.english_translation);
+    const candidate = await randomCardContent(excluded);
+    if (candidate && !seen.has(candidate.content.english_translation)) {
+      seen.add(candidate.content.english_translation);
+      distractors.push(candidate.content.english_translation);
     }
   }
 
-  const choices = shuffle([question.card.english_translation, ...distractors]);
-  const correctIndex = choices.indexOf(question.card.english_translation);
+  const choices = shuffle([question.content.english_translation, ...distractors]);
+  const correctIndex = choices.indexOf(question.content.english_translation);
 
-  const session: QuizSession = { afrikaans_word: question.card.afrikaans_word, choices, correctIndex };
+  const session: QuizSession = { afrikaans_word: question.content.afrikaans_word, choices, correctIndex };
   await redis.set(quizKey(chatId), session, { ex: QUIZ_TTL_SECONDS });
 
   return { afrikaans_word: session.afrikaans_word, choices: session.choices };

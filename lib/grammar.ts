@@ -1,6 +1,6 @@
 import { redis } from "./redis.js";
-import { getCardsByDeck } from "./cards.js";
-import type { Card } from "./types.js";
+import { getCardContentByDeck } from "./cards.js";
+import type { CardContent } from "./types.js";
 
 export const GRAMMAR_DECK = "grammar";
 
@@ -26,7 +26,7 @@ export async function getGrammarLesson(cardId: string): Promise<GrammarLesson | 
   return redis.get<GrammarLesson>(lessonKey(cardId));
 }
 
-/** Topic menu — the grammar deck's cards double as topic metadata (title_af/title_en). */
-export async function listGrammarTopics(): Promise<{ cardId: string; card: Card }[]> {
-  return getCardsByDeck(GRAMMAR_DECK);
+/** Topic menu — the grammar deck's content doubles as topic metadata (title_af/title_en). */
+export async function listGrammarTopics(): Promise<{ cardId: string; content: CardContent }[]> {
+  return getCardContentByDeck(GRAMMAR_DECK);
 }

@@ -1,8 +1,8 @@
 import { readFileSync } from "node:fs";
-import { saveCard, registerDeck } from "../lib/cards.js";
+import { saveCardContent, registerDeck } from "../lib/cards.js";
 import { saveGrammarLesson, GRAMMAR_DECK } from "../lib/grammar.js";
 import { slugify } from "../lib/slug.js";
-import type { Card } from "../lib/types.js";
+import type { CardContent } from "../lib/types.js";
 
 interface GrammarExample {
   af: string;
@@ -21,32 +21,27 @@ async function main() {
     readFileSync(new URL("../data/grammar-lessons.json", import.meta.url), "utf-8")
   );
 
-  const today = new Date().toISOString().slice(0, 10);
   let seeded = 0;
 
   for (const lesson of lessons) {
     const cardId = slugify(lesson.title_af);
     const firstExample = lesson.examples[0];
 
-    const card: Card = {
+    const content: CardContent = {
       afrikaans_word: lesson.title_af,
       english_translation: lesson.title_en,
       example_sentence_af: firstExample?.af ?? "",
       example_sentence_en: firstExample?.en ?? "",
       audio_url: "",
-      ease_factor: 2.5,
-      interval_days: 1,
-      next_review_date: today,
-      review_count: 0,
     };
 
-    await saveCard(GRAMMAR_DECK, cardId, card);
+    await saveCardContent(GRAMMAR_DECK, cardId, content);
     await registerDeck(GRAMMAR_DECK);
     await saveGrammarLesson(cardId, { explanation: lesson.explanation, examples: lesson.examples });
     seeded++;
   }
 
-  console.log(`Seeded ${seeded} grammar topics into Redis, all due today (${today}).`);
+  console.log(`Seeded ${seeded} grammar topics' content into Redis. Each user's SM-2 progress is created on first use.`);
 }
 
 main();

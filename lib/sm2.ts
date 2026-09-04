@@ -1,13 +1,12 @@
-import type { Card } from "./types.js";
-import type { ReviewLogEntry } from "./types.js";
+import type { CardProgress, ReviewLogEntry } from "./types.js";
 
 export type Rating = ReviewLogEntry["rating"];
 
 const MIN_EASE_FACTOR = 1.3;
 
-export function applySM2(card: Card, rating: Rating): Card {
-  let easeFactor = card.ease_factor;
-  let intervalDays = card.interval_days;
+export function applySM2(progress: CardProgress, rating: Rating): CardProgress {
+  let easeFactor = progress.ease_factor;
+  let intervalDays = progress.interval_days;
 
   switch (rating) {
     case "again":
@@ -31,10 +30,9 @@ export function applySM2(card: Card, rating: Rating): Card {
   next.setUTCDate(next.getUTCDate() + intervalDays);
 
   return {
-    ...card,
     ease_factor: Math.round(easeFactor * 100) / 100,
     interval_days: intervalDays,
     next_review_date: next.toISOString().slice(0, 10),
-    review_count: card.review_count + 1,
+    review_count: progress.review_count + 1,
   };
 }

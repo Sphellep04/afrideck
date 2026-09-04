@@ -1,7 +1,7 @@
 import { readFileSync } from "node:fs";
-import { saveCard, registerDeck } from "../lib/cards.js";
+import { saveCardContent, registerDeck } from "../lib/cards.js";
 import { slugify } from "../lib/slug.js";
-import type { Card } from "../lib/types.js";
+import type { CardContent } from "../lib/types.js";
 
 interface SeedCard {
   deck: string;
@@ -16,29 +16,24 @@ async function main() {
     readFileSync(new URL("../data/seed-cards.json", import.meta.url), "utf-8")
   );
 
-  const today = new Date().toISOString().slice(0, 10);
   let seeded = 0;
 
   for (const c of cards) {
     const cardId = slugify(c.afrikaans_word);
-    const card: Card = {
+    const content: CardContent = {
       afrikaans_word: c.afrikaans_word,
       english_translation: c.english_translation,
       example_sentence_af: c.example_sentence_af,
       example_sentence_en: c.example_sentence_en,
       audio_url: "",
-      ease_factor: 2.5,
-      interval_days: 1,
-      next_review_date: today,
-      review_count: 0,
     };
 
-    await saveCard(c.deck, cardId, card);
+    await saveCardContent(c.deck, cardId, content);
     await registerDeck(c.deck);
     seeded++;
   }
 
-  console.log(`Seeded ${seeded} cards into Redis, all due today (${today}).`);
+  console.log(`Seeded ${seeded} cards' content into Redis. Each user's SM-2 progress is created on first use.`);
 }
 
 main();

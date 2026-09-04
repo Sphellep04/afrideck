@@ -1,11 +1,30 @@
-import { redis, cardKey } from "./redis.js";
+import { redis } from "./redis.js";
 import { slugify } from "./slug.js";
-import type { Card, ReviewLogEntry } from "./types.js";
+import type { CardContent, CardProgress, ReviewLogEntry } from "./types.js";
 
-export const DUE_INDEX_KEY = "due_index";
 const DECKS_KEY = "decks";
 const ALL_CARDS_KEY = "all_cards";
-const REVIEW_DATES_KEY = "review_dates";
+const USERS_KEY = "users";
+
+function contentKey(deck: string, cardId: string): string {
+  return `card_content:${deck}:${cardId}`;
+}
+
+function progressKey(chatId: number, deck: string, cardId: string): string {
+  return `progress:${chatId}:${deck}:${cardId}`;
+}
+
+function dueIndexKey(chatId: number): string {
+  return `due_index:${chatId}`;
+}
+
+function enrolledKey(chatId: number): string {
+  return `enrolled:${chatId}`;
+}
+
+function reviewDatesKey(chatId: number): string {
+  return `review_dates:${chatId}`;
+}
 
 export function memberId(deck: string, cardId: string): string {
   return `${deck}:${cardId}`;
@@ -20,64 +39,140 @@ function dateScore(dateStr: string): number {
   return Date.parse(`${dateStr}T00:00:00Z`);
 }
 
+function todayString(): string {
+  return new Date().toISOString().slice(0, 10);
+}
+
 function todayScore(): number {
-  return dateScore(new Date().toISOString().slice(0, 10));
+  return dateScore(todayString());
 }
 
-export async function getCard(deck: string, cardId: string): Promise<Card | null> {
-  return redis.get<Card>(cardKey(deck, cardId));
+const DEFAULT_PROGRESS: Omit<CardProgress, "next_review_date"> = {
+  ease_factor: 2.5,
+  interval_days: 1,
+  review_count: 0,
+};
+
+// ---- Content: shared by every user, seeded once ----
+
+export async function getCardContent(deck: string, cardId: string): Promise<CardContent | null> {
+  return redis.get<CardContent>(contentKey(deck, cardId));
 }
 
-export async function saveCard(deck: string, cardId: string, card: Card): Promise<void> {
-  await redis.set(cardKey(deck, cardId), card);
-  await redis.zadd(DUE_INDEX_KEY, { score: dateScore(card.next_review_date), member: memberId(deck, cardId) });
+export async function saveCardContent(deck: string, cardId: string, content: CardContent): Promise<void> {
+  await redis.set(contentKey(deck, cardId), content);
   await redis.sadd(ALL_CARDS_KEY, memberId(deck, cardId));
 }
 
-/** Every card in the deck, regardless of due status — for quizzing and progress stats. */
-export async function getAllCards(): Promise<Card[]> {
+export async function registerDeck(deck: string): Promise<void> {
+  await redis.sadd(DECKS_KEY, deck);
+}
+
+export async function listDecks(): Promise<string[]> {
+  return redis.smembers(DECKS_KEY);
+}
+
+export async function countAllCards(): Promise<number> {
+  return redis.scard(ALL_CARDS_KEY);
+}
+
+/** Every card's content across every deck — the full shared catalog. */
+export async function getAllCardContent(): Promise<{ deck: string; cardId: string; content: CardContent }[]> {
   const members = await redis.smembers<string[]>(ALL_CARDS_KEY);
   if (members.length === 0) return [];
+
   const keys = members.map((m) => {
     const { deck, cardId } = parseMemberId(m);
-    return cardKey(deck, cardId);
+    return contentKey(deck, cardId);
   });
-  const cards = await redis.mget<(Card | null)[]>(keys);
-  return cards.filter((c): c is Card => c !== null);
+  const contents = await redis.mget<(CardContent | null)[]>(keys);
+
+  return members
+    .map((m, i) => ({ ...parseMemberId(m), content: contents[i] }))
+    .filter((x): x is { deck: string; cardId: string; content: CardContent } => x.content !== null);
 }
 
-/** Every card in a single deck, paired with its card id — e.g. building a topic menu. */
-export async function getCardsByDeck(deck: string): Promise<{ cardId: string; card: Card }[]> {
-  const members = await redis.smembers<string[]>(ALL_CARDS_KEY);
-  const deckMembers = members.filter((m) => m.startsWith(`${deck}:`));
-  if (deckMembers.length === 0) return [];
-
-  const keys = deckMembers.map((m) => {
-    const { deck: d, cardId } = parseMemberId(m);
-    return cardKey(d, cardId);
-  });
-  const cards = await redis.mget<(Card | null)[]>(keys);
-
-  return deckMembers
-    .map((m, i) => ({ cardId: parseMemberId(m).cardId, card: cards[i] }))
-    .filter((x): x is { cardId: string; card: Card } => x.card !== null);
+export async function getCardContentByDeck(deck: string): Promise<{ cardId: string; content: CardContent }[]> {
+  const all = await getAllCardContent();
+  return all.filter((x) => x.deck === deck).map(({ cardId, content }) => ({ cardId, content }));
 }
 
-/** Picks a random card, optionally excluding one member id (e.g. the quiz question itself). */
-export async function randomCard(excludeMember?: string): Promise<{ deck: string; cardId: string; card: Card } | null> {
+/** Picks a random card's content, optionally excluding one member id (e.g. the quiz question itself). */
+export async function randomCardContent(
+  excludeMember?: string
+): Promise<{ deck: string; cardId: string; content: CardContent } | null> {
   const candidates = await redis.srandmember<string[]>(ALL_CARDS_KEY, 5);
   for (const member of candidates ?? []) {
     if (member === excludeMember) continue;
     const { deck, cardId } = parseMemberId(member);
-    const card = await getCard(deck, cardId);
-    if (card) return { deck, cardId, card };
+    const content = await getCardContent(deck, cardId);
+    if (content) return { deck, cardId, content };
   }
   return null;
 }
 
-/** Returns one due (or overdue) card's member id, or null if nothing is due. */
-export async function nextDueMember(): Promise<string | null> {
-  const results = await redis.zrange<string[]>(DUE_INDEX_KEY, 0, todayScore(), {
+/** Finds a card's content by its Afrikaans word/phrase text, searching every known deck. */
+export async function findCardByWord(
+  text: string
+): Promise<{ deck: string; cardId: string; content: CardContent } | null> {
+  const cardId = slugify(text);
+  const decks = await listDecks();
+  for (const deck of decks) {
+    const content = await getCardContent(deck, cardId);
+    if (content) return { deck, cardId, content };
+  }
+  return null;
+}
+
+// ---- Progress: private per user ----
+
+async function trackUser(chatId: number): Promise<void> {
+  await redis.sadd(USERS_KEY, String(chatId));
+}
+
+export async function listUsers(): Promise<number[]> {
+  const ids = await redis.smembers<string[]>(USERS_KEY);
+  return ids.map(Number);
+}
+
+export async function getProgress(chatId: number, deck: string, cardId: string): Promise<CardProgress | null> {
+  return redis.get<CardProgress>(progressKey(chatId, deck, cardId));
+}
+
+export async function saveProgress(
+  chatId: number,
+  deck: string,
+  cardId: string,
+  progress: CardProgress
+): Promise<void> {
+  const member = memberId(deck, cardId);
+  await redis.set(progressKey(chatId, deck, cardId), progress);
+  await redis.zadd(dueIndexKey(chatId), { score: dateScore(progress.next_review_date), member });
+  await redis.sadd(enrolledKey(chatId), member);
+  await trackUser(chatId);
+}
+
+/**
+ * Ensures a user has progress (and a due-index entry) for every card in the shared catalog,
+ * creating default SM-2 state for anything missing. Covers both first-time enrollment and
+ * picking up newly added content for existing users — same operation either way. Cheap
+ * (one SDIFF) when there's nothing new, so safe to call on every /review or /progress.
+ */
+export async function ensureEnrolled(chatId: number): Promise<void> {
+  const missing = (await redis.sdiff(ALL_CARDS_KEY, enrolledKey(chatId))) as string[];
+  if (missing.length === 0) return;
+
+  const today = todayString();
+  for (const member of missing) {
+    const { deck, cardId } = parseMemberId(member);
+    await saveProgress(chatId, deck, cardId, { ...DEFAULT_PROGRESS, next_review_date: today });
+  }
+}
+
+/** Returns one due (or overdue) card's member id for this user, or null if nothing is due. */
+export async function nextDueMember(chatId: number): Promise<string | null> {
+  await ensureEnrolled(chatId);
+  const results = await redis.zrange<string[]>(dueIndexKey(chatId), 0, todayScore(), {
     byScore: true,
     offset: 0,
     count: 1,
@@ -85,26 +180,57 @@ export async function nextDueMember(): Promise<string | null> {
   return results[0] ?? null;
 }
 
-export async function countDue(): Promise<number> {
-  return redis.zcount(DUE_INDEX_KEY, "-inf", todayScore());
+export async function countDue(chatId: number): Promise<number> {
+  await ensureEnrolled(chatId);
+  return redis.zcount(dueIndexKey(chatId), "-inf", todayScore());
 }
 
-export async function logReview(member: string, rating: ReviewLogEntry["rating"]): Promise<void> {
+export async function logReview(chatId: number, member: string, rating: ReviewLogEntry["rating"]): Promise<void> {
   const entry: ReviewLogEntry = { card_id: member, rating };
-  await redis.set(`review_log:${Date.now()}`, entry);
-  await redis.sadd(REVIEW_DATES_KEY, new Date().toISOString().slice(0, 10));
+  await redis.set(`review_log:${chatId}:${Date.now()}`, entry);
+  await redis.sadd(reviewDatesKey(chatId), todayString());
 }
 
 const MASTERED_INTERVAL_DAYS = 21;
 
-export async function countMastered(): Promise<number> {
-  const cards = await getAllCards();
-  return cards.filter((c) => c.interval_days >= MASTERED_INTERVAL_DAYS).length;
+/** Every card this user is enrolled in, content + their own progress — for /progress and mastery. */
+export async function getAllProgressForUser(
+  chatId: number
+): Promise<{ deck: string; cardId: string; content: CardContent; progress: CardProgress }[]> {
+  await ensureEnrolled(chatId);
+  const members = await redis.smembers<string[]>(enrolledKey(chatId));
+  if (members.length === 0) return [];
+
+  const progressKeys = members.map((m) => {
+    const { deck, cardId } = parseMemberId(m);
+    return progressKey(chatId, deck, cardId);
+  });
+  const contentKeys = members.map((m) => {
+    const { deck, cardId } = parseMemberId(m);
+    return contentKey(deck, cardId);
+  });
+
+  const [progresses, contents] = await Promise.all([
+    redis.mget<(CardProgress | null)[]>(progressKeys),
+    redis.mget<(CardContent | null)[]>(contentKeys),
+  ]);
+
+  return members
+    .map((m, i) => ({ ...parseMemberId(m), content: contents[i], progress: progresses[i] }))
+    .filter(
+      (x): x is { deck: string; cardId: string; content: CardContent; progress: CardProgress } =>
+        x.content !== null && x.progress !== null
+    );
 }
 
-/** Consecutive days (ending today or yesterday) with at least one logged review. */
-export async function getReviewStreak(): Promise<number> {
-  const dates = await redis.smembers<string[]>(REVIEW_DATES_KEY);
+export async function countMastered(chatId: number): Promise<number> {
+  const all = await getAllProgressForUser(chatId);
+  return all.filter((x) => x.progress.interval_days >= MASTERED_INTERVAL_DAYS).length;
+}
+
+/** Consecutive days (ending today or yesterday) with at least one logged review, for this user. */
+export async function getReviewStreak(chatId: number): Promise<number> {
+  const dates = await redis.smembers<string[]>(reviewDatesKey(chatId));
   const dateSet = new Set(dates);
 
   const cursor = new Date();
@@ -118,25 +244,4 @@ export async function getReviewStreak(): Promise<number> {
     cursor.setUTCDate(cursor.getUTCDate() - 1);
   }
   return streak;
-}
-
-export async function registerDeck(deck: string): Promise<void> {
-  await redis.sadd(DECKS_KEY, deck);
-}
-
-export async function listDecks(): Promise<string[]> {
-  return redis.smembers(DECKS_KEY);
-}
-
-/** Finds a card by its Afrikaans word/phrase text, searching every known deck. */
-export async function findCardByWord(
-  text: string
-): Promise<{ deck: string; cardId: string; card: Card } | null> {
-  const cardId = slugify(text);
-  const decks = await listDecks();
-  for (const deck of decks) {
-    const card = await getCard(deck, cardId);
-    if (card) return { deck, cardId, card };
-  }
-  return null;
 }

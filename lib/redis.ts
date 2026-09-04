@@ -8,7 +8,3 @@ if (!url || !token) {
 }
 
 export const redis = new Redis({ url, token });
-
-export function cardKey(deck: string, cardId: string): string {
-  return `card:${deck}:${cardId}`;
-}
