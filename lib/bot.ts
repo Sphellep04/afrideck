@@ -35,7 +35,7 @@ bot.command("start", async (ctx) => {
       "grammar lessons, quizzes, and pronunciation audio.\n\n" +
       "Send /review to review the cards due today, /grammar for a grammar topic, /quiz to " +
       "test yourself, /progress for stats, /help for everything else, or just send a message " +
-      "to chat. Everyone gets their own progress, so review at your own pace."
+      "to chat."
   );
 });
 
