@@ -3,6 +3,15 @@
 A personal Afrikaans-learning Telegram bot with spaced repetition flashcards, grammar lessons, quizzes,
 pronunciation audio, and free-form chat. Built entirely on free tiers.
 
+## Screenshots
+
+| | |
+|---|---|
+| ![Start message](docs/screenshots/start-message.jpg) | ![Review flow](docs/screenshots/review-flow.jpg) |
+| `/start` | `/review`, one card at a time |
+| ![Free chat advice](docs/screenshots/chat-advice.jpg) | ![Free chat on work vocabulary](docs/screenshots/chat-work-words.jpg) |
+| Free chat: how to use the bot | Free chat: steering toward specific vocabulary |
+
 ## Features
 
 - **`/review`**: SM-2 spaced repetition over a vocabulary deck (greetings, everyday, work) and a
