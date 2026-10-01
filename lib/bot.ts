@@ -86,14 +86,18 @@ function revealKeyboard(deck: string, cardId: string): InlineKeyboard {
   return keyboard.text("Show answer", `reveal:${deck}:${cardId}`);
 }
 
+/**
+ * Just two outcomes (good/again), matching what reply-grading already produces, rather than
+ * SM-2's full Again/Hard/Good/Easy nuance - the rate callback still accepts all four values
+ * (so any already-sent card message with the old 4-button layout keeps working), only the
+ * buttons rendered on new cards changed.
+ */
 function ratingKeyboard(deck: string, cardId: string): InlineKeyboard {
   const keyboard = new InlineKeyboard();
   if (isR2Configured()) keyboard.text("🔊 Pronounce", `pronounce:${deck}:${cardId}`).row();
   return keyboard
-    .text("Again", `rate:again:${deck}:${cardId}`)
-    .text("Hard", `rate:hard:${deck}:${cardId}`)
-    .text("Good", `rate:good:${deck}:${cardId}`)
-    .text("Easy", `rate:easy:${deck}:${cardId}`);
+    .text("❌ Missed it", `rate:again:${deck}:${cardId}`)
+    .text("✅ Got it", `rate:good:${deck}:${cardId}`);
 }
 
 function frontText(content: CardContent): string {

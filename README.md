@@ -22,8 +22,8 @@ pronunciation audio, and free-form chat. Built entirely on free tiers.
   everyday, work, numbers, time, food, travel, family, home, weather/nature, money, health,
   technology) and a grammar deck, one card at a time, with a running "N left today" count.
   Replying to a card with your answer (instead of tapping a button) grades it and records the
-  review automatically, good/again depending on correctness; the buttons are still there for
-  manual Again/Hard/Good/Easy nuance
+  review automatically, good/again depending on correctness; two fallback buttons (Got it /
+  Missed it) cover the same two outcomes for grammar cards or a quick tap instead of typing
 - **`/grammar`**: menu of 20 core Afrikaans grammar topics, each with a structured explanation and
   examples. Reviewing a grammar card via `/review` shows the same full lesson, not a truncated
   version
