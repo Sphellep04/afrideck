@@ -53,8 +53,9 @@ export async function chatReply(
             `The user was just shown a flashcard for the Afrikaans word or phrase "${activeCard.afrikaans_word}" ` +
             `(correct translation: "${activeCard.english_translation}"). If their message looks like an attempt ` +
             "to answer it, say clearly and directly whether they're right or wrong before anything else, then " +
-            "remind them to tap Again/Hard/Good/Easy on the card itself to actually record the review (this chat " +
-            "reply does not do that). If their message is unrelated to the card, just respond normally.",
+            "remind them that replying directly to the card message (not just typing in the chat) records the " +
+            "review automatically, or they can tap Got it / Missed it on the card itself (this chat reply does " +
+            "not record anything). If their message is unrelated to the card, just respond normally.",
         },
       ]
     : [];
