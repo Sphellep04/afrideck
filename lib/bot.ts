@@ -21,6 +21,7 @@ import { answerQuiz, startQuiz } from "./quiz.js";
 import { chatReply } from "./chat.js";
 import { formatGrammarLesson, getGrammarLesson, GRAMMAR_DECK, listGrammarTopics } from "./grammar.js";
 import { getActiveCard, setActiveCard } from "./review-session.js";
+import { formatWordOfDay, getWordOfDay } from "./word-of-day.js";
 import type { CardContent } from "./types.js";
 
 const token = process.env.BOT_TOKEN;
@@ -51,6 +52,7 @@ bot.command("help", async (ctx) => {
       "/quiz: multiple-choice test, doesn't affect review scheduling",
       "/progress: cards mastered, due today, and your review streak",
       "/decks: see every deck and how many cards it has",
+      "/word: today's word of the day, with a detailed explanation",
       "/pronounce <word>: hear a word's reference pronunciation",
       "/recordings <word>: replay your last 5 practice recordings for a word",
       "",
@@ -65,6 +67,15 @@ bot.command("decks", async (ctx) => {
   const [total, perDeck] = await Promise.all([countAllCards(), countCardsPerDeck()]);
   const lines = perDeck.map(({ deck, count }) => `${deck}: ${count}`);
   await ctx.reply(["📇 Decks", `Total: ${total} cards`, "", ...lines].join("\n"));
+});
+
+bot.command("word", async (ctx) => {
+  const word = await getWordOfDay();
+  if (!word) {
+    await ctx.reply("No word of the day yet, seed the deck first.");
+    return;
+  }
+  await ctx.reply(formatWordOfDay(word));
 });
 
 const CARD_ID = "[a-z0-9-]+";
@@ -128,7 +139,11 @@ async function nextCardMessage(chatId: number): Promise<{ text: string; keyboard
   });
 
   const remaining = `${due} card${due === 1 ? "" : "s"} left today`;
-  return { text: `${frontText(content)}\n\n${remaining}`, keyboard: revealKeyboard(deck, cardId) };
+  const hint = "Reply with your answer to grade it automatically, or tap a button below.";
+  return {
+    text: `${frontText(content)}\n\n${remaining}\n${hint}`,
+    keyboard: revealKeyboard(deck, cardId),
+  };
 }
 
 bot.command("review", async (ctx) => {
@@ -384,10 +399,68 @@ bot.callbackQuery(new RegExp(`^grammar:(${CARD_ID})$`), async (ctx) => {
   await ctx.editMessageText(formatGrammarLesson(content, lesson));
 });
 
+function normalizeAnswer(s: string): string {
+  return s.toLowerCase().replace(/[.,!?'"]/g, "").trim();
+}
+
+/**
+ * Deliberately conservative: only true if the user's answer contains one of the correct senses
+ * as a substring (handles "it means small", "small.", "Small" etc). Doesn't check the reverse
+ * direction (correct sense containing the user's answer), since that would let a short partial
+ * guess like "s" match "small" - under-crediting a synonym is a safer failure than
+ * over-crediting a near-miss.
+ */
+function isAnswerCorrect(userAnswer: string, correctTranslation: string): boolean {
+  const answer = normalizeAnswer(userAnswer);
+  if (!answer) return false;
+  const senses = correctTranslation
+    .split("/")
+    .map((s) => normalizeAnswer(s))
+    .filter(Boolean);
+  return senses.some((sense) => answer.includes(sense));
+}
+
+/**
+ * A free-text reply to a card message is treated as a deliberate answer attempt (same
+ * "reply to the card = this is about that card" convention already used for voice notes), and
+ * gets graded and auto-rated (good/again) instead of just chatted about. Returns true if it
+ * handled the message, so the caller knows not to also fall through to free chat.
+ */
+async function tryGradeReply(ctx: Context & { message: { text: string } }): Promise<boolean> {
+  if (!ctx.chat) return false;
+  const replyText = ctx.message.reply_to_message?.text;
+  const word = replyText ? extractWordFromCardMessage(replyText) : null;
+  if (!word) return false;
+
+  const found = await findCardByWord(word);
+  if (!found) return false;
+
+  const chatId = ctx.chat.id;
+  const progress = await getProgress(chatId, found.deck, found.cardId);
+  if (!progress) return false;
+
+  const correct = isAnswerCorrect(ctx.message.text, found.content.english_translation);
+  const rating: Rating = correct ? "good" : "again";
+  const updated = applySM2(progress, rating);
+  await saveProgress(chatId, found.deck, found.cardId, updated);
+  await logReview(chatId, `${found.deck}:${found.cardId}`, rating);
+
+  const verdict = correct
+    ? `✅ Correct, "${found.content.afrikaans_word}" means "${found.content.english_translation}".`
+    : `❌ Not quite, "${found.content.afrikaans_word}" means "${found.content.english_translation}".`;
+  await ctx.reply(verdict);
+
+  const { text, keyboard } = await nextCardMessage(chatId);
+  await ctx.reply(text, { reply_markup: keyboard });
+  return true;
+}
+
 // Fallback for anything that isn't a recognized command — must stay last so it only
 // catches messages every handler above didn't already consume.
 bot.on("message:text", async (ctx) => {
   try {
+    if (await tryGradeReply(ctx)) return;
+
     await ctx.replyWithChatAction("typing");
     const activeCard = await getActiveCard(ctx.chat.id);
     const reply = await chatReply(ctx.chat.id, ctx.message.text, activeCard ?? undefined);

@@ -13,7 +13,8 @@
     "seed-redis": "tsx --env-file=.env scripts/seed-redis.ts",
     "generate-grammar-lessons": "tsx --env-file=.env scripts/generate-grammar-lessons.ts",
     "seed-grammar": "tsx --env-file=.env scripts/seed-grammar.ts",
-    "migrate-multiuser": "tsx --env-file=.env scripts/migrate-multiuser.ts"
+    "migrate-multiuser": "tsx --env-file=.env scripts/migrate-multiuser.ts",
+    "generate-word-of-day": "tsx --env-file=.env scripts/generate-word-of-day.ts"
   },
   "dependencies": {
     "@upstash/redis": "^1.34.0",
